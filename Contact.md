@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Contact form
+title: Contact
 permalink: /contact/
+order: 5
 ---
 
 We are grateful for general feedback and suggestions. Please submit your feedback or suggestion for a new source via this [form](contact/).
