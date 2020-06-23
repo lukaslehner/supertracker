@@ -2,14 +2,14 @@
 layout: page
 title: About
 permalink: /about/
-order: 4
+order: 5
 ---
 
 In the context of Covid-19, numerous organisations have produced policy trackers and datasets to allow policy-makers and researchers to follow and evaluate policy changes across the world. In order to address information overload, this project creates a supertracker that gives immediate access to all existing policy trackers, datasets and surveys. The supertracker offers users the option of searching and filtering relevant sources. Through direct engagement with providers and users of policy trackers, the project also helps propose concrete actions to solve informational gaps in existing policy trackers and create synergies between them.
 
 The Oxford supertracker is maintained by [Mary Daly](https://www.spi.ox.ac.uk/people/profile/daly.html), [Bernhard Ebbinghaus](https://www.spi.ox.ac.uk/people/professor-bernhard-ebbinghaus), [Lukas Lehner](https://www.spi.ox.ac.uk/people/lukas-lehner), [Marek Naczyk](https://www.spi.ox.ac.uk/people/dr-marek-naczyk) and [Tim Vlandas](https://www.spi.ox.ac.uk/people/dr-tim-vlandas), all at the [Department of Social Policy and Intervention at the University of Oxford](). The project is funded by Economic, Social, Cultural & Environmental Impacts of COVID-19: Urgent Response Fund funded by the Higher Education Innovation Fund (HEIF) and Oxford ESRC Impact Acceleration Account (IAA).
 
-The project builds on and extend [Covid19policytrackers](https://lukaslehner.github.io/covid19policytrackers/), - a supertracker of policy trackers - compiled since late March 2020 by Lukas Lehner. The collection started initially as a [Twitter
+The Supertracker builds on [Covid19policytrackers](https://lukaslehner.github.io/covid19policytrackers/) - compiled since late March 2020 by Lukas Lehner. The collection started initially as a [Twitter
 Thread](https://twitter.com/LukasLehner_/status/1243557931888578565) in
 March 2020 and is based on a collaborative effort with suggestions from
 [@B_Ebbinghaus](https://twitter.com/B_Ebbinghaus),
@@ -64,3 +64,4 @@ Phoebe Dunn,
 [@kbbolch](https://twitter.com/kbbolch),
 [@LiviaFritz](https://twitter.com/LiviaFritz), and
 [@KonstPoensgen](https://twitter.com/KonstPoensgen).
+
