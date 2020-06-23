@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Add a tracker
-permalink: /add-a-tracker/
+title: Submit a Tracker
+permalink: /submit-a-tracker/
 order: 4
 ---
 
