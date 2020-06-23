@@ -5,11 +5,7 @@ permalink: /documentation/
 order: 3
 ---
 
-The Oxford Supertracker includes all policy trackers, suveys and new data sources that 
-1) document policy developments or changes in attitudes, 
-2) relate to COVID-19, and 
-3) .
-The compilation is not meant to be exhaustive and we are grateful for additional suggestions.
+The Oxford Supertracker includes policy trackers, suveys and new data sources that relate to COVID-19. The compilation is not meant to be exhaustive and we are grateful for additional **[suggestions](submit-a-tracker/)**.
 
 The collection is structured around the areas of
 1. Non-Pharmaceutical Interventions
