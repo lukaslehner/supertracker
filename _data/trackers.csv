@@ -1,0 +1,408 @@
+title,link,category,Focus,By,Coverage,Data format,
+,,,,,,,
+WHO PHSM: Public health and social measures,https://www.who.int/emergencies/diseases/novel-coronavirus-2019/phsm,1. Non-Pharmaceutical Interventions incl. Confinement and Travel," measures or actions by individuals, institutions, communities, local and national governments and international bodies to slow or stop the spread of an infectious disease. Establishing one single open-content dataset by merging pre-existing datasets from WHO, the London School of Hygiene and Tropical Medicine, ACAPS, University of Oxford, Global Public Health Intelligence Network, US Centers for Disease Control and Prevention and the Complexity Science Hub Vienna.", @WHO, countries worldwide, csv,
+COVID19 Government Measures Dataset,https://www.acaps.org/covid19-government-measures-dataset,1. Non-Pharmaceutical Interventions incl. Confinement and Travel," implemented governments measures structured by 1) Social distancing, 2) Movement restrictions, 3) Public health measures, 4) Social and economic measures, 5) Lockdowns", @ACAPSproject, worldwide, xlsx spreadsheet,
+Oxford COVID19 Government Response Tracker,https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker,1. Non-Pharmaceutical Interventions incl. Confinement and Travel," 8 indicators on containment policies (such as school closures or travel restrictions), 4 economic indicators on fiscal or stimulus measures, and 5 indicators that track health system policies (such as testing)."," @thomasnhale,
+@annajessiep,
+@TobyMPhillips,
+@BlavatnikSchool", 150 countries, csv or via API,
+CoronaNet project database,https://coronanet-project.org,1. Non-Pharmaceutical Interventions incl. Confinement and Travel," currently includes more than 10,000 separate policy announcements on measures such as social distancing measures, border restrictions, public awareness campaigns, declaration of emergency, health"," @CoronaNet_org
+@LuMesserschmidt
+@rmkubinec
+@joan_barcelo_
+@as_hartnett", 190 countries and sub-national units," csv, xlsx spreadsheet",
+Complexity Science Hub COVID-19 Covid-19 Control Strategies List (CCCSL),http://covid19-interventions.com/,1. Non-Pharmaceutical Interventions incl. Confinement and Travel, non-pharmaceutical interventions (NPIs) to stop the spread of COVID-19,  @CSHVienna, 170 governmental measures in 41 countries worldwide, csv spreadsheet,
+Health Intervention Tracking for COVID-19 (HIT-COVID),https://akuko.io/post/covid-intervention-tracking,1. Non-Pharmaceutical Interventions incl. Confinement and Travel, documents public health policy interventions related to COVID-19, @JohnsHopkinsSPH @BUSPH @qulu_zheng @JustinLessler @alabriqu @andrewazman @Ymax, worldwide at the national and first-level administrative unit," html for aggregate data, csv for microdata",
+Coronavirus containment measures,https://coronavirusmeasures.herokuapp.com/,1. Non-Pharmaceutical Interventions incl. Confinement and Travel, containment measures incl. a stringency index as a time series, @O_LJ, worldwide, csv and world map,
+COVID-19 US state policy database (CUSP),https://tinyurl.com/statepolicies,1. Non-Pharmaceutical Interventions incl. Confinement and Travel," dates of state policy changes in the areas of non-pharmaceutical interventions, social policies, healthcare, racial disparities, etc."," @JuliaRaifman
+@JacobBor
+@dklinejones
+@DrSarahLipson
+@jonjaytweets", USA (state level)," Google sheets, xlsx, csv",
+socialdistancing.stanford.edu,http://socialdistancing.stanford.edu,1. Non-Pharmaceutical Interventions incl. Confinement and Travel," County-level nonpharmaceutical interventions (K-12 school closures, higher education closures, religious gathering cancellations, non-essential business closures, stay-at-home orders)", @StanfordHCI @UVA_BI, USA on a county level (currently 274 counties covered)," Google sheets, downloadable as csv and xlsx",
+COVID Analysis and Mapping of Policies (AMP) site,https://covidamp.org/,1. Non-Pharmaceutical Interventions incl. Confinement and Travel, non-pharmaceutical interventions," @georgetown_ghss
+@TalusAnalytics
+@NTI_WMD"," United States (national and sub-national), Nigeria, Djibouti"," html, xlsx",
+COVID19 Afrique Données Recherche,https://www.covid19afrique.com/,1. Non-Pharmaceutical Interventions incl. Confinement and Travel, non-pharmaceutical interventions; cases and deaths (in French)," @mavalo76
+@ValeryRidde", Francophone African countries and countries of Economic Community of West African States (ECOWAS), html,
+COVID19 Global Travel Navigator,https://c19navigator.mayerbrown.com/,1. Non-Pharmaceutical Interventions incl. Confinement and Travel," travel restrictions, quarantine requirements for travellers", @Mayer_Brown, worldwide," pdf, html",
+EY global immigration tracker,https://www.ey.com/en_lu/tax/how-covid-19-is-disrupting-immigration-policies-and-worker-mobility-a-tracker,1. Non-Pharmaceutical Interventions incl. Confinement and Travel," mobility and immigration regulations, such as entry restrictions, quarantine orders for newly admitted citizens, visa suspensions or changes in eligibility criteria for visa applications", @EYnews, countries worldwide, pdf,
+IMF policy tracker,https://t.co/tzG6SIT4o7?amp=1,2. Macroeconomic and Financial Policy," fiscal, monetary and macroprudential",, worldwide, html,
+OECD Covid Action Map,https://oecd.github.io/OECD-covid-action-map/,2. Macroeconomic and Financial Policy," containment, health, fiscal, monetary"," @OECD incl.
+@OECDeconomy
+OECD_Social
+@OECDtax", worldwide, xlsx spreadsheet,
+COVID-19 Financial Response Tracker (CFRT),https://som.yale.edu/node/222278,2. Macroeconomic and Financial Policy," financial stability (incl. fiscal, monetary, macroprudential and liquidity measures)",, worldwide, xlsx spreadsheet,
+Eastern Europe Coronavirus tracker,https://wiiw.ac.at/eastern-europe-coronavirus-tracker-economic-impact-rising-n-439.html,2. Macroeconomic and Financial Policy," fiscal, monetary, public order"," @wiiw_news incl.
+@RicGri
+@JuliaGruebler
+@alexbykova
+@MarioHolzner",23 CESEE countries," pdf, html",
+IIF Global Policy Responses,https://www.iif.com/Portals/0/Files/Databases/COVID-19_responses.pdf?ver=2020-04-24-173749-083,2. Macroeconomic and Financial Policy, fiscal and monetary policy responses, @IIF, advanced and emerging economies worldwide, pdf,
+Bruegel fiscal policy dataset,https://t.co/XxHMpTlW9q?amp=1,2. Macroeconomic and Financial Policy, fiscal (3 categories: 1) fiscal impulse 2) deferrals 3) guarantees)," @ZsoltDarvas
+@BergaminiEnrico
+@MartaDomnguezJ1"," 11 countries (BEL, DNK, FRA, DEU, GRC, HUN, ITA, ESP, GBR,
+USA)", html,
+EU and euro area level measures,https://www.europarl.europa.eu/RegData/etudes/IDAN/2020/645723/IPOL_IDA(2020)645723_EN.pdf,2. Macroeconomic and Financial Policy, measures proposed and taken at the EU or euro area level to mitigate the economic and social effects., @europarl_EN," measures by the EC, EU Council, ECB, SSM, ESRB, EBA, EIB. EIF, EBRD.", pdf,
+Economic Policy Response Map,https://sites.google.com/view/atanaspekanov/economic-policy-response-map,2. Macroeconomic and Financial Policy, fiscal and wider liquidity measures, @atanaspekanov," EU governments, European Commission, ECB", html,
+COVID-19 Economic Stimulus Index,http://web.boun.edu.tr/elgin/COVID.htm,2. Macroeconomic and Financial Policy," fiscal, monetary & exchange rate measures"," @CeyhunElgin
+@BasbugGokce
+@AbdullahYalaman", 166 countries,,
+COVID-19 Fiscal Response Tracker and world map,https://www.csis.org/analysis/breaking-down-g20-covid-19-fiscal-response,2. Macroeconomic and Financial Policy, breakdown of major fiscal actions," @CSIS
+@CSIS_Econ
+@MPGoodman88
+@handrewschwartz", G20 countries, html,
+IMF Fiscal Monitor,https://lnks.gd/l/eyJhbGciOiJIUzI1NiJ9.eyJidWxsZXRpbl9saW5rX2lkIjoxMDgsInVyaSI6ImJwMjpjbGljayIsImJ1bGxldGluX2lkIjoiMjAyMDA1MjAuMjE3ODU5MjEiLCJ1cmwiOiJodHRwczovL3d3dy5pbWYub3JnL34vbWVkaWEvRmlsZXMvUHVibGljYXRpb25zL2Zpc2NhbC1tb25pdG9yLzIwMjAvQXByaWwvRW5nbGlzaC9vbmxpbmVhbm5leDExLmFzaHg_bGE9ZW4mdXRtX21lZGl1bT1lbWFpbCZ1dG1fc291cmNlPWdvdmRlbGl2ZXJ5In0.2kIn3Sr0Vxsxo63xijpm_Ma21ifxFSMYrhNztcJPD6M/br/78878540483-l,2. Macroeconomic and Financial Policy," key fiscal measures governments have announced or taken from January 1 to April 8, 2020, categorised by above-the-line measures, below-the-line measures, and guarantees", @IMFNews, G20 countries + selected countries, pdf,
+Policy Responses to COVID-19 in Asia and the Pacific,https://www.unescap.org/covid19/policy-responses,2. Macroeconomic and Financial Policy," Non-pharmaceutical interventions; fiscal, monetary, financial and trade policy;"," @UNESCAP
+@sweta_saxena", Asia and the Pacific, Tableau; pdf,
+The Opportunity Insights Economic Tracker,https://tracker.opportunityinsights.org/,2. Macroeconomic and Financial Policy," real time tracking of employment, unemployment, consumer spending, job postings, small businesses openings and revenue, students online math coursework"," @OppInsights
+Raj Chetty
+@John_N_Friedman
+@nhendren82
+@michaelstepner", USA aggregate and on a state level," html, downloadable soon",
+U.S. Economic Policy Response to Coronavirus Pandemic,https://messertodd.github.io/coronavirus-policy-response/,2. Macroeconomic and Financial Policy," economic policy responses, explanation of economic mechanisms at play and references to theory and academic readings on the implemented measures."," @ToddOfMess
+@PeterMcCrory", USA, html,
+Firm-level risk Covid-19 exposure,https://sites.google.com/view/firmrisk/home?authuser=0,2. Macroeconomic and Financial Policy," firm-level measures of exposure, risk, and sentiment to epidemic diseases (covid-19, SARS, H1N1, Ebola, etc.) constructed using textual analysis of quarterly earnings conference calls"," @StephanHollan
+@L_van_Lent", 11’000 firms in 81 countries; 2002 to 2020q1," csv, tsv, dta",
+Covid Stimulus Watch,https://covidstimuluswatch.org/blog/2020-04/covid-stimulus-watch-new-website-documents-accountability-track-records-cares-act,2. Macroeconomic and Financial Policy," strengthen corporate accountability. It assembles CARES Act recipient data on grants and loans per firm and combines it with information about each firm’s history of regulatory violations, previous government assistance, federal tax avoidance, and CEO and worker pay practices."," @GoodJobsFirst
+@DirtDiggers
+@GregLeRoy4"," US firms receiving grants and loans through the CARES Act. At the moment, it contains more than 5,700 awards, totalling $54 billion."," html, downloadable as csv and xml",
+The Weekly Economic Index (WEI),https://www.newyorkfed.org/research/policy/weekly-economic-index,2. Macroeconomic and Financial Policy," provides a signal of the state of the U.S. economy based on data available at a daily or weekly frequency. It represents the common component of ten different daily and weekly series covering consumer behavior, the labor market, and production, scaled to proxy US GDP growth."," @NewYorkFed
+@DallasFed", USA, xlsx,
+Real Time Population Survey,https://sites.google.com/view/covid-rps,2. Macroeconomic and Financial Policy, bi-weekly online household survey that aims to provide more timely and more frequent version of the official labor market survey used to produce unemployment rate numbers etc.," Alexander Bick, @AdamBlandin
+@DallasFed", USA," html, pdf. No micro data available yet.",
+OECD tax policy dataset,https://oecd.org/tax/covid-19-tax-policy-and-other-measures.xlsm,3. Tax Policy, tax policy measures incl. a detailed breakdown of cash flow measures and changes in tax policies for firms & households," @OECDtax incl.
+@DBradbury1021
+@THanappi
+@PierceOReilly
+@jmteusch", 91 countries, xlsm spreadsheet,
+OECD tax administration responses dataset,https://read.oecd-ilibrary.org/view/?ref=126_126478-29c4rprb3y&title=Tax_administration_responses_to_COVID-9_Measures_taken_to_support_taxpayers,3. Tax Policy," 1) additional time for tax affairs, 2) quicker refunds, 3) changes in audit policy, 4) services & communications", CIAT/IOTA/OECD, worldwide, pdf,
+Tax Foundation tax relief dataset,https://taxfoundation.org/coronavirus-country-by-country-responses/,3. Tax Policy," individual, business, consumption, and other taxes", @TaxFoundation @ElkeAsen @crisberechet @danieldbunn, worldwide, html,
+EY Covid-19 Global Trade Considerations tracker,https://www.ey.com/en_lu/tax/how-covid-19-is-affecting-customs-and-excise-taxes-a-trade-track,4. Trade Policy and FDI," trade policies, such as import tariffs on personal protective equipment, export restrictions on similar goods, relaxing regulatory requirements to help quicker responses.", @EYnews, countries worldwide, pdf,
+Covid-19 Food Policy Tracker,https://www.ifpri.org/project/covid-19-food-trade-policy-tracker,4. Trade Policy and FDI, food export restrictions and their impact as a percentage of each country’s imported calories that are impacted by export restrictions," @IFPRI
+Dashboard", countries worldwide, csv,
+update on cross border investment flows,https://unctad.org/en/pages/newsdetails.aspx?OriginalVersionID=2313,4. Trade Policy and FDI," projections on global FDI and data on CAPEX, greenfield investments, M&As, and MNE earning estimates"," @UNCTAD
+@unctadwif incl.
+@perezludena", worldwide, pdf,
+Social Protection and Jobs Responses to COVID-19: A Real-Time Review of Country Measures,http://www.ugogentilini.net/,5. Social and Employment Policy, social protection and jobs," @Ugentilini
+@mohamed_almenfi
+(WorldBank, ILO, UNICEF)", worldwide, pdf,
+OECD employment and social policies dataset,http://oecd.org/social/Covid-19-Employment-and-Social-Policy-Responses-by-Country.xlsx,5. Social and Employment Policy, Employment and social policies," OECD_Social incl.
+@AGarnero
+@sebkoenigs", 37 OECD and G20 countries, xlsx spreadsheet,
+ILO collection of country policy responses,https://ilo.org/global/topics/coronavirus/country-responses/lang--en/index.htm,5. Social and Employment Policy," structured by 4 categories: 1) Stimulating economy & employment 2) Supporting enterprises, jobs, incomes 3) Protecting workers in workplace 4) Relying on social dialogue",, 174 countries, html,
+ILO Social Protection Monitor,https://www.social-protection.org/gimi/RessourcePDF.action?id=56024,5. Social and Employment Policy, social protection,, 46 countries, pdf,
+COVID-19 EU PolicyWatch,https://www.eurofound.europa.eu/data/covid-19-eu-policywatch,5. Social and Employment Policy, social and employment policy responses of government and social partners; examples of company practices aimed at mitigating the social and economic impacts, @eurofound," EU member countries, Norway, United Kingdom"," html, csv, json",
+"COVID 19
+summary",https://www.eurofound.europa.eu/publications/blog/coronavirus-a-labour-market-earthquake?&utm_campaign=covid-19&utm_content=ef20052&utm_source=twitter&utm_medium=social-network,5. Social and Employment Policy," large-scale company restructuring events. It includes company, sector and jobs affected.", @eurofound, EU, html,
+ETUC Briefing Notes,https://t.co/tGCy28L9qo?amp=1,5. Social and Employment Policy," short-time work, social protection, employment protection, human rights"," @etuc_ces
+@ETUI_org", Europe, pdf,
+Special Issue: Covid-19 and Labour Law. A Global Review,https://illej.unibo.it/issue/view/868,5. Social and Employment Policy," labour law norms and institutions, and workplace arrangements across legal systems", @labour_e, 40 countries worldwide, pdf,
+IGC COVID-19 tracker,https://www.theigc.org/covid-19/tracker/,5. Social and Employment Policy," economic support measures for countries worldwide by 1) wage/employment support, 2) cash transfers, 3) credit schemes/guarantees/ business support, 4) tax delays/deferrals, 5) tax cuts/ cancellations/exemptions/credits, 6) Interest rate cuts/liquidity measures/ other monetary measures", @The_IGC, countries worldwide with a focus on developing countries," google spreadsheet, downloadable as xlsx or csv",
+Monitoring the Covid-19 Employment Response: Policy Approaches Across Countries,https://www.hks.harvard.edu/centers/wiener/programs/project-on-workforce/covid-19-employment-response,5. Social and Employment Policy, wage & employment support measures and their mechanisms," @Rachel_Lipson
+@jnorthend
+@HarvardMWC
+@Kennedy_School"," 16 countries: Australia, Canada, Denmark, France, Germany, Ireland, Italy, Japan, Netherlands, New Zealand, Norway, South Africa, Spain, Sweden, United Kingdom, United States", html,
+OECD Health System responses summary,https://t.co/f41gKRros0?amp=1,6. Health and Care Policy, health system responses. The policies are structured around 1) access to diagnostics 2) strengthening capacity 3) leverage digital solutions 4) R&D.," @OECD_Social incl.
+@FranColombo2019
+@fredguanais"," mainly OECD + Argentina, Peru, Costa Rica", xlsx spreadsheet,
+Health System Response Monitor,https://www.covid19healthsystem.org/mainpage.aspx,6. Health and Care Policy, health systems and wider public health initiatives," @OBShealth
+@WHO_Europe
+@EU_Health
+@EU_Commission incl.
+@BKMErica", Europe, pdf,
+International Long-Term Care Policy Network resources,https://ltccovid.org,6. Health and Care Policy, long-term care policy," @LTCcovid
+@AdelinaCoHe
+@LorenzKH
+@CPEC_LSE
+@ilpnetwork", worldwide, html,
+"Cambridge Core Health Economics, Policy and Law Blog series",https://www.cambridge.org/core/blog/tag/country-responses-to-the-covid19-pandemic/,6. Health and Care Policy, health and social care policy issues, @CambridgeCore, selected countries worldwide and US states, html,
+Visualizing regional socioeconomic indicators for Europe,https://covid19.iiasa.ac.at/interactive/,6. Health and Care Policy," socioeconomic indicators, such as life expectancy and population shares elderly, ratios of doctors and hospital beds to elderly population, or the ratio of tourists to local population"," @IIASAVienna
+incl. @AsjadNaqvi", Europe on a state/province level, html,
+COVID-19 sex-disaggregated data tracker,https://globalhealth5050.org/covid19/,6. Health and Care Policy," sex-disaggregated data on cases, deaths, hospitalisations, ICU admissions, age & infections in health care workers", @GlobalHlth5050, 78 countries," downloadable as csv, xlsx, pdf, html",
+The COVID Racial Data Tracker,https://covidtracking.com/race,6. Health and Care Policy," cases, deaths and negative test results by race and ethnicity on a bi-weekly basis"," @AntiracismCtr
+@COVID19Tracking
+@TheAtlantic", US states," Google sheets, downloadable as csv",
+The Health Foundation COVID-19 policy tracker,https://www.health.org.uk/news-and-comment/charts-and-infographics/covid-19-policy-tracker,6. Health and Care Policy," national government and health and social care system responses in five areas: 1. Policy narrative, 2. Measures to limit spread, 3. Health and social care systems responses, 4. Interventions to support R&D, 5. Broader social and economic interventions"," @HealthFdn
+@hughalderwick", England, xlsx,
+UNESCO COVID-19 Educational Disruption and Response,https://en.unesco.org/covid19/educationresponse,"7. Education, Research and Innovation", school closures, @UNESCO, worldwide, html (map ony),
+CGD - COVID education policy tracking,https://docs.google.com/spreadsheets/d/1ndHgP53atJ5J-EtxgWcpSfYG8LdzHpUsnb6mWybErYg/edit#gid=0,"7. Education, Research and Innovation", school closures," @CGDev
+@leecrawfurd"," countries worldwide and regional level for India, Brazil, Nigeria, USA"," Google sheets, downloadable as csv, xlsx, pdf, html",
+OECD Survey on Science and Innovation policy responses,https://stip.oecd.org/Covid.html,"7. Education, Research and Innovation", science and innovation policy responses as self-reported by national government ministries, @OECDinnovation, 33 mainly OECD countries, html,
+COVID-19 Social Science Research Tracker,https://github.com/natematias/covid-19-social-science-research/,"7. Education, Research and Innovation"," new research about COVID 19, including published findings, pre-prints, projects underway, and projects at least at proposal stage. You can add your project via Google form."," @natematias
+@alexleavitt", worldwide," Google sheets, downloadable as csv, xlsx, pdf, html",
+World Pandemic Research Network (WPRN),https://wprn.org/,"7. Education, Research and Innovation", collects research projects and maintains a searchable global directory of the scientific resources available on the societal and human impacts of the Covid-19 pandemic, @WPRN_org, worldwide, html,
+COVID-19 Open Research Dataset (CORD-19),https://pages.semanticscholar.org/coronavirus-research,"7. Education, Research and Innovation"," covers 52,000 scholarly articles, including over 41,000 with full text, about COVID-19 and the coronavirus family of viruses.",, worldwide," pdf, json",
+The Lens COVID19 datasets,https://about.lens.org/covid-19/,"7. Education, Research and Innovation"," patent documents, scholarly research works’ metadata and biological sequences from patents. The current patent data relates to previous viral outbreaks from SARS and MERS but patents for COVID-19 will be added once available.", @TheLensOrg, worldwide," csv, json",
+"Dimensions COVID-19 publications, data sets, clinical trials",https://dimensions.figshare.com/articles/Dimensions_COVID-19_publications_datasets_and_clinical_trials/11961063,"7. Education, Research and Innovation"," research outputs in medical and health science, such as journal articles, datasets and clinical trials"," @DSDimensions
+@digitalsci", worldwide, xlsx spreadsheet,
+COVID Scholar,https://covidscholar.org/,"7. Education, Research and Innovation", search engine that uses natural language processing (NLP) to search on a set of research papers related to COVID-19. It also shows daily paper statistics on related research articles., @CovidScholar incl. @KPatBerkeley @jmdagdelen, worldwide, html,
+Open Government Approaches to Tackling COVID-19,https://www.opengovpartnership.org/collecting-open-government-approaches-to-covid-19/,"7. Education, Research and Innovation"," a list of open government approaches, such as citizen-led community responses, Building trust between government and citizens, Transparency over forecasting models and data, Digital platforms or apps, Tackling misinformation online", @opengovpart," worldwide, country level"," Google sheet, downloadable as xlsx or csv",
+OECD multilevel governance,https://read.oecd-ilibrary.org/view/?ref=128_128287-5agkkojaaa&title=The-territorial-impact-of-covid-19-managing-the-crisis-across-levels-of-government,"8. Regions, Cities, SMEs, Tourism", measures taken by national and subnational governments to ensure effective coordination and support regions and cities., @OECD_local, worldwide, pdf,
+OECD cities responses,https://read.oecd-ilibrary.org/view/?ref=126_126769-yen45847kf&title=Coronavirus-COVID-19-Cities-Policy-Responses,"8. Regions, Cities, SMEs, Tourism", policy responses taken by cities. They are structured by i) communication & awareness raising ii) workplace & commuting iii) social distance iv) vulnerable groups v) local service delivery vi) support to business.," @OECD_local incl.
+@Akhmouch", worldwide, pdf,
+Resources State and Local Government Practitioners,https://medium.com/covid-19-public-sector-resources,"8. Regions, Cities, SMEs, Tourism", policy solutions," @HarvardAsh
+@Kennedy_School", US local and state governments, html,
+"GovPredict Federal, State, and Local Responses to the Coronavirus",https://www.govpredict.com/corona-virus-resource-center,"8. Regions, Cities, SMEs, Tourism"," federal bills, state bills, governor orders, local documents", @GovPredict," US city, county, state, and federal level", html,
+COVID-19: Innovative responses update,https://oecd-opsi.org/covid-19-innovative-responses-update-2/,"8. Regions, Cities, SMEs, Tourism", innovative government responses," OECD @OPSIgov
+@CaptainInnovate
+@SamANutt
+@civiccatalyst
+@hbuisma", worldwide, html,
+OECD SME policy responses,https://read.oecd-ilibrary.org/view/?ref=119_119680-di6h3qgi4x&title=Covid-19_SME_Policy_Responses,"8. Regions, Cities, SMEs, Tourism"," policies that are targeted at SMEs. Measures range from tax deferrals and loan guarantees to direct lending and wage
+subsidies.", @OECD_local, worldwide, pdf,
+OECD tourism,https://read.oecd-ilibrary.org/view/?ref=124_124984-7uf8nm95se&Title=Covid-19:%20Tourism%20Policy%20Responses,"8. Regions, Cities, SMEs, Tourism", impact on tourism and policy responses to support the tourism industry, @OECD_local, worldwide, pdf,
+Google Covid-19 Community Mobility Reports,https://www.google.com/covid19/mobility/,9. Behavioural Responses and Mobility," mobility trends over time by geography, across different categories of places such as retail and recreation, groceries and pharmacies, parks, transit stations, workplaces, and residential. Data is sourced from Google Apps such as Google Maps."," @Google
+@googlemaps"," 131 countries, of which many can be disaggregated at the regional level"," csv data, pdf reports",
+Apple Mobility Trends Reports,https://www.apple.com/covid19/mobility,9. Behavioural Responses and Mobility," mobility trends. Data can be separated by walking, driving and public transport. Data reflect relative volume of directions requests compared to a baseline volume on 13 January 2020.", @Apple," countries, regions and cities worldwide"," csv data, html charts",
+The Dallas Fed Social Distancing Index,https://www.dallasfed.org/research/sdi.aspx,9. Behavioural Responses and Mobility, The index summarises the information in seven different variables based on geolocation data collected from a large sample of mobile devices: 1. The fraction of devices leaving home in a day; 2. The fraction of devices away from home for 3-6 hours at a fixed location; 3. The fraction of devices away from home longer than 6 hours at a fixed location; 4. An adjusted average of daytime hours spent at home; 5. The fraction of devices taking trips longer than 16 kilometers; 6. The fraction of devices taking trips less than 2 kilometers; and 7. The average time spent at locations far from home., @DallasFed," USA at county, metropolitan statistical areas (MSA), state and national level.", csv,
+Global overview of COVID-19: Impact on elections,https://www.idea.int/news-media/multimedia-reports/global-overview-covid-19-impact-elections,"10. Politics, Elections, Policy Making", compiles a list of elections postponed due to the outbreak of COVID-19 and of elections held despite the outbreak., @Int_IDEA, worldwide, html,
+Open COVID-19 policy dataset,https://blog.overton.io/blog/2020/03/31/open-covid-19-policy-dataset/,"10. Politics, Elections, Policy Making"," policy documents from think tanks, policy orientated NGOs, IOs and national governments", @overtonio @Stew, worldwide, pdf files with an accompanying json file for metadata,
+COVID-19 Policy-Making Tracker,https://www.ingsa.org/covid/policymaking-tracker/,"10. Politics, Elections, Policy Making"," how policy interventions are being made by collecting advice, evidence or other justifications that underpin governments’ decisions"," @INGSciAdvice
+@ISC
+@PeterGluckman
+@jameswilsdon
+@SciChefQC", worldwide, html,
+COVID19 Civic Freedom Tracker,https://www.icnl.org/covid19tracker/,"11. Civic Freedom, Human Rights, Media", government responses that affect civicfreedoms and humanrights," @ICNLAlliance
+@enablingNGOlaw
+@NiAolainF", worldwide, html,
+Tracker 19,https://rsf.org/en/tracker19-Coronavirus-Covid19,"11. Civic Freedom, Human Rights, Media"," press freedom. It evaluates the impact on journalism by documenting state censorship and deliberate disinformation, and their impact on the right to reliable news and information. It also makes recommendations on how to defend journalism."," Reporters Without Borders
+@RSF_en
+@RSF_inter", countries worldwide, html,
+Solidarity amid the COVID-19 crisis,http://civicspacewatch.eu/solidarity-amid-covid-19-crisis/,"11. Civic Freedom, Human Rights, Media", civil society’s and NGOs actions and demands, @ForCivicEU, in European countries and on a European level, html,
+Civicus Monitor Tracking Civic Space,https://monitor.civicus.org/COVID19/,"11. Civic Freedom, Human Rights, Media"," restrictions and attacks on civic freedoms. Categories include 1) Censorship and restrictions on access to information, 2) Threats and arrests for criticising state response, 3) Restrictions on the media, 4) Passage and use of restrictive laws to counter ‘fake news’, 5) Targeting of human rights defenders, 6) Police abuses during lockdowns, 7) Surveillance and violations of the right to privacy, 8) Overly broad emergency laws and new restrictive legislation."," @CIVICUSMonitor
+@CIVICUSalliance", countries worldwide, html,
+COVID-19 Public Media Dataset,https://anacode.de/download-covid-19-public-media-dataset/,"11. Civic Freedom, Human Rights, Media"," contains over 40,000 online articles with full texts which were scraped from online media in the timespan January – April 2020, focussed mainly on the non-medical aspects of COVID-19.", @Anacode, worldwide, csv,
+Impact:Peace resources on COVID-19,https://docs.google.com/document/d/1QMEOe7NC1wpSx3jLDBohxXja-cN4M5A8ctg8fbLrOcs/edit,"11. War, Peace and Civil Unrest"," resources related to violence, conflict, inequality, peacebuilding"," @ImpactPeace
+@juliascanney", worldwide, google doc,
+Conflict and Covid-19 Resource Hub,https://www.politicalsettlements.org/covid-19/resources/,"11. War, Peace and Civil Unrest"," conflicts, ceasefires, human rights, elections, emergency legislation, prisoners, etc.", @PolSettlements, worldwide, html,
+COVID-19 Disorder Tracker (CDT),https://acleddata.com/analysis/covid-19-disorder-tracker/,"11. War, Peace and Civil Unrest"," the pandemic’s impact on political violence and protest, monitoring changes in demonstration activity, state repression, mob attacks, overall rates of armed conflict, etc.", @ACLEDINFO, worldwide," html, data can be exported",
+Coronavirus in Prisons map and database,https://blogs.helsinki.fi/gulagechoes/2020/04/01/coronavirus-in-prisons-a-global-perspective-tracking-policy-responses-releases-and-riots/#more-311,"12. Prisons, Courts and Judiciary Systems"," responses in prison systems incl. policy responses, releases, and riots", @OZeveleva, 76 countries, html,
+The Marshall Project Coronavirus Tracker,https://www.themarshallproject.org/2020/03/17/tracking-prisons-response-to-coronavirus,"12. Prisons, Courts and Judiciary Systems"," prison responses, such as visit restrictions, court operations",, U.S. states, html,
+Prison Policy: Responses to the COVID-19 pandemic,https://www.prisonpolicy.org/virus/virusresponse.html,"12. Prisons, Courts and Judiciary Systems"," responses of U.S. jails and prisons, such as releasing people early, lowering or stopping jail admissions, limiting check-ins and visits to offices for people on parole, eliminating medical co-pays, reducing the cost of phone calls", @PrisonPolicy, U.S. states, html,
+Vera Institute of Justice prison data,https://www.vera.org/blog/covid-19-1/use-this-data-to-hold-your-local-jail-accountable-during-the-pandemic,"12. Prisons, Courts and Judiciary Systems", number of prisoners and #COVID19 cases and deaths per prison, @verainstitute, U.S. facility-level," Tableau, downloadable as pdf",
+Brennan Center for Justice Courts’ Responses,https://www.brennancenter.org/our-work/research-reports/courts-responses-covid-19-crisis,"12. Prisons, Courts and Judiciary Systems"," court operations, postponements of hearings and closures", @BrennanCenter," U.S. federal courts, immigration courts, and state courts", html,
+UCLA Law Covid-19 Behind Bars Data Project,https://docs.google.com/spreadsheets/d/1X6uJkXXS-O6eePLxw2e4JeRtM41uPZ2eRcOA_HkPVTk/edit#gid=1641553906,"12. Prisons, Courts and Judiciary Systems"," cases & deaths for each US prison, jail, youth correctional facility and immigration detention facility. It also tracks releases, population reduction requests and responses, legal filings and court orders."," @uclaprisondata
+@SharonDolovich
+@aaronlittman
+@uclaprisonlaw", U.S. facility-level," Google spreadsheet, downloadable as xlsx or csv",
+Covid Prison Data,https://covidprisondata.com/,"12. Prisons, Courts and Judiciary Systems"," cases, tests and deaths among inmates and guards; historical population data for state prisons"," @DataPrison
+@JacobKaplan19
+@seathebass92
+@cconcannon1
+@everydayasoreng
+@aaronlittman
+@nrjones8", U.S. states and facility-level," xlsx, csv, html",
+Coronavirus: prison fever,https://www.prison-insider.com/en/articles/coronavirus-la-fievre-des-prisons,"12. Prisons, Courts and Judiciary Systems", @PrisonInsider," living conditions in prisons: cases, deaths, appeals, NGO recommendations, protests, sanitary conditions and access to healthcare"," worldwide, country level", html,
+UNDP HDR Global Preparedness and Vulnerability Dashboard,http://hdr.undp.org/,"13. International Development, Philantropy"," Index for preparedness and vulnerability to pandemics by country. Preparedness index composed of indicators such as Human Development Index, number of physicians and mobile phone subscriptions. Vulnerability index composed of indicators such as population in poverty, population without social protection, remittances inflows or tourism as a share of GDP.",, all countries worldwide," xlsx, pdf, html",
+World Bank Group’s Operational Response to COVID-19 (coronavirus) – Projects List,https://www.worldbank.org/en/about/what-we-do/brief/world-bank-group-operational-response-covid-19-coronavirus-projects-list,"13. International Development, Philantropy", countries that are getting World Bank Group support through the COVID-19 dedicated fast-track facility as well as other financing mechanisms, @WorldBank, developing countries worldwide, html,
+African Policy Monitor,https://covid19africawatch.org/african-policy-monitor/,"13. International Development, Philantropy"," 1) Emergency declarations, 2) Fiscal Policy Responses, 3) Monetary Policy Responses, 4) Social Distancing Measures, 5) School closures", @Covid_Africa, African countries, html,
+Philanthropic funding data,https://candid.org/explore-issues/coronavirus,"13. International Development, Philantropy"," private funders and recipients with details on the amount, purpose and geographical distribution", @CandidDotOrg, worldwide, html,
+Global Response Funding Tracker,https://covid19africawatch.org/global-response-monitor/,"13. International Development, Philantropy"," global initiatives and financial support packages organised by 1) Financial Support from International Development Partners, 2) IMF and World Bank Support, 3) Philanthropic and Corporate Giving", @Covid_Africa, African countries, html tables,
+The ONE Africa COVID-19 Tracker,https://www.one.org/africa/about/policy-analysis/covid-19-tracker/,"13. International Development, Philantropy"," health, economic, and social impacts, such as the number of hospital beds and ICUs; government measures to limit spread of the virus or to limit civil liberties; impact on food intake or remittances"," @ONECampaign
+@David_McNair", African countries, Tableau (not downloadable),
+SHARE,http://www.share-project.org,14. National Surveys (with probability samples)," Employment and financial situation, infection and health, mental health, social networks, healthcare", @SHARE_MEA," 27 EU countries + Israel
+Target population and sampling: Probability sample of population aged 50 and older
+Time: May/June 2020
+Interval of data collection: once
+Availability of individual level data from pre-CoVID: Yes
+Number of observations:  sub-sample of all SHARE panel respondents
+
+", no (planned:yes)," .dta, .sav"
+SOEP-CoV,https://www.soep-cov.de/,14. National Surveys (with probability samples)," Employment and financial situation, children and family, COVID-related behavior and perceptions, mental health, political attitudes", @DIW_Berlin @unibielefeld," Germany
+Target population and sampling: Probability sample of households
+Time: 30/3/2020 – 28/6/2020
+Interval of data collection: weekly cross-sections, follow-up survey planned for 2021
+Availability of individual level data from pre-CoVID: Yes
+Number of observations:  ~ 7.800 households (300-2000 per week)
+
+", no (planned:yes), pdf (research reports)
+Mannheimer Corona-Studie,https://www.uni-mannheim.de/gip/corona-studie/,14. National Surveys (with probability samples)," Employment and financial situation, children and family, COVID-related behavior and perceptions, mental health, political attitudes", @PolEconReforms Universität Mannheim," Germany
+Target population and sampling: Probability sample of households/individuals
+Time: 20/3/2020-03/7/2020
+Interval of data collection: daily cross-sections, weekly individual panel data
+Availability of individual level data from pre-CoVID: Yes
+Number of observations:  ~ 3.500 individuals (~ 500 per day)
+
+", no (planned:yes), pdf (daily update)
+gesis panel,https://www.gesis.org/gesis-panel/gesis-panel-home,14. National Surveys (with probability samples)," Employment and financial situation, children and family, COVID-related behavior and perceptions, mental health, political attitudes", @GESIS_Panel," Germany
+Target population and sampling: Probability sample of individuals
+Time: 17/3/2020-29/03/2020
+Interval of data collection: once
+Availability of individual level data from pre-CoVID: Yes
+Number of observations:  3.765 individuals
+
+", yes," .dta, .sav"
+Understanding America Study,https://covid19pulse.usc.edu/,14. National Surveys (with probability samples)," Employment and financial situation, children and family, COVID-related behavior and perceptions, mental health, political attitudes", USCDornsife," United States
+Target population and sampling: Probability sample of U.S. residents
+Time: since 10/3/2020 (ongoing)
+Interval of data collection: daily cross-sections, bi-weekly individual level panel
+Availability of individual level data from pre-CoVID: Yes
+Number of observations: ~ 5.500 individuals (~500 per day)
+
+", yes," .dta, .html (daily updates)"
+COVID Impact Survey,https://www.covid-impact.org/,14. National Surveys (with probability samples)," Employment and financial situation, COVID-related behavior and perceptions, mental health", @covidimpact Data Foundation," United States
+Target population and sampling: Probability sample of U.S. adult population
+Time: 20/4/2020-26/4/2020 (Week 1), 04/5/2020-10/5/2020 (Week 2), 1/6/2020-8/6/2020, ongoing
+Interval of data collection: monthly cross-sections
+Availability of individual level data from pre-CoVID: No
+Number of observations: ~ 2,200 individuals each month
+
+", yes," .dta, .sav, .csv"
+LISS Panel,https://www.lissdata.nl/,14. National Surveys (with probability samples), various topics based on several studies proposed by individual researchers (in addition to the standard monthly LISS questions), @centerdata," Netherlands
+Target population and sampling: Probability sample of Dutch Households
+Time: since March 2020
+Interval of data collection: monthly
+Availability of individual level data from pre-CoVID: Yes
+Number of observations: ~ 7.000 individuals each month
+
+", yes (planned)," .dta, .sav"
+Norwegian Citizen Panel,https://www.uib.no/en/digsscore/122162/methodology-and-field-periods,14. National Surveys (with probability samples)," Social Sciences, Medicine, Psychology", @DIGSSCORE @uib," Norway
+Target population and sampling: Probability sample of adult population
+Time: 20 – 29 March
+Interval of data collection: once, some questions will be repeated in June 2020, August 2020 and October 2020.
+Availability of individual level data from pre-CoVID: Yes
+Number of observations: ~ 12.000 (less in the follow up-studies)
+
+"," Planned to become available, timing still not decided."," .dta, .sav"
+Understanding Society,https://www.understandingsociety.ac.uk/research/themes/covid-19,14. National Surveys (with probability samples)," Employment and financial situation, children and family, COVID-related behavior and perceptions, mental health, political attitudes", @usociety," UK
+Target population and sampling: Probability sample of households, population 16+
+Time: since April 2020 (wave 1), ongoing
+Interval of data collection: monthly
+Availability of individual level data from pre-CoVID: Yes
+Number of observations: ~ 40.000
+
+"," yes, planned for end of May via UK Data Service"," .dta, .sav"
+Covid19 Behaviour Tracker,https://github.com/YouGov-Data/covid-19-tracker,15. National and comparative surveys (with non-probability samples), perceptions and COVID19-related health behavior,," 29
+Target population and sampling: people aged 18 and over, quota sample from opt-in panel
+Time: since 30/3/2020, ongoing
+Interval of data collection: weekly cross-sections
+Availability of individual level data from pre-CoVID: No
+Number of observations: ~ 21,000 respondents each week
+
+", aggregate results are published on a dashboard and microdata are publicly available as csv spreadsheets,
+YouGov international COVID19 tracker,https://yougov.co.uk/topics/international/articles-reports/2020/03/17/YouGov-international-COVID-19-tracker,15. National and comparative surveys (with non-probability samples), public attitudes on a broad range of topics from brands to politics, @YouGov," 26
+Target population and sampling: people aged 18 and over, quota sample from opt-in panel
+Time: since march 2020, ongoing
+Interval of data collection: weekly cross-sections
+Availability of individual level data from pre-CoVID: No
+Number of observations: ~ 27,000 respondents each week
+
+"," html, only aggregate data for selected categories, such as behavioral response and government satisfaction are publicly available",
+Attitudes Towards COVID-19 - A comparative study,https://www.sciencespo.fr/cevipof/attitudesoncovid19/,15. National and comparative surveys (with non-probability samples)," public attitudes on health, economy, civil liberties, government, policies and institutions"," Sylvain Brouard, Michael Becher, @MartialFoucault, @pavlosvas1, @CEVIPOF"," 20
+Target population and sampling: people aged 18 and over, quota sample from opt-in panel
+Time: 20/3/2020- 30/4/2020
+Interval of data collection: individual level panel data (weekly, 2-8 waves depending on country)
+Availability of individual level data from pre-CoVID: No
+Number of observations: ~ 23,000 respondents in the first wave
+
+"," microdata in dta, summary statistics in pdf",
+COVID Inequality Project,https://sites.google.com/view/covidinequality/home,15. National and comparative surveys (with non-probability samples)," impact on workers and inequality across many dimensions, such as age, gender, occupation, work arrangements, and education. Two survey waves collecting responses from large geographically representative samples in the US and UK and one survey wave in Germany.",," USA, UK, Germany
+Target population and sampling: people aged 18 and over, quota sample from opt-in panel
+Time: 24/03/2020 - 14/04/2020
+Interval of data collection: 2 cross-sectional waves in UK and US, 1 wave in Germany
+Availability of individual level data from pre-CoVID: No
+Number of observations: ~ 4,000 per country and wave
+
+"," aggregate data in csv, results reported in html and pdf",
+intergen-COVID,https://sites.google.com/unifi.it/intergen-covid,15. National and comparative surveys (with non-probability samples), Intergenerational contact during COVID and mental health, @brunoarpinoFLR @ValeriaBordone  @pasqualinimarta," Italy, Spain, France
+Target population and sampling: Adult population, quota sampling from opt-in panels
+Time: April 2020
+Interval of data collection: once
+Availability of individual level data from pre-CoVID: No
+Number of observations: 9,186
+
+", no, Key findings in google doc
+COVID-19 Snapshot Monitoring (COSMO),https://www.psycharchives.org/handle/20.500.12034/2397,15. National and comparative surveys (with non-probability samples)," COVID-related behavior and perceptions, mental health, political attitudes"," @unierfurt, Robert Koch-Institut @rki_de, Bundeszentrale für gesundheitliche Aufklärung @bzga_de, Leibniz-Zentrum für Psychologische Information und Dokumentation @ZPID, Science Media Center @smc_germany, Bernhard Nocht Institute for Tropical Medicine @BNITM_de, Yale Institute for Global Health @YaleGH"," Germany
+Target population and sampling: Adult population, non-probability quota sampling
+Time: since 03/03/2020 (ongoing)
+Interval of data collection: weekly cross-sections
+Availability of individual level data from pre-CoVID: No
+Number of observations: ~ 1.000 per week
+
+", no (planned: N/A), .html
+Austrian Corona Panel Project,https://viecer.univie.ac.at/en/projects-and-cooperations/austrian-corona-panel-project/,15. National and comparative surveys (with non-probability samples)," Employment and financial situation, children and family, COVID-related behavior and perceptions, mental health, political attitudes", @VieCER_," Austria
+Target population and sampling: adult population, non-probability quota sampling
+Time: since 27/03/2020 (ongoing)
+Interval of data collection: weekly individual level panel data
+Availability of individual level data from pre-CoVID: No
+Number of observations: ~ 1.500 per week
+
+", no (planned: N/A), .html (daily reports)
+The State of the Nation: A 50-State COVID-19 Survey,https://covidstates.org/,15. National and comparative surveys (with non-probability samples)," Employment and financial situation, children and family, COVID-related behavior and perceptions, mental health, political attitudes",": The COVID-19 Consortium for Understanding the Public’s Policy Preferences Across States
+The Network Science Institute of Northeastern University
+The Shorenstein Center on Media, Politics, and Public Policy of Harvard University
+Harvard Medical School, Harvard University
+The School of Communication & Information, Rutgers University
+Department of Political Science, Northwestern University
+@ognyanova
+@royperlis
+@matthewabaum
+@davidlazer
+James Druckman (Northwestern University)
+@MauSantillana
+@dellavolpe"," US
+Target population and sampling: adult population, non-probability quota sampling
+Time: since 17/4/2020 (ongoing)
+Interval of data collection: ~ monthly cross-sections
+Availability of individual level data from pre-CoVID: No
+Number of observations: ~ 20.000 per round
+
+", no (planned: N/A)," reports, aggregate data and cross-tabs (as .html, .csv, .pdf)"
+International Survey on Coronavirus,https://covid19-survey.org/,15. National and comparative surveys (with non-probability samples), Worldwide COVID-19 Attitudes and Beliefs,," 170
+Target population and sampling: people aged 18 and over, snowballing via social media
+Time: since 20/3/2020, ongoing
+Interval of data collection: continuous
+Availability of individual level data from pre-CoVID: No
+Number of observations: > 110,000 respondents
+
+"," aggregate results in html, individual level data in dta",
+COVIDiSTRESS Global Survey,https://osf.io/z39us/wiki/home/,15. National and comparative surveys (with non-probability samples)," Psychological stress, compliance with behavioral guidelines, trust in governmental institutions and their preventive measures",," > 50
+Target population and sampling: people aged 18 and over, snowballing via social media
+Time: since 30/3/2020, ongoing
+Interval of data collection: continuous
+Availability of individual level data from pre-CoVID: No
+Number of observations: > 150,000 respondents
+
+", individual level data as csv,
+"Living, working and COVID-19",https://www.eurofound.europa.eu/data/covid-19,15. National and comparative surveys (with non-probability samples), Work and well-being,: @eurofound," EU27 and the UK
+Target population and sampling: people aged 18 and over, snowballing on social media
+Time: 09/4/2020-30/04/2020, ongoing
+Interval of data collection: monthly cross-sections
+Availability of individual level data from pre-CoVID: No
+Number of observations: ~ 70,000
+
+", aggregate data (also for some subgroups) in .html and .csv,
+Global Drug Survey,https://www.globaldrugsurvey.com/,15. National and comparative surveys (with non-probability samples)," Alcohol and other drug use, mental health and coping mechanisms",: @GlobalDrugSurvy," 12 countries
+Target population and sampling: people aged 18 and over, snowballing
+Time: May and June 2020
+Interval of data collection: once
+Availability of individual level data from pre-CoVID: No
+Number of observations: ~ 70,000
+
+", research report (.pdf),
+Monitero Nacional de Sintomas y Practicas COVID-19 en Chile,https://www.movid19.cl/,15. National and comparative surveys (with non-probability samples), Health situation and well-being,": Colegio Médico de Chile y Universidad de Chile, Facultad de Psicología, Universidad Diego Portales, PI: Cristóbal Cuadrado, @CCuadrado"," Chile
+Target population and sampling: people aged 18 and over, snowball sampling
+Time: 13/4/2020 - 24/5/2020, ongoing
+Interval of data collection: weekly cross-sections and weekly individual level panel
+Availability of individual level data from pre-CoVID: No
+Number of observations: 15,000-37,000 per week
+
+", N/A,
+undefined,undefined,15. National and comparative surveys (with non-probability samples)," COVID19 impact on financial health of households incl. income, savings, debt"," @BFAGlobal
+@ashamin"," Ghana, Kenya, Nigeria, South Africa, India, Mexico, UK, USA
+Target population and sampling: N/A
+Time: 25-26 March 2020, 11-12 April 2020
+Interval of data collection: 2 cross-sections
+Availability of individual level data from pre-CoVID: No
+Number of observations: 1,561 respondents in 7 countries (wave1), 1,646 respondents in 8 countries (wave 2).
+
+", html for aggregate results (only),
+@timvlandas,https://twitter.com/timvlandas,Additional Sources: Research & other collections,,,,,
+@voxeu,https://twitter.com/voxeu,Additional Sources: Research & other collections,,,,,
+@JEEA_News,https://twitter.com/JEEA_News,Additional Sources: Research & other collections,,,,,
+@LSEPublicPolicy,https://twitter.com/LSEPublicPolicy,Additional Sources: Research & other collections,,,,,
+@NIESRorg,https://twitter.com/NIESRorg,Additional Sources: Research & other collections,,,,,
+@OurWorldInData,https://twitter.com/OurWorldInData,Additional Sources: Research & other collections,,,,,
+CORE Project,https://www.core-econ.org/project/core-covid-19-collection/,Additional Sources: Research & other collections,,,,,
+@CovidImpactLab,https://covid-19-impact-lab.readthedocs.io/en/latest/,Additional Sources: Research & other collections,,,,,
