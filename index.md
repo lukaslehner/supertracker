@@ -11,7 +11,7 @@ To keep track of policy trackers, surveys and new datasets, the Oxford Supertrac
 
 Search for policy trackers and relevant data sources using our **[database of policy trackers](data/)**.
 
-The criteria for inclusion into the supertracker are explained in the **[documentaion](documentation/)**.
+The criteria for inclusion into the supertracker are explained in the **[documentation](documentation/)**.
 
 The Oxford Supertracker is a living collection and over 50 persons have contributed with their suggestions to the collection. We are updating the tracker of trackers on a regular basis. Please submit your feedback or suggestion for new sources via this **[form](add-a-tracker/)**.
 
