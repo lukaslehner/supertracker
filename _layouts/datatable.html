@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+  
+  <form class="filter-container mb-3" action="#0">
+    <h4>Filter</h4>
+    <div class="d-flex justify-start">
+      <div class="filter-element">
+        <label>search</label>
+        <input placeholder="Enter Searchterm" type="text" class="form-control" id="search_filter">
+      </div>
+      <div class="filter-element">
+        <label>Category</label>
+        <select class="form-control" id="category_filter">
+          <option value="">alle</option>
+        </select>
+      </div>
+      <div class="filter-element">
+        <label>Coverage</label>
+        <select class="form-control" id="coverage_filter">
+          <option value="">alle</option>
+        </select>
+      </div>
+      <div class="filter-element">
+        <label>Data Format</label>
+        <select class="form-control" id="dataformat_filter">
+          <option value="">alle</option>
+        </select>
+      </div>
+    </div>    
+  </form>  
+  
+  <div class="datatable-container">
+    {{content}}
+  </div>
+</article>
+
+<script defer src="{{ "/assets/js/datatable.js" | relative_url }}"></script>

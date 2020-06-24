@@ -2,4 +2,11 @@ body.page-datatable{
   .page-content .wrapper{
     max-width: 100%;
   }
+  .filter-container{
+    .filter-element{
+      min-width: 150px;
+      max-width: 200px;
+      margin-right: 10px;
+    }
+  }
 }
