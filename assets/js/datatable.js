@@ -5,7 +5,7 @@ jQuery(function () {
   jQuery("#category_filter").on('change',function (event) {
     dt_filter(jQuery(this).val());
   });
-  jQuery("#coverage_fitler").on('change',function (event) {
+  jQuery("#coverage_filter").on('change',function (event) {
     dt_filter(jQuery(this).val());
   });
   jQuery("#dataformat_filter").on('change',function (event) {
@@ -22,7 +22,7 @@ jQuery(function () {
     const row = jQuery(this);    
 
     let c = row.find('td.category').text();
-    c = c.split(',').map(elem=>elem.trim());
+    c = c.split(';').map(elem=>elem.trim());
     categories = new Set([...categories, ...c]);
     
     let cov = row.find('td.coverage').text();
