@@ -28,6 +28,10 @@
   float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
 
+  label{
+    display:inline;
+  }
+  
   .nav-trigger {
       display: none;
   }
@@ -36,7 +40,7 @@
     display: none;
   }
 
-  .page-link {
+  .minima-page-link {
     color: $text-color;
     line-height: $base-line-height;
 
@@ -88,7 +92,7 @@
       padding-bottom: 5px;
     }
 
-    .page-link {
+    .minima-page-link {
       display: block;
       padding: 5px 10px;
 

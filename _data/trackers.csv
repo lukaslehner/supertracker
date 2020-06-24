@@ -1,5 +1,4 @@
 title,link,category,Focus,Coverage,Data format,By
-,,,,,,
 WHO PHSM: Public health and social measures,https://www.who.int/emergencies/diseases/novel-coronavirus-2019/phsm,"Non-Pharmaceutical Interventions incl. Confinement and Travel, Health and Care Policy, Macroeconomic and Financial Policy"," measures or actions by individuals, institutions, communities, local and national governments and international bodies to slow or stop the spread of an infectious disease. Establishing one single open-content dataset by merging pre-existing datasets from WHO, the London School of Hygiene and Tropical Medicine, ACAPS, University of Oxford, Global Public Health Intelligence Network, US Centers for Disease Control and Prevention and the Complexity Science Hub Vienna.",worldwide, csv, @WHO
 COVID19 Government Measures Dataset,https://www.acaps.org/covid19-government-measures-dataset,"Non-Pharmaceutical Interventions incl. Confinement and Travel, Health and Care Policy"," implemented governments measures structured by 1) Social distancing, 2) Movement restrictions, 3) Public health measures, 4) Social and economic measures, 5) Lockdowns",worldwide,xlsx, @ACAPSproject
 Oxford COVID19 Government Response Tracker,https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker,"Non-Pharmaceutical Interventions incl. Confinement and Travel, Health and Care Policy, Macroeconomic and Financial Policy"," 8 indicators on containment policies (such as school closures or travel restrictions), 4 economic indicators on fiscal or stimulus measures, and 5 indicators that track health system policies (such as testing).",worldwide,csv; API," @thomasnhale;
@@ -216,7 +215,7 @@ Interval of data collection: daily cross-sections; weekly individual panel data
 Availability of individual level data from pre-CoVID: Yes
 Number of observations:  ~ 3.500 individuals (~ 500 per day)
 
-", no (planned:yes), @PolEconReforms Universität Mannheim
+", no (planned:yes), @PolEconReforms Universitï¿½t Mannheim
 gesis panel,https://www.gesis.org/gesis-panel/gesis-panel-home,National Surveys (with probability samples)," Employment and financial situation, children and family, COVID-related behavior and perceptions, mental health, political attitudes"," Germany
 Target population and sampling: Probability sample of individuals
 Time: 17/3/2020-29/03/2020
@@ -312,7 +311,7 @@ Interval of data collection: weekly cross-sections
 Availability of individual level data from pre-CoVID: No
 Number of observations: ~ 1.000 per week
 
-", no (planned: N/A), @unierfurt; Robert Koch-Institut @rki_de; Bundeszentrale für gesundheitliche Aufklärung @bzga_de; Leibniz-Zentrum für Psychologische Information und Dokumentation @ZPID; Science Media Center @smc_germany; Bernhard Nocht Institute for Tropical Medicine @BNITM_de; Yale Institute for Global Health @YaleGH
+", no (planned: N/A), @unierfurt; Robert Koch-Institut @rki_de; Bundeszentrale fï¿½r gesundheitliche Aufklï¿½rung @bzga_de; Leibniz-Zentrum fï¿½r Psychologische Information und Dokumentation @ZPID; Science Media Center @smc_germany; Bernhard Nocht Institute for Tropical Medicine @BNITM_de; Yale Institute for Global Health @YaleGH
 Austrian Corona Panel Project,https://viecer.univie.ac.at/en/projects-and-cooperations/austrian-corona-panel-project/,National and comparative surveys (with non-probability samples)," Employment and financial situation, children and family, COVID-related behavior and perceptions, mental health, political attitudes"," Austria
 Target population and sampling: adult population; non-probability quota sampling
 Time: since 27/03/2020 (ongoing)
