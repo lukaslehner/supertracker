@@ -1,0 +1,18 @@
+
+
+.site-header{
+  background: #f3f3f3; 
+  border-bottom: none;
+  >.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .site-title{
+    img{
+      height: 150px;
+    }
+  }
+}
