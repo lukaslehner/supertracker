@@ -3,10 +3,25 @@ body.page-datatable{
     max-width: 100%;
   }
   .filter-container{
+    background: #fff;
+    
     .filter-element{
       min-width: 150px;
       max-width: 200px;
       margin-right: 10px;
     }
+  }
+  // .datatable-container{
+  //   overflow-x: scroll;
+  // }
+  table th{
+    background: #fff;
+    font-family: $font-family-heading;
+    font-weight: $font-weight-heading;
+    background-color: #f3f3f3;
+    min-width: 150px;
+    position: sticky;
+    top:-1px;
+    z-index: 1;
   }
 }

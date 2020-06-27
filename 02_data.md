@@ -11,12 +11,18 @@ bodyclass: page-datatable
     {% if forloop.first %}
     <thead>
       <tr>
-        <td>Title</td>
-        <td>Category</td>
-        <td>Focus</td>
-        <td>Coverage</td>
-        <td>Data Format</td>
-        <td>By</td>
+        <th>Title</th>
+        <th>Category</th>
+        <th>Focus</th>
+        <th>Coverage</th>
+        <th>Data Format</th>
+        <th>By</th>
+        <th>Target Population and Sampling</th>
+        <th>Time</th>
+        <th>Interval of data collection</th>
+        <th>Availability of individual level data from pre-CoVID</th>
+        <th>Number of observations</th>
+        <th>Micro data availablity</th>
       </tr>
     </thead>
     {% else %}
@@ -41,6 +47,24 @@ bodyclass: page-datatable
         </td>
         <td class="by">
           {{ row['By'] }}
+        </td>
+        <td class="target_population">
+          {{ row['Target population and sampling'] }}
+        </td>
+        <td class="time">
+          {{ row['Time'] }}
+        </td>
+        <td class="data_collection_interval">
+          {{ row['Interval of data collection'] }}
+        </td>
+        <td class="individual_level_data">
+          {{ row['Availability of individual level data from pre-CoVID'] }}
+        </td>
+        <td class="number_of_observations">
+          {{ row['Number of observations'] }}
+        </td>
+        <td class="micro_data_availability">
+          {{ row['Micro data availablity'] }}
         </td>
       </tr>
     </tbody>
