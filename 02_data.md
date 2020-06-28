@@ -23,6 +23,8 @@ bodyclass: page-datatable
         <th>Availability of individual level data from pre-CoVID</th>
         <th>Number of observations</th>
         <th>Micro data availablity</th>
+        <th>Type</th>
+        <th>Level of Observation</th>
       </tr>
     </thead>
     {% else %}
@@ -65,6 +67,12 @@ bodyclass: page-datatable
         </td>
         <td class="micro_data_availability">
           {{ row['Micro data availablity'] }}
+        </td>
+        <td class="type">
+          {{ row['Type'] }}
+        </td>
+        <td class="level_of_observation">
+          {{ row['Level of observation'] }}
         </td>
       </tr>
     </tbody>
