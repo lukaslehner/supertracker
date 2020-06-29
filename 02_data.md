@@ -48,7 +48,7 @@ bodyclass: page-datatable
           {{ row['Data format'] }}
         </td>
         <td class="by">
-          {{ row['By'] }}
+          {{ row['Author'] }}
         </td>
         <td class="target_population">
           {{ row['Target population and sampling'] }}
