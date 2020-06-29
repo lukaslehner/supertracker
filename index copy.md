@@ -12,18 +12,20 @@ order: 0
 
 The Oxford supertracker collection comprises of over 100 policy trackers, surveys and new datasets related to COVID-19. It creates a global single directory for researchers and policy-makers to keep track of the rapidly growing number of data sources. You can search for the datasets of your interest to identify the relevant information across different areas, countries and data types.
 
+[Access the data](data/){: .btn .btn-primary}
+{: .text-center}
+
 - **[Subscribe for updates](subscribe/)**
 - **[Submit a new source](submit-a-tracker/)**
 - **[Share your feedback](Contact/)**
-
-[Access the data](data/){: .btn .btn-primary}
-{: .text-center}
 
 # Analysis
 
 The novel cross-country sources on policies provide a range of new opportunities as well as challenges for research and policy analysis. We are discussing these in our blog series. We are also partnering up with the producers and users of existing data sources on social policies in the wake of the pandemic to identify remaining information gaps and potential synergies, and to propose concrete actions to address these. A webinar discussion and policy brief will address information gaps in existing policy trackers.
 
-- **[Blog series](blog/)** 
+[Blog series](blog/){: .btn .btn-primary}
+{: .text-center}
+
 - **[Contribute to the debate](Contact/)**
 
 
