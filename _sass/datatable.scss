@@ -9,6 +9,15 @@ body.page-datatable{
       min-width: 150px;
       max-width: 200px;
       margin-right: 10px;
+
+      &._interval-of-_data-_collection_filter_container{
+        min-width: 220px;
+        max-width: 250px;
+      }
+      &._individual-_level-_data-from-_pre__002d_c_o_v_i_d_filter_container{
+        min-width: 320px;
+        max-width: 320px;
+      }
     }
   }
   // .datatable-container{

@@ -6,8 +6,6 @@ order: 2
 bodyclass: page-datatable
 ---
 
-The criteria for inclusion into the supertracker are outlined in the **[documentation](../documentation/)**.
-
 <table>
   {% for row in site.data.trackers %}
     {% if forloop.first %}
@@ -20,12 +18,12 @@ The criteria for inclusion into the supertracker are outlined in the **[document
         <th>Data Format</th>
         <th>Author</th>
         <th>Target Population</th>
-        <th>Sampling</th>
+        <th>Sampling Method</th>
         <th>Time</th>
-        <th>Interval of data collection</th>
-        <th>Availability of individual level data from pre-CoVID</th>
-        <th>Number of observations</th>
-        <th>Micro data availablity</th>
+        <th>Interval of Data Collection</th>
+        <th>Individual Level Data from Pre-COVID</th>
+        <th>Number of Observations</th>
+        <th>Micro Data Availablity</th>
         <th class="type">Type</th>
         <th>Level of Observation</th>
       </tr>
@@ -57,28 +55,28 @@ The criteria for inclusion into the supertracker are outlined in the **[document
           {{ row['Target Population'] }}
         </td>
         <td class="target_population">
-          {{ row['Sampling'] }}
+          {{ row['Sampling Method'] }}
         </td>
         <td class="time">
           {{ row['Time'] }}
         </td>
         <td class="data_collection_interval">
-          {{ row['Interval of data collection'] }}
+          {{ row['Interval of Data Collection'] }}
         </td>
         <td class="individual_level_data">
-          {{ row['Availability of individual level data from pre-COVID'] }}
+          {{ row['Availability of Individual Level Data from Pre-COVID'] }}
         </td>
         <td class="number_of_observations">
-          {{ row['Number of observations'] }}
+          {{ row['Number of Observations'] }}
         </td>
         <td class="micro_data_availability">
-          {{ row['Micro data availablity'] }}
+          {{ row['Micro Data Availablity'] }}
         </td>
         <td class="type">
           {{ row['Type'] }}
         </td>
         <td class="level_of_observation">
-          {{ row['Level of observation'] }}
+          {{ row['Level of Observation'] }}
         </td>
       </tr>
     </tbody>

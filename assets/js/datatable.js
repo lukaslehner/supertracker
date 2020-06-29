@@ -16,7 +16,7 @@ jQuery(function () {
   createMultiSelect('Sampling', ';', surveyFilter);
   createMultiSelect('Time', ';', surveyFilter);
   createMultiSelect('Interval of Data Collection', ';', surveyFilter);
-  createMultiSelect('Availability of Individual Level Data from Pre-COVID', ';', surveyFilter);
+  createMultiSelect('Individual Level Data from Pre-COVID', ';', surveyFilter);
   createMultiSelect('Number of Observations', ';', surveyFilter);
   createMultiSelect('Micro Data Availablity', ';', surveyFilter);
   createMultiSelect('Level of Observation', ';', surveyFilter);
@@ -53,7 +53,7 @@ function createMultiSelect(column, splitter, container){
   var options = terms.reduce((term,string)=> `${string}<option>${term}</option>`);
   
   var filter = `
-    <div class="filter-element">
+    <div class="filter-element ${id}_container">
       <label>${column}</label>
       <select class="form-control" id="${id}">
         <option selected value="">all</option>
