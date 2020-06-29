@@ -5,6 +5,8 @@ permalink: /submit-a-tracker/
 order: 4
 ---
 
+# Submit a Tracker
+
 We are interest in making the collection as comprehensive and accessible as possible. We will promptly review if your suggestion falls into the **[criteria for inclusion](../documentation/)** and update the collection.
 
 If you have any additional ideas, please **[share your feedback](../Contact/)**.

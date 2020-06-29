@@ -4,6 +4,7 @@ title: Subscribe
 permalink: /subscribe/
 order: 3
 ---
+# Subscribe
 
 The Oxford Supertracker is a growing collection. Please subscribe here to receive regular updates on new sources.
 
