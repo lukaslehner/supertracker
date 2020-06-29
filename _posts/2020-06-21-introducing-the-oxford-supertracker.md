@@ -7,4 +7,4 @@ permalink: introducing-the-oxford-supertracker/
 author: Lukas Lehner
 ---
 
-This is the introduction to the Oxford supertracker.
+*This is the introduction to the Oxford supertracker.*

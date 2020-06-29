@@ -6,6 +6,8 @@ order: 2
 bodyclass: page-datatable
 ---
 
+The criteria for inclusion into the supertracker are explained in the **[documentation](../documentation/)**.
+
 <table>
   {% for row in site.data.trackers %}
     {% if forloop.first %}
