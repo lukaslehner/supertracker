@@ -13,12 +13,12 @@ Search for policy trackers and relevant data sources using our **[database of po
 
 The criteria for inclusion into the supertracker are explained in the **[documentation](documentation/)**.
 
-The Oxford Supertracker is a living collection and over 50 persons have contributed with their suggestions to the collection. We are updating the tracker of trackers on a regular basis. Please submit your feedback or suggestion for new sources via this **[form](add-a-tracker/)**.
+The Oxford Supertracker is a living collection and over 50 persons have contributed with their suggestions to the collection. We are updating the tracker of trackers on a regular basis. Please submit your feedback or suggestion for new sources via this **[form](submit-a-tracker/)**.
 
 # Analysis of data sources
 
 We are partnering up with the producers and users of existing data sources on COVID-19 social policy to identify important informational gaps and potential synergies and to propose concrete actions to address these. A webinar discussion and policy brief will address information gaps in existing policy trackers. Please find more information on the Supertracker project on the website of the **[Department of Social Policy and Intervention at the University of Oxford][DSPI]**.
 
-As part of our data review, we will provide a series of **[blogs](blog/)** on new opportunities for research arising from the novel sources. We also address remaining information gaps and suggest areas for further data collection and use of synergies.
+As part of our data review, we will provide a series of **[blogs](blogs/)** on new opportunities for research arising from the novel sources. We also address remaining information gaps and suggest areas for further data collection and use of synergies.
 
 [DSPI]: https://www.spi.ox.ac.uk/policy-super-tracker
