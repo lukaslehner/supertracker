@@ -60,7 +60,7 @@ bodyclass: page-datatable
           {{ row['Interval of data collection'] }}
         </td>
         <td class="individual_level_data">
-          {{ row['Availability of individual level data from pre-CoVID'] }}
+          {{ row['Availability of individual level data from pre-COVID'] }}
         </td>
         <td class="number_of_observations">
           {{ row['Number of observations'] }}
