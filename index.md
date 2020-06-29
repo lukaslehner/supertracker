@@ -20,7 +20,7 @@ We are interest in making the collection as comprehensive and accessible as poss
 
 # Analysis
 
-The novel cross-country sources on policies provide a range of new opportunities as well as challenges for research and policy analysis. We are discussing these in our **[blog series](blogs/)**. Please contact us in case you would like to **[contribute to the debate](Contact/)**.
+The novel cross-country sources on policies provide a range of new opportunities as well as challenges for research and policy analysis. We are discussing these in our **[blog series](blog/)**. Please contact us in case you would like to **[contribute to the debate](Contact/)**.
 
 We are also partnering up with the producers and users of existing data sources on social policies in the wake of the pandemic to identify remaining information gaps and potential synergies, and to propose concrete actions to address these. A webinar discussion and policy brief will address information gaps in existing policy trackers. You can find more information on the Supertracker project on the website of the **[Department of Social Policy and Intervention at the University of Oxford][DSPI]**.
 
