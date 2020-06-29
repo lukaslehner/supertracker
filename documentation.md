@@ -15,13 +15,15 @@ The collection is structured around the areas of
 4. Trade Policy and FDI
 5. Social and Employment Policy
 6. Health and Care Policy
-7. Education, Research and Innovation
-8. Regions, Cities, SMEs, Tourism
-9. Behavioural Responses and Mobility
-10. Politics, Elections, Policy Making
-11. Civic Freedom, Human Rights, Media
-12. War, Peace and Civil Unrest
-13. Prisons, Courts and Judiciary Systems
-14. International Development, Philantropy
-15. Surveys with probability samples
-16. Surveys with non-probability samples
+7. Education Policy
+8. Research and Innovation
+9. Regions and Cities
+10. Behavioural Responses and Mobility
+11. Politics, Elections, Policy Making
+12. Media
+13. Civic Freedom and Human Rights
+14. War, Peace and Civil Unrest
+15. Prisons, Courts and Judiciary Systems
+16. International Development, Philantropy
+17. Surveys with probability samples
+18. Surveys with non-probability samples
