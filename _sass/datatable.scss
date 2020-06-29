@@ -24,4 +24,9 @@ body.page-datatable{
     top:-1px;
     z-index: 1;
   }
+  table th.type,
+  table td.type
+  {
+    display: none;
+  }
 }

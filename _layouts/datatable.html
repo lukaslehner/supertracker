@@ -9,31 +9,20 @@ layout: default
   
   <form class="filter-container mb-3" action="#0">
     <h4>Filter</h4>
-    <div class="d-flex justify-start">
-      <div class="filter-element">
+    <div class="d-flex justify-start" id="primaryfilter">
+    </div>
+    <div class="d-flex justify-start" id="filterlist">
+        <div class="filter-element">
         <label>Search</label>
         <input placeholder="Enter Searchterm" type="text" class="form-control" id="search_filter">
       </div>
-      <div class="filter-element">
-        <label>Category</label>
-        <select class="form-control" id="category_filter">
-          <option value="">all</option>
-        </select>
-      </div>
-      <div class="filter-element">
-        <label>Coverage</label>
-        <select class="form-control" id="coverage_filter">
-          <option value="">all</option>
-        </select>
-      </div>
-      <div class="filter-element">
-        <label>Data Format</label>
-        <select class="form-control" id="dataformat_filter">
-          <option value="">all</option>
-        </select>
-      </div>
     </div>    
+    
+    <h4 class="mt-4">Filter for Surveys</h4>
+    <div class="d-flex justify-start" id="surveyfilter">
+    </div>
   </form>  
+  
   
   <div class="datatable-container">
     {{content}}

@@ -18,14 +18,15 @@ The criteria for inclusion into the supertracker are explained in the **[documen
         <th>Focus</th>
         <th>Coverage</th>
         <th>Data Format</th>
-        <th>By</th>
-        <th>Target Population and Sampling</th>
+        <th>Author</th>
+        <th>Target Population</th>
+        <th>Sampling</th>
         <th>Time</th>
         <th>Interval of data collection</th>
         <th>Availability of individual level data from pre-CoVID</th>
         <th>Number of observations</th>
         <th>Micro data availablity</th>
-        <th>Type</th>
+        <th class="type">Type</th>
         <th>Level of Observation</th>
       </tr>
     </thead>
@@ -34,11 +35,11 @@ The criteria for inclusion into the supertracker are explained in the **[documen
       <tr>
         <td>
           <a href="{{row['link']}}">
-            {{ row['title'] }}
+            {{ row['Title'] }}
           </a>
         </td>
         <td class="category">
-          {{ row['category'] }}
+          {{ row['Category'] }}
         </td>
         <td class="focus">
           {{ row['Focus'] }}
@@ -47,13 +48,16 @@ The criteria for inclusion into the supertracker are explained in the **[documen
           {{ row['Coverage'] }}
         </td>
         <td class="data-format">
-          {{ row['Data format'] }}
+          {{ row['Data Format'] }}
         </td>
-        <td class="by">
+        <td class="author">
           {{ row['By'] }}
         </td>
         <td class="target_population">
-          {{ row['Target population and sampling'] }}
+          {{ row['Target Population'] }}
+        </td>
+        <td class="target_population">
+          {{ row['Sampling'] }}
         </td>
         <td class="time">
           {{ row['Time'] }}

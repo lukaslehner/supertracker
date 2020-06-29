@@ -3,6 +3,9 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page
+title: Home
+permalink: /
+order: 0
 ---
 
 # Oxford Supertracker
