@@ -5,8 +5,11 @@
     {%- assign page_paths = site.pages | sort:"order" | map: "path" -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
     
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+    <a class="site-title d-flex align-items-end" rel="author" href="{{ "/" | relative_url }}">
       <img src="{{ "assets/images/DSPI-logo.png" | relative_url }}" />
+      <span class="ml-3">
+        Oxford Supertracker
+      </span>
     </a>
 
     {%- if titles_size > 0 -%}
