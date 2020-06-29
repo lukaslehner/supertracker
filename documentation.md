@@ -1,11 +1,12 @@
 ---
 layout: page
-title: Documentation
-permalink: /documentation/
-order: 3
+
+permalink: documentation/
 ---
 
-The Oxford Supertracker includes policy trackers, suveys and new data sources that relate to COVID-19. The compilation is not meant to be exhaustive and we are grateful for additional **[suggestions](submit-a-tracker/)**.
+# Documentation
+
+The Oxford Supertracker includes policy trackers, suveys and new data sources that relate to COVID-19. The compilation is not meant to be exhaustive and we are grateful for additional **[suggestions](../submit-a-tracker/)**.
 
 The collection is structured around the areas of
 1. Non-Pharmaceutical Interventions
