@@ -11,7 +11,7 @@ In the context of Covid-19, numerous organisations have produced policy trackers
 
 The Oxford supertracker is edited by **[Mary Daly](https://www.spi.ox.ac.uk/people/profile/daly.html)**, **[Bernhard Ebbinghaus](https://www.spi.ox.ac.uk/people/professor-bernhard-ebbinghaus)**, **[Lukas Lehner](https://www.spi.ox.ac.uk/people/lukas-lehner)**, **[Marek Naczyk](https://www.spi.ox.ac.uk/people/dr-marek-naczyk)** and **[Tim Vlandas](https://www.spi.ox.ac.uk/people/dr-tim-vlandas)**, all at the **[Department of Social Policy and Intervention at the University of Oxford](https://www.spi.ox.ac.uk/)**. The section on surveys is edited by **[Elias Naumann](http://www.eliasnaumann.de/)** at the University of Mannheim. Technical support is provided by **[Maximilian Trenkmann](https://github.com/trenkmann)**. The project is funded by Economic, Social, Cultural & Environmental Impacts of COVID-19: Urgent Response Fund funded by the Higher Education Innovation Fund (HEIF) and Oxford ESRC Impact Acceleration Account (IAA).
 
-The Supertracker builds on the **[tracker of trackers](https://lukaslehner.github.io/covid19policytrackers/)** - compiled since March 2020 by Lukas Lehner. What started initially as a [Twitter
+The Supertracker builds on the **[tracker of trackers](https://lukaslehner.github.io/covid19policytrackers/)** - compiled since March 2020 by [Lukas Lehner](https://www.spi.ox.ac.uk/people/lukas-lehner). What started initially as a [Twitter
 Thread](https://twitter.com/LukasLehner_/status/1243557931888578565) compiling policy trackers in
 March 2020, grew rapidly to a collection of over 100 novel sources. It is based on a collaborative effort with suggestions from
 [@B_Ebbinghaus](https://twitter.com/B_Ebbinghaus),
