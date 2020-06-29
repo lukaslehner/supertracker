@@ -5,7 +5,7 @@ permalink: /Contact/
 order: 6
 ---
 
-You can submit feedback through our **[contact form](add-a-tracker/)** or send us an **[email](mailto:lukas.lehner@spi.ox.ac.uk)**.
+You can submit feedback through our **[contact form](submit-a-tracker/)** or send us an **[email](mailto:lukas.lehner@spi.ox.ac.uk)**.
 
 University of Oxford <br>
 Department of Social Policy and Intervention <br>
