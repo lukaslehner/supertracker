@@ -7,16 +7,16 @@ bodyclass: page-datatable
 ---
 
 <table>
-  {% for row in site.data.trackers %}
+  {% for row in site.data.surveys %}
     {% if forloop.first %}
     <thead>
       <tr>
         <th>Title</th>
-        <th>Category</th>
+        <th>Policy Area</th>
         <th>Focus</th>
-        <th>Coverage</th>
+        <th>Country Coverage</th>
         <th>Data Format</th>
-        <th>Author</th>
+        <th>Authors</th>
         <th>Target Population</th>
         <th>Sampling Method</th>
         <th>Time</th>
@@ -36,25 +36,25 @@ bodyclass: page-datatable
             {{ row['Title'] }}
           </a>
         </td>
-        <td class="category">
-          {{ row['Category'] }}
+        <td class="policy-area">
+          {{ row['Policy Area'] }}
         </td>
         <td class="focus">
           {{ row['Focus'] }}
         </td>
-        <td class="coverage">
-          {{ row['Coverage'] }}
+        <td class="country-coverage">
+          {{ row['Country Coverage'] }}
         </td>
         <td class="data-format">
           {{ row['Data Format'] }}
         </td>
-        <td class="author">
-          {{ row['By'] }}
+        <td class="authors">
+          {{ row['Authors'] }}
         </td>
         <td class="target_population">
           {{ row['Target Population'] }}
         </td>
-        <td class="target_population">
+        <td class="sampling-method">
           {{ row['Sampling Method'] }}
         </td>
         <td class="time">
