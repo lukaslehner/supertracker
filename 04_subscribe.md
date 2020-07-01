@@ -2,7 +2,7 @@
 layout: page
 title: Subscribe
 permalink: /subscribe/
-order: 3
+order: 4
 ---
 # Subscribe
 

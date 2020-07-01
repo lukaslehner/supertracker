@@ -1,8 +1,8 @@
 ---
 layout: datatable
-title: Data
-permalink: /data/
-order: 2
+title: Policy trackers
+permalink: /policy-trackers/
+order: 1
 bodyclass: page-datatable
 ---
 
