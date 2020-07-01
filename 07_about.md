@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-order: 6
+order: 7
 ---
 
 # About
@@ -67,3 +67,12 @@ Phoebe Dunn,
 [@LiviaFritz](https://twitter.com/LiviaFritz), and
 [@KonstPoensgen](https://twitter.com/KonstPoensgen).
 
+<br>
+**Contact details** <br>
+University of Oxford <br>
+Department of Social Policy and Intervention <br>
+Barnett House <br>
+32 Wellington Square <br>
+Oxford <br>
+OX1 2ER <br>
+United Kingdom <br>
