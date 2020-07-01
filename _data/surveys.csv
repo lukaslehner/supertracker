@@ -1,0 +1,275 @@
+Title,Link,Policy Area,Focus,Country Coverage,Data Format,Authors,Target Population,Sampling Method,Time,Interval of Data Collection,Availability of Individual Level Data from Pre-COVID,Number of Observations,Micro Data Availablity,Type,Level of Observation,
+SHARE,http://www.share-project.org,National Surveys (with probability samples)," Employment and financial situation, infection and health, mental health, social networks, healthcare","Europe; 27 EU countries; Israel
+Target population and sampling: Probability sample of population aged 50 and older
+Time: May/June 2020
+Interval of data collection: once
+Availability of individual level data from pre-CoVID: Yes
+Number of observations:  sub-sample of all SHARE panel respondents
+
+", no (planned:yes), @SHARE_MEA,,,,,,,,Survey,,
+SOEP-CoV,https://www.soep-cov.de/,National Surveys (with probability samples)," Employment and financial situation, children and family, COVID-related behavior and perceptions, mental health, political attitudes"," Germany
+Target population and sampling: Probability sample of households
+Time: 30/3/2020 – 28/6/2020
+Interval of data collection: weekly cross-sections; follow-up survey planned for 2021
+Availability of individual level data from pre-CoVID: Yes
+Number of observations:  ~ 7.800 households (300-2000 per week)
+
+", no (planned:yes), @DIW_Berlin; @unibielefeld,,,,,,,,Survey,,
+Mannheimer Corona-Studie,https://www.uni-mannheim.de/gip/corona-studie/,National Surveys (with probability samples)," Employment and financial situation, children and family, COVID-related behavior and perceptions, mental health, political attitudes"," Germany
+Target population and sampling: Probability sample of households/individuals
+Time: 20/3/2020-03/7/2020
+Interval of data collection: daily cross-sections; weekly individual panel data
+Availability of individual level data from pre-CoVID: Yes
+Number of observations:  ~ 3.500 individuals (~ 500 per day)
+
+", no (planned:yes), @PolEconReforms Universit�t Mannheim,,,,,,,,Survey,,
+gesis panel,https://www.gesis.org/gesis-panel/gesis-panel-home,National Surveys (with probability samples)," Employment and financial situation, children and family, COVID-related behavior and perceptions, mental health, political attitudes"," Germany
+Target population and sampling: Probability sample of individuals
+Time: 17/3/2020-29/03/2020
+Interval of data collection: once
+Availability of individual level data from pre-CoVID: Yes
+Number of observations:  3.765 individuals
+
+", yes, @GESIS_Panel,,,,,,,,Survey,,
+Understanding America Study,https://covid19pulse.usc.edu/,National Surveys (with probability samples)," Employment and financial situation, children and family, COVID-related behavior and perceptions, mental health, political attitudes"," United States
+Target population and sampling: Probability sample of U.S. residents
+Time: since 10/3/2020 (ongoing)
+Interval of data collection: daily cross-sections; bi-weekly individual level panel
+Availability of individual level data from pre-CoVID: Yes
+Number of observations: ~ 5.500 individuals (~500 per day)
+
+", yes, USCDornsife,,,,,,,,Survey,,
+COVID Impact Survey,https://www.covid-impact.org/,National Surveys (with probability samples)," Employment and financial situation, COVID-related behavior and perceptions, mental health"," United States
+Target population and sampling: Probability sample of U.S. adult population
+Time: 20/4/2020-26/4/2020 (Week 1); 04/5/2020-10/5/2020 (Week 2); 1/6/2020-8/6/2020; ongoing
+Interval of data collection: monthly cross-sections
+Availability of individual level data from pre-CoVID: No
+Number of observations: ~ 2;200 individuals each month
+
+", yes, @covidimpact Data Foundation,,,,,,,,Survey,,
+LISS Panel,https://www.lissdata.nl/,National Surveys (with probability samples), various topics based on several studies proposed by individual researchers (in addition to the standard monthly LISS questions)," Netherlands
+Target population and sampling: Probability sample of Dutch Households
+Time: since March 2020
+Interval of data collection: monthly
+Availability of individual level data from pre-CoVID: Yes
+Number of observations: ~ 7.000 individuals each month
+
+", yes (planned), @centerdata,,,,,,,,Survey,,
+Norwegian Citizen Panel,https://www.uib.no/en/digsscore/122162/methodology-and-field-periods,National Surveys (with probability samples)," Social Sciences, Medicine, Psychology"," Norway
+Target population and sampling: Probability sample of adult population
+Time: 20 – 29 March
+Interval of data collection: once; some questions will be repeated in June 2020; August 2020 and October 2020.
+Availability of individual level data from pre-CoVID: Yes
+Number of observations: ~ 12.000 (less in the follow up-studies)
+
+", Planned to become available; timing still not decided., @DIGSSCORE; @uib,,,,,,,,Survey,,
+Understanding Society,https://www.understandingsociety.ac.uk/research/themes/covid-19,National Surveys (with probability samples)," Employment and financial situation, children and family, COVID-related behavior and perceptions, mental health, political attitudes"," UK
+Target population and sampling: Probability sample of households; population 16+
+Time: since April 2020 (wave 1); ongoing
+Interval of data collection: monthly
+Availability of individual level data from pre-CoVID: Yes
+Number of observations: ~ 40.000
+
+", yes; planned for end of May via UK Data Service, @usociety,,,,,,,,Survey,,
+Covid19 Behaviour Tracker,https://github.com/YouGov-Data/covid-19-tracker,National and comparative surveys (with non-probability samples), perceptions and COVID19-related health behavior," 29
+Target population and sampling: people aged 18 and over; quota sample from opt-in panel
+Time: since 30/3/2020; ongoing
+Interval of data collection: weekly cross-sections
+Availability of individual level data from pre-CoVID: No
+Number of observations: ~ 21;000 respondents each week
+
+",csv; dashboard,,,,,,,,,Survey,,
+YouGov international COVID19 tracker,https://yougov.co.uk/topics/international/articles-reports/2020/03/17/YouGov-international-COVID-19-tracker,National and comparative surveys (with non-probability samples), public attitudes on a broad range of topics from brands to politics," 26
+Target population and sampling: people aged 18 and over; quota sample from opt-in panel
+Time: since march 2020; ongoing
+Interval of data collection: weekly cross-sections
+Availability of individual level data from pre-CoVID: No
+Number of observations: ~ 27;000 respondents each week
+
+", html; only aggregate data for selected categories; such as behavioral response and government satisfaction are publicly available, @YouGov,,,,,,,,Survey,,
+Attitudes Towards COVID-19 - A comparative study,https://www.sciencespo.fr/cevipof/attitudesoncovid19/,National and comparative surveys (with non-probability samples)," public attitudes on health, economy, civil liberties, government, policies and institutions"," 20
+Target population and sampling: people aged 18 and over; quota sample from opt-in panel
+Time: 20/3/2020- 30/4/2020
+Interval of data collection: individual level panel data (weekly; 2-8 waves depending on country)
+Availability of individual level data from pre-CoVID: No
+Number of observations: ~ 23;000 respondents in the first wave
+
+",dta; pdf, Sylvain Brouard; Michael Becher; @MartialFoucault; @pavlosvas1; @CEVIPOF,,,,,,,,Survey,,
+COVID Inequality Project,https://sites.google.com/view/covidinequality/home,National and comparative surveys (with non-probability samples)," impact on workers and inequality across many dimensions, such as age, gender, occupation, work arrangements, and education. Two survey waves collecting responses from large geographically representative samples in the US and UK and one survey wave in Germany."," USA; UK; Germany
+Target population and sampling: people aged 18 and over; quota sample from opt-in panel
+Time: 24/03/2020 - 14/04/2020
+Interval of data collection: 2 cross-sectional waves in UK and US; 1 wave in Germany
+Availability of individual level data from pre-CoVID: No
+Number of observations: ~ 4;000 per country and wave
+
+",csv; html; pdf,,,,,,,,,Survey,,
+intergen-COVID,https://sites.google.com/unifi.it/intergen-covid,National and comparative surveys (with non-probability samples), Intergenerational contact during COVID and mental health," Italy; Spain; France
+Target population and sampling: Adult population; quota sampling from opt-in panels
+Time: April 2020
+Interval of data collection: once
+Availability of individual level data from pre-CoVID: No
+Number of observations: 9;186
+
+", no, @brunoarpinoFLR; @ValeriaBordone;  @pasqualinimarta,,,,,,,,Survey,,
+COVID-19 Snapshot Monitoring (COSMO),https://www.psycharchives.org/handle/20.500.12034/2397,National and comparative surveys (with non-probability samples)," COVID-related behavior and perceptions, mental health, political attitudes"," Germany
+Target population and sampling: Adult population; non-probability quota sampling
+Time: since 03/03/2020 (ongoing)
+Interval of data collection: weekly cross-sections
+Availability of individual level data from pre-CoVID: No
+Number of observations: ~ 1.000 per week
+
+", no (planned: N/A), @unierfurt; Robert Koch-Institut @rki_de; Bundeszentrale f�r gesundheitliche Aufkl�rung @bzga_de; Leibniz-Zentrum f�r Psychologische Information und Dokumentation @ZPID; Science Media Center @smc_germany; Bernhard Nocht Institute for Tropical Medicine @BNITM_de; Yale Institute for Global Health @YaleGH,,,,,,,,Survey,,
+Austrian Corona Panel Project,https://viecer.univie.ac.at/en/projects-and-cooperations/austrian-corona-panel-project/,National and comparative surveys (with non-probability samples)," Employment and financial situation, children and family, COVID-related behavior and perceptions, mental health, political attitudes"," Austria
+Target population and sampling: adult population; non-probability quota sampling
+Time: since 27/03/2020 (ongoing)
+Interval of data collection: weekly individual level panel data
+Availability of individual level data from pre-CoVID: No
+Number of observations: ~ 1.500 per week
+
+", no (planned: N/A), @VieCER_,,,,,,,,Survey,,
+The State of the Nation: A 50-State COVID-19 Survey,https://covidstates.org/,National and comparative surveys (with non-probability samples)," Employment and financial situation, children and family, COVID-related behavior and perceptions, mental health, political attitudes"," US
+Target population and sampling: adult population; non-probability quota sampling
+Time: since 17/4/2020 (ongoing)
+Interval of data collection: ~ monthly cross-sections
+Availability of individual level data from pre-CoVID: No
+Number of observations: ~ 20.000 per round
+
+", no (planned: N/A),"The COVID-19 Consortium for Understanding the Public’s Policy Preferences Across States;
+The Network Science Institute of Northeastern University;
+The Shorenstein Center on Media; Politics; and Public Policy of Harvard University;
+Harvard Medical School; Harvard University;
+The School of Communication & Information; Rutgers University;
+Department of Political Science; Northwestern University;
+@ognyanova;
+@royperlis;
+@matthewabaum;
+@davidlazer;
+James Druckman (Northwestern University);
+@MauSantillana;
+@dellavolpe",,,,,,,,Survey,,
+International Survey on Coronavirus,https://covid19-survey.org/,National and comparative surveys (with non-probability samples), Worldwide COVID-19 Attitudes and Beliefs," 170
+Target population and sampling: people aged 18 and over; snowballing via social media
+Time: since 20/3/2020; ongoing
+Interval of data collection: continuous
+Availability of individual level data from pre-CoVID: No
+Number of observations: > 110;000 respondents
+
+",html; dta,,,,,,,,,Survey,,
+COVIDiSTRESS Global Survey,https://osf.io/z39us/wiki/home/,National and comparative surveys (with non-probability samples)," Psychological stress, compliance with behavioral guidelines, trust in governmental institutions and their preventive measures"," > 50
+Target population and sampling: people aged 18 and over; snowballing via social media
+Time: since 30/3/2020; ongoing
+Interval of data collection: continuous
+Availability of individual level data from pre-CoVID: No
+Number of observations: > 150;000 respondents
+
+",csv,,,,,,,,,Survey,,
+"Living, working and COVID-19",https://www.eurofound.europa.eu/data/covid-19,National and comparative surveys (with non-probability samples), Work and well-being," EU27 and the UK
+Target population and sampling: people aged 18 and over; snowballing on social media
+Time: 09/4/2020-30/04/2020; ongoing
+Interval of data collection: monthly cross-sections
+Availability of individual level data from pre-CoVID: No
+Number of observations: ~ 70;000
+
+",html; csv, @eurofound,,,,,,,,Survey,,
+Global Drug Survey,https://www.globaldrugsurvey.com/,National and comparative surveys (with non-probability samples)," Alcohol and other drug use, mental health and coping mechanisms"," 12 countries
+Target population and sampling: people aged 18 and over; snowballing
+Time: May and June 2020
+Interval of data collection: once
+Availability of individual level data from pre-CoVID: No
+Number of observations: ~ 70;000
+
+",pdf, @GlobalDrugSurvy,,,,,,,,Survey,,
+Monitero Nacional de Sintomas y Practicas COVID-19 en Chile,https://www.movid19.cl/,National and comparative surveys (with non-probability samples), Health situation and well-being," Chile
+Target population and sampling: people aged 18 and over; snowball sampling
+Time: 13/4/2020 - 24/5/2020; ongoing
+Interval of data collection: weekly cross-sections and weekly individual level panel
+Availability of individual level data from pre-CoVID: No
+Number of observations: 15;000-37;000 per week
+
+", N/A,Colegio Médico de Chile y Universidad de Chile; Facultad de Psicologaa; Universidad Diego Portales; PI: Cristobal Cuadrado; @CCuadrado,,,,,,,,Survey,,
+undefined,undefined,National and comparative surveys (with non-probability samples)," COVID19 impact on financial health of households incl. income, savings, debt"," Ghana; Kenya; Nigeria; South Africa; India; Mexico; UK; USA
+Target population and sampling: N/A
+Time: 25-26 March 2020; 11-12 April 2020
+Interval of data collection: 2 cross-sections
+Availability of individual level data from pre-CoVID: No
+Number of observations: 1;561 respondents in 7 countries (wave1); 1;646 respondents in 8 countries (wave 2).
+
+", html," @BFAGlobal;
+@ashamin",,,,,,,,Survey,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
