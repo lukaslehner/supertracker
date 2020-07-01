@@ -1,6 +1,6 @@
 ---
 layout: datatable
-title: Policy trackers
+title: Policy tracker collection
 permalink: /policy-trackers/
 order: 1
 bodyclass: page-datatable
