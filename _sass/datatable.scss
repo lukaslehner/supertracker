@@ -1,4 +1,13 @@
 body.page-datatable{
+  #surveyfilter{
+    display: none;
+  }
+  &.surveys{
+    #surveyfilter{
+      display:flex;
+    }
+  }
+  
   .page-content .wrapper{
     max-width: 100%;
   }

@@ -3,7 +3,7 @@ layout: datatable
 title: Survey collection
 permalink: /surveys/
 order: 2
-bodyclass: page-datatable
+bodyclass: page-datatable surveys
 ---
 
 <table>

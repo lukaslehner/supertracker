@@ -1,19 +1,19 @@
 jQuery(function () {
   
-  var primaryFilter = jQuery('#primaryfilter');
-  createMultiSelect('Type', ';', primaryFilter);
+  // var primaryFilter = jQuery('#primaryfilter');
+  // createMultiSelect('Type', ';', primaryFilter);
   
   var normalFilter = jQuery('#filterlist');
 
-  createMultiSelect('Category', ';', normalFilter);
-  createMultiSelect('Coverage', ';', normalFilter);
+  createMultiSelect('Policy Area', ';', normalFilter);
+  createMultiSelect('Country Coverage', ';', normalFilter);
   createMultiSelect('Data Format', ';', normalFilter);
-  createMultiSelect('Author', ';', normalFilter);
+  createMultiSelect('Authors', ';', normalFilter);
 
   var surveyFilter = jQuery('#surveyfilter');
 
   createMultiSelect('Target Population', ';', surveyFilter);
-  createMultiSelect('Sampling', ';', surveyFilter);
+  createMultiSelect('Sampling Method', ';', surveyFilter);
   createMultiSelect('Time', ';', surveyFilter);
   createMultiSelect('Interval of Data Collection', ';', surveyFilter);
   createMultiSelect('Individual Level Data from Pre-COVID', ';', surveyFilter);
