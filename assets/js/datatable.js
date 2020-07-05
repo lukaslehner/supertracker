@@ -1,3 +1,7 @@
+let dt_sortby = 1;
+let dt_order = 'asc';
+let dt_search = '';
+
 jQuery(function () {
   
   // var primaryFilter = jQuery('#primaryfilter');
@@ -9,7 +13,7 @@ jQuery(function () {
   createMultiSelect('Country Coverage', ';', normalFilter);
   createMultiSelect('Data Format', ';', normalFilter);
   createMultiSelect('Authors', ';', normalFilter);
-
+  
   var surveyFilter = jQuery('#surveyfilter');
 
   createMultiSelect('Target Population', ';', surveyFilter);
@@ -21,7 +25,20 @@ jQuery(function () {
   createMultiSelect('Micro Data Availablity', ';', surveyFilter);
   createMultiSelect('Level of Observation', ';', surveyFilter);
 
+  jQuery('#sortby').change(function(){
+    dt_sortby = jQuery(this).val()
+    datatableFilter();
+  })
+  jQuery('#order').change(function(){
+    dt_order = jQuery(this).val()
+    datatableFilter();
+  })
+  jQuery('#search_filter').on('input change',function(){
+    datatableFilter('all', jQuery(this).val());
+  })
+
   datatableFilter();
+
 });
 
 /** Actual Fitler Function */
@@ -43,7 +60,9 @@ function datatableFilter(column, terms){
   let totalElems = rows.length;
   rows.each(function () {
     textContent = this.textContent.toLowerCase();
-    const show = allTerms.every((term) => console.log(term) || textContent.includes(term.toLowerCase()));
+    const show = 
+      allTerms.every((term) => console.log(term) || textContent.includes(term.toLowerCase()));
+
     if (!show) {
       jQuery(this).hide();
     } else {
@@ -54,6 +73,23 @@ function datatableFilter(column, terms){
   
   jQuery('[data-content="DATASETS_FOUND"]').text(visibleElems);
   jQuery('[data-content="DATASETS_TOTAL"]').text(totalElems);
+
+  sortTable(table, dt_sortby, dt_order);
+}
+
+function sortTable(table, column, order) {
+  var asc   = order === 'asc',
+      tbody = table.find('tbody');
+
+  tbody.find('tr').sort(function(a, b) {
+      if (asc) {
+          return $('td:nth-child('+column+')', a)
+            .text().localeCompare($('td:nth-child('+column+')', b).text());
+      } else {
+          return $('td:nth-child('+column+')', b)
+            .text().localeCompare($('td:nth-child('+column+')', a).text());
+      }
+  }).appendTo(tbody);
 }
 
 function createMultiSelect(column, splitter, container){

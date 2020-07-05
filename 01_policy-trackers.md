@@ -20,8 +20,8 @@ bodyclass: page-datatable
         <th class="type">Type</th>
       </tr>
     </thead>
-    {% else %}
     <tbody>
+    {% else %}
       <tr>
         <td>
           <a href="{{row['Link']}}">
@@ -47,7 +47,7 @@ bodyclass: page-datatable
           {{ row['Type'] }}
         </td>
       </tr>
-    </tbody>
     {% endif %}
   {% endfor %}
+  </tbody>
 </table>

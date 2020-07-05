@@ -28,8 +28,8 @@ bodyclass: page-datatable surveys
         <th>Level of Observation</th>
       </tr>
     </thead>
-    {% else %}
     <tbody>
+    {% else %}
       <tr>
         <td>
           <a href="{{ row['Link'] }}">
@@ -79,7 +79,7 @@ bodyclass: page-datatable surveys
           {{ row['Level of Observation'] }}
         </td>
       </tr>
-    </tbody>
     {% endif %}
   {% endfor %}
+  </tbody>
 </table>

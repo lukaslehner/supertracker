@@ -26,7 +26,29 @@ layout: default
     </div>    
     
     <h4 class="mt-4">Filter for Surveys</h4>
-    <div class="justify-start flex-wrap" id="surveyfilter">
+      <div class="justify-start flex-wrap" id="surveyfilter">
+    </div>
+
+    <h4 class="mt-4">Sortierung</h4>
+    <div class="justify-start flex-wrap" id="sortcontainer">
+      <div class="filter-element">
+        <label>Sort By</label>
+        <select class="form-control" name="Sort By" id="sortby">
+          <option value="1">Title</option>
+          <option value="2">Policy Area</option>
+          <option value="3">Focus</option>
+          <option value="4">Country Coverage</option>
+          <option value="5">Data Format</option>
+          <option value="6">Authors</option>
+        </select>
+      </div>
+      <div class="filter-element">
+        <label>Order</label>
+        <select class="form-control" name="Order" id="order">
+          <option value="asc">Ascending</option>
+          <option value="2">Descending</option>
+        </select>
+      </div>
     </div>
 
     <div>
