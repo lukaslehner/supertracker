@@ -42,6 +42,7 @@ body.page-datatable{
     position: sticky;
     top:-1px;
     z-index: 1;
+    white-space: nowrap;
   }
   table th.type,
   table td.type
