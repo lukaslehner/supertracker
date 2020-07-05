@@ -41,6 +41,14 @@ body#top {
       img{
         height: 150px;
       }
+      h1{
+        font-size: 26px;
+        font-weight: $font-weight-normal;
+        p{
+          font-size: 18px;
+          margin-bottom: 0;
+        }
+      }
     }
     .site-nav{
       margin-top: 30px;
