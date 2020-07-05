@@ -32,7 +32,7 @@ bodyclass: page-datatable surveys
     <tbody>
       <tr>
         <td>
-          <a href="{{row['link']}}">
+          <a href="{{ row['Link'] }}">
             {{ row['Title'] }}
           </a>
         </td>

@@ -24,7 +24,7 @@ bodyclass: page-datatable
     <tbody>
       <tr>
         <td>
-          <a href="{{row['link']}}">
+          <a href="{{row['Link']}}">
             {{ row['Title'] }}
           </a>
         </td>
