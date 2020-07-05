@@ -20,20 +20,27 @@ jQuery(function () {
   createMultiSelect('Number of Observations', ';', surveyFilter);
   createMultiSelect('Micro Data Availablity', ';', surveyFilter);
   createMultiSelect('Level of Observation', ';', surveyFilter);
+
+  datatableFilter();
 });
 
+/** Actual Fitler Function */
 const datatableFilterTerms = new Map();
 function datatableFilter(column, terms){
-  if(!Array.isArray(terms)){
-    terms = [terms];
+  if(column){
+    if(!Array.isArray(terms)){
+      terms = [terms];
+    }
+    datatableFilterTerms.set(column, terms);
   }
-  datatableFilterTerms.set(column, terms);
 
   const table = jQuery(".datatable-container table");
   const rows = table.find("tbody tr");
   
   const allTerms = [...datatableFilterTerms.values()].flat();
   
+  let visibleElems = 0;
+  let totalElems = rows.length;
   rows.each(function () {
     textContent = this.textContent.toLowerCase();
     const show = allTerms.every((term) => console.log(term) || textContent.includes(term.toLowerCase()));
@@ -41,8 +48,12 @@ function datatableFilter(column, terms){
       jQuery(this).hide();
     } else {
       jQuery(this).show();
+      visibleElems++;
     }
   });
+  
+  jQuery('[data-content="DATASETS_FOUND"]').text(visibleElems);
+  jQuery('[data-content="DATASETS_TOTAL"]').text(totalElems);
 }
 
 function createMultiSelect(column, splitter, container){

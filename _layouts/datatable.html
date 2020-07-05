@@ -15,16 +15,26 @@ layout: default
     <h4>Filter</h4>
     <!-- <div class="d-flex justify-start flex-wrap" id="primaryfilter">
     </div> -->
-    <div class="d-flex justify-start flex-wrap" id="filterlist">
-        <div class="filter-element">
+    <div class="d-flex justify-start flex-wrap" id="primaryfilter">
+      <div class="filter-element">
         <label>Search</label>
         <input placeholder="Enter Searchterm" type="text" class="form-control" id="search_filter">
       </div>
+    </div>    
+
+    <div class="d-flex justify-start flex-wrap" id="filterlist">
     </div>    
     
     <h4 class="mt-4">Filter for Surveys</h4>
     <div class="justify-start flex-wrap" id="surveyfilter">
     </div>
+
+    <div>
+      <div class="filter-metadata font-weight-bold mt-2">
+        <span>Results:</span> <span data-content="DATASETS_FOUND"></span> / <span data-content="DATASETS_TOTAL"></span>
+      </div>      
+    </div>
+    
   </form>  
   
   
