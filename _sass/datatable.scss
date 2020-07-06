@@ -1,9 +1,9 @@
 body.page-datatable{
-  #surveyfilter{
+  .only_for_surveys{
     display: none;
   }
   &.surveys{
-    #surveyfilter{
+    .only_for_surveys{
       display:flex;
     }
   }

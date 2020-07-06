@@ -12,25 +12,24 @@ layout: default
   </p>
   
   <form class="filter-container mb-3" action="#0">
-    <h4>Filter</h4>
-    <!-- <div class="d-flex justify-start flex-wrap" id="primaryfilter">
-    </div> -->
+    
+    <h4>Search</h4>
     <div class="d-flex justify-start flex-wrap" id="primaryfilter">
       <div class="filter-element">
-        <label>Search</label>
         <input placeholder="Enter Searchterm" type="text" class="form-control" id="search_filter">
       </div>
     </div>    
-
+    
+    <h4>Filter</h4>
     <div class="d-flex justify-start flex-wrap" id="filterlist">
     </div>    
     
-    <h4 class="mt-4">Filter for Surveys</h4>
-      <div class="justify-start flex-wrap" id="surveyfilter">
+    <h4 class="mt-4 only_for_surveys">Filter for Surveys</h4>
+    <div class="justify-start flex-wrap only_for_surveys" id="surveyfilter">
     </div>
 
     <h4 class="mt-4">Sortierung</h4>
-    <div class="justify-start flex-wrap" id="sortcontainer">
+    <div class="d-flex justify-start flex-wrap" id="sortcontainer">
       <div class="filter-element">
         <label>Sort By</label>
         <select class="form-control" name="Sort By" id="sortby">
