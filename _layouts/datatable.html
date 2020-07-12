@@ -11,12 +11,12 @@ layout: default
     The criteria for inclusion into the supertracker are explained in the <a href="../documentation/">documentation</a>.
   </p>
   
-  <form class="filter-container mb-3" action="#0">
+  <form class="filter-container mb-3">
     
     <h4>Search</h4>
     <div class="d-flex justify-start flex-wrap" id="primaryfilter">
       <div class="filter-element">
-        <input placeholder="Enter Searchterm" type="text" class="form-control" id="search_filter">
+        <input placeholder="Enter Searchterm" autocomplete="off" type="text" class="form-control" id="search_filter">
       </div>
     </div>    
     
@@ -51,11 +51,14 @@ layout: default
     </div>
 
     <div>
-      <div class="filter-metadata font-weight-bold mt-2">
-        <span>Results:</span> <span data-content="DATASETS_FOUND"></span> / <span data-content="DATASETS_TOTAL"></span>
+      <div class="filter-metadata font-weight-bold mt-2 d-flex justify-content-between">
+        <div>
+          <span>Results:</span> <span data-content="DATASETS_FOUND"></span> / <span data-content="DATASETS_TOTAL"></span>
+        </div>
+        <a href="#0" data-action="download-csv" class="btn btn-primary">Download as CSV</a>
       </div>      
     </div>
-    
+
   </form>  
   
   
