@@ -21,8 +21,7 @@
 title: Oxford Supertracker
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
-  The Oxford Supertracker is a project by the Department of [Social Policy and Intervention at the University of Oxford](https://www.spi.ox.ac.uk/policy-super-tracker). 
-  Please submit your feedback or suggestion for a new source via this [form](submit-a-tracker/).
+  The Oxford Supertracker is a global directory of over 100 policy trackers and surveys related to COVID-19.
 
 baseurl: "/supertracker" # the subpath of your site, e.g. /blog
 url: "https://lukaslehner.github.io" # the base hostname & protocol for your site, e.g. http://example.com
