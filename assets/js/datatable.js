@@ -114,12 +114,16 @@ function sortTable(table, column, order) {
     .appendTo(tbody);
 }
 
+console.log('test');
+
 const allTerms = new Set();
 function createMultiSelect(column, splitter, container) {
   var id = makeSafeForCSS(column) + "_filter";
 
   var terms = getTerms(column, splitter);
 
+  console.log(terms);
+  
   terms.forEach(term => allTerms.add(term))
 
   var options = terms.reduce(
@@ -154,9 +158,13 @@ function getTerms(column, splitter) {
     return elem.textContent.toLowerCase() === column.toLowerCase();
   });
 
+  console.log(columnNumber);
+
   rows.each(function () {
     const row = jQuery(this);
-    let d = row.find(`:nth-child(${columnNumber + 1})`).text();
+
+    const elem = row.find(`:nth-child(${columnNumber + 1})`)[0];
+    let d = elem ? elem.textContent : '';
     d = d.split(splitter).map((elem) => elem.trim());
     terms = new Set([...terms, ...d]);
   });
