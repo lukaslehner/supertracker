@@ -50,7 +50,6 @@ jQuery(function () {
         const results = [...allTerms]
           .flat(Infinity)
           .filter(elem => elem && elem.toLowerCase().includes(query));
-        console.log(query, results)
         callback(results);
       },
     },
@@ -114,15 +113,11 @@ function sortTable(table, column, order) {
     .appendTo(tbody);
 }
 
-console.log('test');
-
 const allTerms = new Set();
 function createMultiSelect(column, splitter, container) {
   var id = makeSafeForCSS(column) + "_filter";
 
   var terms = getTerms(column, splitter);
-
-  console.log(terms);
   
   terms.forEach(term => allTerms.add(term))
 
@@ -157,8 +152,6 @@ function getTerms(column, splitter) {
     if (!elem.textContent) return false;
     return elem.textContent.toLowerCase() === column.toLowerCase();
   });
-
-  console.log(columnNumber);
 
   rows.each(function () {
     const row = jQuery(this);
