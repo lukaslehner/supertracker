@@ -114,7 +114,6 @@ function sortTable(table, column, order) {
     .appendTo(tbody);
 }
 
-
 const allTerms = new Set();
 function createMultiSelect(column, splitter, container) {
   var id = makeSafeForCSS(column) + "_filter";
@@ -200,9 +199,9 @@ function downloadCsv() {
       }
       const end = jQuery(elem).is(":last-child") ? "\n" : ",";
 
-      let content = elem.textContent;
+      let content = elem.textContent.trim();
 
-      return rowData + `"${elem.textContent}"${end}`;
+      return rowData + `"${content}"${end}`;
     }, "");
 
   var downloadLink = document.createElement("a");
