@@ -49,7 +49,7 @@ bodyclass: page-datatable surveys
           {{ row['Data Format'] }}
         </td>
         <td class="authors">
-          {{ row['Authors'] }}
+          {{ row['Authors'] | markdownify }}
         </td>
         <td class="target_population">
           {{ row['Target Population'] }}

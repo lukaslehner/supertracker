@@ -41,7 +41,7 @@ bodyclass: page-datatable
           {{ row['Data Format'] }}
         </td>
         <td class="authors">
-          {{ row['Authors'] }}
+          {{ row['Authors'] | markdownify }}
         </td>
         <td class="type">
           {{ row['Type'] }}
