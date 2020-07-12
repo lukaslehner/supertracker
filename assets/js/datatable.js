@@ -126,7 +126,7 @@ function createMultiSelect(column, splitter, container) {
   
   terms.forEach(term => allTerms.add(term))
 
-  var options = terms.reduce(
+  var options = terms.sort().reverse().reduce(
     (term, string) => `${string}<option>${term}</option>`
   );
 
