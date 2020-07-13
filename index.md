@@ -10,7 +10,7 @@ order: 0
 
 # Oxford Supertracker
 
-The Oxford Supertracker is a global directory of over 100 **[policy trackers](policy-trackers/)** and **[surveys](surveys/)** related to COVID-19. This novel collection is designed to assist researchers and policy-makers in keeping track of a rapidly growing number of data sources. You can search and identify  relevant information resources (datasets, surveys, and other systematic collections) across different areas, countries and data types.
+The Oxford Supertracker is a global directory of over 100 **[policy trackers](policy-trackers/)** and **[surveys](surveys/)** related to COVID-19. This novel collection is designed to assist researchers and policy-makers in keeping track of a rapidly growing number of data sources. You can search and identify  relevant information resources, such as datasets, surveys, and systematic collections, across different areas, countries and data types.
 
 If you would like to receive updates on new sources, you can **[subscribe here](subscribe/)**.
 
