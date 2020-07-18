@@ -33,6 +33,15 @@ body.page-datatable{
   // .datatable-container{
   //   overflow-x: scroll;
   // }
+  .show-more{
+    &::before{
+      display:inline;
+      content: attr(data-content);
+    }
+  }
+  table{
+    font-size: 15px;    
+  }
   table th{
     background: #fff;
     font-family: $font-family-heading;
@@ -43,6 +52,12 @@ body.page-datatable{
     top:-1px;
     z-index: 1;
     white-space: nowrap;
+  }
+  table td.country-coverage{
+    width: 20%;
+  }
+  table td.policy-area{
+    width: 20%;
   }
   table th.type,
   table td.type

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Submit a Tracker
+title: Contribute
 permalink: /submit-a-tracker/
 order: 5
 ---

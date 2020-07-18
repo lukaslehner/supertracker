@@ -1,6 +1,6 @@
 ---
 layout: datatable
-title: Survey collection
+title: Surveys
 permalink: /surveys/
 order: 2
 bodyclass: page-datatable surveys
