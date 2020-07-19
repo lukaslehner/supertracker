@@ -41,6 +41,8 @@ body.page-datatable{
   }
   table{
     font-size: 15px;    
+    border-collapse: separate;
+    border-spacing: 0;
   }
   table th{
     background: #fff;
@@ -52,6 +54,16 @@ body.page-datatable{
     top:-1px;
     z-index: 1;
     white-space: nowrap;
+    border-left: none;
+    border-top: none;
+    border-bottom: 2px solid #e8e8e8;
+  }
+  table td{
+    border-bottom: none;
+    border-left: none;
+  }
+  table tr:first-child td{
+    border-top: 0;
   }
   table td.country-coverage{
     width: 20%;

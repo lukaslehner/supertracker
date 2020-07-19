@@ -8,21 +8,30 @@ jQuery(function () {
 
   var normalFilter = jQuery("#filterlist");
 
-  createMultiSelect("Policy Area", ";", normalFilter);
-  createMultiSelect("Country Coverage", ";", normalFilter);
-  createMultiSelect("Data Format", ";", normalFilter);
-  createMultiSelect("Authors", ";", normalFilter);
+  createMultiSelect("Policy Area", ";", jQuery("th.policy-area"), {
+    showLabel: false,
+  });
+  createMultiSelect("Focus", ",", jQuery("th.focus"), {
+    showLabel: false,
+  });
+  createMultiSelect("Country Coverage", ";", jQuery("th.country-coverage"), {
+    showLabel: false,
+  });
+  createMultiSelect("Data Format", ";", jQuery("th.data-format"), {
+    showLabel: false,
+  });
+  createMultiSelect("Authors", ";", jQuery("th.authors"), { showLabel: false });
 
   var surveyFilter = jQuery("#surveyfilter");
 
-  createMultiSelect("Target Population", ";", surveyFilter);
-  createMultiSelect("Sampling Method", ";", surveyFilter);
-  createMultiSelect("Time", ";", surveyFilter);
-  createMultiSelect("Interval of Data Collection", ";", surveyFilter);
-  createMultiSelect("Individual Level Data from Pre-COVID", ";", surveyFilter);
-  createMultiSelect("Number of Observations", ";", surveyFilter);
-  createMultiSelect("Micro Data Availablity", ";", surveyFilter);
-  createMultiSelect("Level of Observation", ";", surveyFilter);
+  createMultiSelect("Target Population", ";", jQuery('th.target-population'), { showLabel: false });
+  createMultiSelect("Sampling Method", ";", jQuery('th.sampling-method'), { showLabel: false });
+  createMultiSelect("Time", ";", jQuery('th.time'), { showLabel: false });
+  createMultiSelect("Interval of Data Collection", ";", jQuery('th.data-collection-interval'), { showLabel: false });
+  createMultiSelect("Individual Level Data from Pre-COVID", ";", jQuery('th.individual-level-data'), { showLabel: false });
+  createMultiSelect("Number of Observations", ";", jQuery('th.number-of-observations'), { showLabel: false });
+  createMultiSelect("Micro Data Availablity", ";", jQuery('th.micro-data-availability'), { showLabel: false });
+  createMultiSelect("Level of Observation", ";", jQuery('th.level-of-observation'), { showLabel: false });
 
   jQuery("#sortby").change(function () {
     dt_sortby = jQuery(this).val();
@@ -49,7 +58,7 @@ jQuery(function () {
         query = query.toLowerCase();
         const results = [...allTerms]
           .flat(Infinity)
-          .filter(elem => elem && elem.toLowerCase().includes(query));
+          .filter((elem) => elem && elem.toLowerCase().includes(query));
         callback(results);
       },
     },
@@ -114,20 +123,25 @@ function sortTable(table, column, order) {
 }
 
 const allTerms = new Set();
-function createMultiSelect(column, splitter, container) {
+function createMultiSelect(column, splitter, container, options = {}) {
+  const { showLabel = true } = options;
+
   var id = makeSafeForCSS(column) + "_filter";
 
   var terms = getTerms(column, splitter);
-  
-  terms.forEach(term => allTerms.add(term))
 
-  var options = terms.sort().reverse().reduce(
-    (term, string) => `${string}<option>${term}</option>`
-  );
+  terms.forEach((term) => allTerms.add(term));
+
+  var options = terms
+    .sort()
+    .reverse()
+    .reduce((term, string) => `${string}<option>${term}</option>`);
+
+  var labelElement = showLabel ? `<label>${column}</label>` : "";
 
   var filter = `
     <div class="filter-element ${id}_container">
-      <label>${column}</label>
+      ${labelElement}
       <select class="form-control" id="${id}">
         <option selected value="">all</option>
         ${options}
@@ -157,7 +171,7 @@ function getTerms(column, splitter) {
     const row = jQuery(this);
 
     const elem = row.find(`:nth-child(${columnNumber + 1})`)[0];
-    let d = elem ? elem.textContent : '';
+    let d = elem ? elem.textContent : "";
     d = d.split(splitter).map((elem) => elem.trim());
     terms = new Set([...terms, ...d]);
   });
