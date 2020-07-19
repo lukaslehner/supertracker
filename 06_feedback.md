@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Submit Feedback
+title: Feedback
 permalink: /submit-feedback/
 order: 6
 ---
