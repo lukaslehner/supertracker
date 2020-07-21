@@ -11,9 +11,6 @@ jQuery(function () {
   createMultiSelect("Policy Area", ";", jQuery("th.policy-area"), {
     showLabel: false,
   });
-  createMultiSelect("Focus", ",", jQuery("th.focus"), {
-    showLabel: false,
-  });
   createMultiSelect("Country Coverage", ";", jQuery("th.country-coverage"), {
     showLabel: false,
   });
@@ -41,6 +38,8 @@ jQuery(function () {
     dt_order = jQuery(this).val();
     datatableFilter();
   });
+
+  jQuery('th.title').append(`<input placeholder="Enter Searchterm" autocomplete="off" type="text" class="form-control" id="search_filter">`);
   jQuery("#search_filter").on("input change", function () {
     datatableFilter("all", jQuery(this).val());
   });

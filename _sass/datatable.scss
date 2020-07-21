@@ -58,6 +58,9 @@ body.page-datatable{
     border-top: none;
     border-bottom: 2px solid #e8e8e8;
   }
+  table th.title{
+    z-index: 2;
+  }
   table td{
     border-bottom: none;
     border-left: none;
@@ -69,6 +72,9 @@ body.page-datatable{
     width: 20%;
   }
   table td.policy-area{
+    width: 20%;
+  }
+  table td.title{
     width: 20%;
   }
   table th.type,
