@@ -6,8 +6,26 @@ jQuery(function () {
   // var primaryFilter = jQuery('#primaryfilter');
   // createMultiSelect('Type', ';', primaryFilter);
 
-  var normalFilter = jQuery("#filterlist");
-
+  jQuery('.datatable-container table th').each(function(){
+    const icons = `
+      <svg class="desc" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-sort-alpha-up-alt" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M4 14a.5.5 0 0 0 .5-.5v-11a.5.5 0 0 0-1 0v11a.5.5 0 0 0 .5.5z"/>
+        <path fill-rule="evenodd" d="M6.354 4.854a.5.5 0 0 0 0-.708l-2-2a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L4 3.207l1.646 1.647a.5.5 0 0 0 .708 0z"/>
+        <path d="M9.027 7h3.934v-.867h-2.645v-.055l2.567-3.719v-.691H9.098v.867h2.507v.055L9.027 6.309V7zm.637 7l.418-1.371h1.781L12.281 14h1.121l-1.78-5.332h-1.235L8.597 14h1.067zM11 9.687l.652 2.157h-1.351l.652-2.156H11z"/>
+      </svg>
+      <svg class="asc" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-sort-alpha-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M4 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11A.5.5 0 0 1 4 2z"/>
+        <path fill-rule="evenodd" d="M6.354 11.146a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L4 12.793l1.646-1.647a.5.5 0 0 1 .708 0z"/>
+        <path d="M9.664 7l.418-1.371h1.781L12.281 7h1.121l-1.78-5.332h-1.235L8.597 7h1.067zM11 2.687l.652 2.157h-1.351l.652-2.157H11zM9.027 14h3.934v-.867h-2.645v-.055l2.567-3.719v-.691H9.098v.867h2.507v.055l-2.578 3.719V14z"/>
+      </svg>
+    `;
+    const content = jQuery(this).text();
+    const index = jQuery(this).index() + 1;
+    const classes = index == 1 ? 'active' : '';
+    console.log(content, index, classes);
+    jQuery(this).html(`<a class="${classes}" data-order="true" data-sortby="${index}">${content}${icons}</a>`)
+  })
+  
   createMultiSelect("Policy Area", ";", jQuery("th.policy-area"), {
     showLabel: false,
   });
@@ -38,6 +56,25 @@ jQuery(function () {
     dt_order = jQuery(this).val();
     datatableFilter();
   });
+
+  jQuery('a[data-sortby]').click(function() {
+    const elem = jQuery(this);
+    const active = jQuery(this).hasClass('active')
+    let order = jQuery(this).attr('data-order') === 'true';
+    if(active){
+      order = !order
+    }
+
+    dt_sortby = jQuery(this).data('sortby');
+    dt_order = order ? 'asc' : 'desc';
+
+    jQuery(this).attr('data-order', order);
+
+    jQuery('[data-sortby]').removeClass('active')
+    jQuery(this).addClass('active')
+    
+    datatableFilter();
+  })
 
   jQuery('th.title').append(`<input placeholder="Enter Searchterm" autocomplete="off" type="text" class="form-control" id="search_filter">`);
   jQuery("#search_filter").on("input change", function () {
