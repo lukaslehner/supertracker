@@ -200,7 +200,7 @@ function getTerms(column, splitter) {
 
   const columnNumber = headings.toArray().findIndex(function (elem) {
     if (!elem.textContent) return false;
-    return elem.textContent.toLowerCase() === column.toLowerCase();
+    return elem.textContent.trim().toLowerCase() === column.toLowerCase();
   });
 
   rows.each(function () {

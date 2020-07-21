@@ -57,33 +57,7 @@ body.page-datatable{
     border-left: none;
     border-top: none;
     border-bottom: 2px solid #e8e8e8;
-  }
-  table th.title{
-    z-index: 2;
-  }
-  table td{
-    border-bottom: none;
-    border-left: none;
-  }
-  table tr:first-child td{
-    border-top: 0;
-  }
-  table td.country-coverage{
-    width: 20%;
-  }
-  table td.policy-area{
-    width: 20%;
-  }
-  table td.title{
-    width: 20%;
-  }
-  table th.type,
-  table td.type
-  {
-    display: none;
-  }
-
-  table th{
+    user-select: none;
     .desc,.asc{
       display: none;
       opacity: 0.4;
@@ -127,4 +101,30 @@ body.page-datatable{
       }
     }
   }
+  table th.title{
+    z-index: 2;
+  }
+  table td{
+    border-bottom: none;
+    border-left: none;
+  }
+  table tr:first-child td{
+    border-top: 0;
+  }
+  table td.country-coverage{
+    width: 20%;
+  }
+  table td.policy-area{
+    width: 20%;
+  }
+  table td.title{
+    width: 20%;
+  }
+  table th.type,
+  table td.type
+  {
+    display: none;
+  }
+
+
 }
