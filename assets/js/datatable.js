@@ -77,7 +77,7 @@ jQuery(function () {
   })
 
   jQuery('th.title').append(`<input placeholder="Enter Searchterm" autocomplete="off" type="text" class="form-control" id="search_filter">`);
-  jQuery("#search_filter").on("input change", function () {
+  jQuery("#search_filter").on("input change keypress", function () {
     datatableFilter("all", jQuery(this).val());
   });
 
