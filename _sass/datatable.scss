@@ -33,6 +33,17 @@ body.page-datatable{
   // .datatable-container{
   //   overflow-x: scroll;
   // }
+  .show-more{
+    &::before{
+      display:inline;
+      content: attr(data-content);
+    }
+  }
+  table{
+    font-size: 15px;    
+    border-collapse: separate;
+    border-spacing: 0;
+  }
   table th{
     background: #fff;
     font-family: $font-family-heading;
@@ -43,10 +54,77 @@ body.page-datatable{
     top:-1px;
     z-index: 1;
     white-space: nowrap;
+    border-left: none;
+    border-top: none;
+    border-bottom: 2px solid #e8e8e8;
+    user-select: none;
+    .desc,.asc{
+      display: none;
+      opacity: 0.4;
+      padding: 5px;
+      font-size: calc(1.2em + 10px);
+      background: transparent;
+      border-radius: 50%;
+    }
+    a[data-sortby]{
+      display: inline-block;
+      width: 100%;
+      cursor: pointer;
+      height: 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &:hover{
+        opacity: 0.7;
+      }
+    }
+    a[data-sortby][data-order="false"]{
+      .desc{
+        display: inline-block;
+      }
+      .asc{
+        display: none;
+      }
+    }
+    a[data-sortby][data-order="true"]{
+      .desc{
+        display: none;
+      }
+      .asc{
+        display: inline-block;
+      }
+    }
+    a.active{
+      .desc,.asc{
+        opacity: 1;
+        background: #CCC;
+      }
+    }
+  }
+  table th.title{
+    z-index: 2;
+  }
+  table td{
+    border-bottom: none;
+    border-left: none;
+  }
+  table tr:first-child td{
+    border-top: 0;
+  }
+  table td.country-coverage{
+    width: 20%;
+  }
+  table td.policy-area{
+    width: 20%;
+  }
+  table td.title{
+    width: 20%;
   }
   table th.type,
   table td.type
   {
     display: none;
   }
+
+
 }

@@ -1,6 +1,6 @@
 ---
 layout: datatable
-title: Survey collection
+title: Surveys
 permalink: /surveys/
 order: 2
 bodyclass: page-datatable surveys
@@ -11,21 +11,21 @@ bodyclass: page-datatable surveys
     {% if forloop.first %}
     <thead>
       <tr>
-        <th>Title</th>
-        <th>Policy Area</th>
-        <th>Focus</th>
-        <th>Country Coverage</th>
-        <th>Data Format</th>
-        <th>Authors</th>
-        <th>Target Population</th>
-        <th>Sampling Method</th>
-        <th>Time</th>
-        <th>Interval of Data Collection</th>
-        <th>Individual Level Data from Pre-COVID</th>
-        <th>Number of Observations</th>
-        <th>Micro Data Availablity</th>
+        <th class="title">Title</th>
+        <th class="policy-area">Policy Area</th>
+        <th class="focus">Focus</th>
+        <th class="country-coverage">Country Coverage</th>
+        <th class="data-format">Data Format</th>
+        <th class="authors">Authors</th>
+        <th class="target-population">Target Population</th>
+        <th class="sampling-method">Sampling Method</th>
+        <th class="time">Time</th>
+        <th class="data-collection-interval">Interval of Data Collection</th>
+        <th class="individual-level-data">Individual Level Data from Pre-COVID</th>
+        <th class="number-of-observations">Number of Observations</th>
+        <th class="micro-data-availability">Micro Data Availablity</th>
         <th class="type">Type</th>
-        <th>Level of Observation</th>
+        <th class="level-of-observation">Level of Observation</th>
       </tr>
     </thead>
     <tbody>
@@ -51,7 +51,7 @@ bodyclass: page-datatable surveys
         <td class="authors">
           {{ row['Authors'] | markdownify }}
         </td>
-        <td class="target_population">
+        <td class="target-population">
           {{ row['Target Population'] }}
         </td>
         <td class="sampling-method">
@@ -60,22 +60,22 @@ bodyclass: page-datatable surveys
         <td class="time">
           {{ row['Time'] }}
         </td>
-        <td class="data_collection_interval">
+        <td class="data-collection-interval">
           {{ row['Interval of Data Collection'] }}
         </td>
-        <td class="individual_level_data">
+        <td class="individual-level-data">
           {{ row['Availability of Individual Level Data from Pre-COVID'] }}
         </td>
-        <td class="number_of_observations">
+        <td class="number-of-observations">
           {{ row['Number of Observations'] }}
         </td>
-        <td class="micro_data_availability">
+        <td class="micro-data-availability">
           {{ row['Micro Data Availablity'] }}
         </td>
         <td class="type">
           {{ row['Type'] }}
         </td>
-        <td class="level_of_observation">
+        <td class="level-of-observation">
           {{ row['Level of Observation'] }}
         </td>
       </tr>
