@@ -13,12 +13,34 @@ bodyclass: page-datatable
     {% if forloop.first %}
     <thead>
       <tr>
-        <th class="title">Title</th>
-        <th class="policy-area">Policy Area</th>
-        <th class="focus">Focus</th>
-        <th class="country-coverage">Country Coverage</th>
-        <th class="data-format">Data Format</th>
-        <th class="authors">Authors</th>       
+        <th class="title">
+          Title
+        </th>
+        <th class="policy-area">
+          <a data-sortby="2">
+            Policy Area
+            </a>
+        </th>
+        <th class="focus">
+          <a data-sortby="3">
+            Focus
+            </a>
+        </th>
+        <th class="country-coverage">
+          <a data-sortby="4">
+            Country Coverage
+            </a>
+        </th>
+        <th class="data-format">
+          <a data-sortby="5">
+            Data Format
+            </a>
+        </th>
+        <th class="authors">
+          <a data-sortby="6">
+            Authors
+            </a>
+        </th>       
         <th class="type">Type</th>
       </tr>
     </thead>
