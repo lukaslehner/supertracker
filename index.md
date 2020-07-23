@@ -28,7 +28,7 @@ We are also partnering up with the producers and users of existing data sources 
 
 See the **[press release]()** about the Oxford Supertracker.
 
-Within a few weeks, thousands of researchers from over 120 countries around the globe have visited our **[initial website](https://lukaslehner.github.io/covid19policytrackers/)** making use of the directory and contributing to the growing number of entries.
+Within a few weeks, **thousands of researchers from over 120 countries** around the globe have visited our **[initial website](https://lukaslehner.github.io/covid19policytrackers/)** making use of the directory and contributing to the growing number of entries.
 
 We are working with authors of policy trackers to propose concrete actions to solve information gaps in existing policy trackers and create synergies between them. At the same time, their feedback has informed the creation of the Supertracker.
 
