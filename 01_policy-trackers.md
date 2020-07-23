@@ -77,7 +77,7 @@ bodyclass: page-datatable
             {%- if i == 10 -%}
               {%- assign too_many_countries = true -%}
               <!-- <br><a class="btn btn-sm btn-secondary font-weight-bold" data-toggle="collapse" href="#row_countries_{{rownumber}}"> show {{ country_codes.size | minus: 10 }} more countries... </a> -->
-              <div class="more collapse" id="row_{{rownumber}}">
+              <div class="more collapse" id="row_countries_{{rownumber}}">
             {%- endif -%}
             {{'; '}}
             {%- if forloop.last == true and i >= 10 -%}
