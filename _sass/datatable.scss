@@ -112,13 +112,17 @@ body.page-datatable{
     border-top: 0;
   }
   table td.country-coverage{
-    width: 20%;
+    width: 25%;
   }
   table td.policy-area{
-    width: 20%;
+    width: 25%;
   }
   table td.title{
-    width: 20%;
+    width: 15%;
+    max-width: 280px;
+  }
+  table td.focus{
+    max-width: 280px;
   }
   table th.type,
   table td.type

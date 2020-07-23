@@ -23,8 +23,8 @@ email:
 description: >- # this means to ignore newlines until "baseurl:"
   The Oxford Supertracker is a global directory of over 100 policy trackers and surveys related to COVID-19.
 
-baseurl: "/supertracker" # the subpath of your site, e.g. /blog
-url: "https://lukaslehner.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://supertracker.spi.ox.ac.uk/" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 # Build settings
