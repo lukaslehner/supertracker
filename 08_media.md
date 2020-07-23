@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Media coverage
+title: Impact and Media
 permalink: /media/
 order: 8
 ---
 
-# Media coverage
+# Impact and Media
 
 Within a few weeks, thousands of researchers from over 120 countries around the globe have visited our website making use of the directory and contributing to the growing number of entries.
 
