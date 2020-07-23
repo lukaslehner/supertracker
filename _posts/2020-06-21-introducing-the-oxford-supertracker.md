@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Introducing the Oxford Supertracker"
-date:   2020-06-21 22:57:42 +0200
+date:   2020-06-27 08:00:00 +0100
 categories: jekyll update
 permalink: introducing-the-oxford-supertracker/
-author: Lukas Lehner
+author: Mary Daly, Bernhard Ebbinghaus, Lukas Lehner, Marek Naczyk and Tim Vlandas
 ---
 
 *This is the introduction to the Oxford supertracker.*
