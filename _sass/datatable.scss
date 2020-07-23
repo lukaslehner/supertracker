@@ -1,7 +1,9 @@
 body.page-datatable{
+  
   .only_for_surveys{
     display: none;
   }
+
   &.surveys{
     .only_for_surveys{
       display:flex;
@@ -30,9 +32,18 @@ body.page-datatable{
       }
     }
   }
-  // .datatable-container{
-  //   overflow-x: scroll;
-  // }
+  .datatable-container{
+    @media (max-width: 1300px) {
+      margin: 0 -30px;
+      padding: 0 30px;
+      overflow-x: auto;      
+      max-width: 100vw;  
+    }
+    @media (max-width: 800px) {
+      margin: 0 -15px;
+      padding: 0 15px;
+    }
+  }
   .show-more{
     &::before{
       display:inline;
