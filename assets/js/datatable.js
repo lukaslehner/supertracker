@@ -22,7 +22,6 @@ jQuery(function () {
     const content = jQuery(this).text();
     const index = jQuery(this).index() + 1;
     const classes = index == 1 ? 'active' : '';
-    console.log(content, index, classes);
     jQuery(this).html(`<a class="${classes}" data-order="true" data-sortby="${index}">${content}${icons}</a>`)
   })
   
@@ -104,8 +103,6 @@ function datatableFilter(column, terms) {
     }
     datatableFilterTerms.set(column, terms);
   }
-
-  console.log(datatableFilterTerms);
 
   const table = jQuery(".datatable-container table");
   const rows = table.find("tbody tr");
