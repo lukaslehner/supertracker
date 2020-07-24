@@ -179,7 +179,7 @@ function createMultiSelect(column, splitter, container, options = {}) {
   var filter = `
     <div class="filter-element ${id}_container">
       ${labelElement}
-      <select class="selectpicker" data-live-search="true" title="Select Filter..." multiple id="${id}">
+      <select class="selectpicker" data-container="body" data-live-search="true" title="Select Filter..." multiple id="${id}">
         ${options}
       </select>
     </div>  
