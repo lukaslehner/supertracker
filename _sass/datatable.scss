@@ -69,6 +69,10 @@ body.page-datatable{
     border-top: none;
     border-bottom: 2px solid #e8e8e8;
     user-select: none;
+    .btn-light{
+      background-color: #fff;
+      border: 1px solid #ced4da;
+    }
     .desc,.asc{
       display: none;
       opacity: 0.4;
