@@ -118,12 +118,25 @@ function datatableFilter(column, terms) {
   rows.each(function () {
     textContent = this.textContent.toLowerCase();
 
-    const show = allFilter.every((terms) => {
-      console.log(terms);
-      if(!terms || terms.length === 0) return true;
-      return terms.some((term) => textContent.includes(term.toLowerCase()));
-    }
-    );
+    let show = true;
+
+    datatableFilterTerms.forEach((terms, cat)=>{
+      let catShow = true;
+      
+      if(!terms || terms.length === 0) return;      
+
+      switch (cat) {
+        case 'Country Coverage':
+          catShow = terms.every((term) => textContent.includes(term.toLowerCase()))          
+          break;
+        default:
+          catShow = terms.some((term) => textContent.includes(term.toLowerCase()))
+          break;
+      }
+
+      if(!catShow) show = false;
+    })
+    
 
     if (!show) {
       jQuery(this).addClass("hidden");
