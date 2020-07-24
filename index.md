@@ -14,7 +14,7 @@ The Oxford Supertracker is a global directory of over 100 **[policy trackers](po
 
 If you would like to receive updates on new sources, you can **[subscribe here](#subscribe)**.
 
-The Oxford Supertracker is a collaborative effort. Over 50 people have already contributed to the growing collection. If you maintain or know of an additional dataset, please **[submit a new source](submit-a-tracker/)**. We will promptly review it in line with our **[criteria for inclusion](documentation/)** and update the collection.
+The Oxford Supertracker is a collaborative effort. Over 50 researchers have already contributed to the growing collection. If you maintain or know of an additional dataset, please **[submit a new source](submit-a-tracker/)**. We will promptly review it in line with our **[criteria for inclusion](documentation/)** and update the collection.
 
 We are interested in making the collection as comprehensive and accessible as possible. If you have any suggestions for improvements, please **[share your feedback](submit-feedback/)**.
 
