@@ -179,13 +179,15 @@ function createMultiSelect(column, splitter, container, options = {}) {
   var filter = `
     <div class="filter-element ${id}_container">
       ${labelElement}
-      <select class="selectpicker" data-container="body" data-live-search="true" title="Select Filter..." multiple id="${id}">
+      <select data-container="body" data-live-search="true" title="Select Filter..." multiple id="${id}">
         ${options}
       </select>
     </div>  
   `;
 
   container.append(filter);
+
+  jQuery(`#${id}`).selectpicker();
 
   jQuery(`#${id}`).on("change", function (event) {
     datatableFilter(column, jQuery(this).val());
