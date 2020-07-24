@@ -92,3 +92,7 @@ body#top {
 body#top .hidden{
   display: none !important;
 }
+
+body#top .dropdown-menu{
+  max-width: 100%;
+}
