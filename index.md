@@ -14,7 +14,7 @@ The Oxford Supertracker is a global directory of over 100 **[policy trackers](po
 
 If you would like to receive updates on new sources, you can **[subscribe here](#subscribe)**.
 
-The Oxford Supertracker is a collaborative effort. Over 50 people have already contributed to the growing collection. If you maintain or know of an additional dataset, please **[submit a new source](submit-a-tracker/)**. We will promptly review it in line with our **[criteria for inclusion](documentation/)** and update the collection.
+The Oxford Supertracker is a collaborative effort. Over 50 researchers have already contributed to the growing collection. If you maintain or know of an additional dataset, please **[submit a new source](submit-a-tracker/)**. We will promptly review it in line with our **[criteria for inclusion](documentation/)** and update the collection.
 
 We are interested in making the collection as comprehensive and accessible as possible. If you have any suggestions for improvements, please **[share your feedback](submit-feedback/)**.
 
@@ -25,8 +25,6 @@ The appearance of many new information resources on COVID-19 creates opportuniti
 We are also partnering up with the producers and users of existing data sources on social policies in the wake of the pandemic to identify remaining information gaps and potential synergies, and to propose concrete actions to address these. A webinar discussion and policy brief will address information gaps in existing policy trackers. You can find more information on the Supertracker project on the website of the **[Department of Social Policy and Intervention at the University of Oxford][DSPI]**.
 
 # Impact and Media
-
-See the **[press release]()** about the Oxford Supertracker.
 
 Within a few weeks, **thousands of researchers from over 120 countries** around the globe have visited our **[initial website](https://lukaslehner.github.io/covid19policytrackers/)** making use of the directory and contributing to the growing number of entries.
 
