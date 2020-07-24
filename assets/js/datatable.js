@@ -26,15 +26,9 @@ jQuery(function () {
     jQuery(this).html(`<a class="${classes}" data-order="true" data-sortby="${index}">${content}${icons}</a>`)
   })
   
-  createMultiSelect("Policy Area", ";", jQuery("th.policy-area"), {
-    showLabel: false,
-  });
-  createMultiSelect("Country Coverage", ";", jQuery("th.country-coverage"), {
-    showLabel: false,
-  });
-  createMultiSelect("Data Format", ";", jQuery("th.data-format"), {
-    showLabel: false,
-  });
+  createMultiSelect("Policy Area", ";", jQuery("th.policy-area"), { showLabel: false });
+  createMultiSelect("Country Coverage", ";", jQuery("th.country-coverage"), { showLabel: false });
+  createMultiSelect("Data Format", ";", jQuery("th.data-format"), { showLabel: false });
   createMultiSelect("Authors", ";", jQuery("th.authors"), { showLabel: false });
 
   var surveyFilter = jQuery("#surveyfilter");
@@ -111,17 +105,24 @@ function datatableFilter(column, terms) {
     datatableFilterTerms.set(column, terms);
   }
 
+  console.log(datatableFilterTerms);
+
   const table = jQuery(".datatable-container table");
   const rows = table.find("tbody tr");
 
   const allTerms = [...datatableFilterTerms.values()].flat();
+  const allFilter = [...datatableFilterTerms.values()];
 
   let visibleElems = 0;
   let totalElems = rows.length;
   rows.each(function () {
     textContent = this.textContent.toLowerCase();
-    const show = allTerms.every((term) =>
-      textContent.includes(term.toLowerCase())
+
+    const show = allFilter.every((terms) => {
+      console.log(terms);
+      if(!terms || terms.length === 0) return true;
+      return terms.some((term) => textContent.includes(term.toLowerCase()));
+    }
     );
 
     if (!show) {
@@ -178,8 +179,7 @@ function createMultiSelect(column, splitter, container, options = {}) {
   var filter = `
     <div class="filter-element ${id}_container">
       ${labelElement}
-      <select class="form-control" id="${id}">
-        <option selected value="">all</option>
+      <select class="selectpicker" data-live-search="true" title="Select Filter..." multiple id="${id}">
         ${options}
       </select>
     </div>  
