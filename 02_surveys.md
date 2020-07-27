@@ -7,6 +7,7 @@ bodyclass: page-datatable surveys
 ---
 
 <table>
+  {%- assign rownumber = 0 -%}
   {% for row in site.data.surveys %}
     {% if forloop.first %}
     <thead>
@@ -30,6 +31,7 @@ bodyclass: page-datatable surveys
     </thead>
     <tbody>
     {% else %}
+      {%- assign rownumber = rownumber | plus: 1 -%}
       <tr>
         <td>
           <a href="{{ row['Link'] }}">
@@ -43,7 +45,33 @@ bodyclass: page-datatable surveys
           {{ row['Focus'] }}
         </td>
         <td class="country-coverage">
-          {{ row['Country Coverage'] }}
+          {%- assign country_codes = row['Country Coverage'] | split: "; " -%}
+          {%- assign i = 1 -%}
+          
+          {%- for code in country_codes -%}
+            {%- assign i = i | plus: 1 -%}
+            {%- assign country_name = site.data.countries | where: "Alpha-3 code", code | map: 'Country' -%}
+            {%- assign country_name = country_name[0] -%}
+
+            {%- if country_name -%}
+              {{ country_name }}
+            {%- else -%}
+              {{ code }}
+            {%- endif -%}
+            
+            {%- if i == 10 -%}
+              {%- assign too_many_countries = true -%}
+              <!-- <br><a class="btn btn-sm btn-secondary font-weight-bold" data-toggle="collapse" href="#row_countries_{{rownumber}}"> show {{ country_codes.size | minus: 10 }} more countries... </a> -->
+              <div class="more collapse" id="row_countries_{{rownumber}}">
+            {%- endif -%}
+            {{'; '}}
+            {%- if forloop.last == true and i >= 10 -%}
+              </div>
+              {%- if too_many_countries -%}
+                <br><a class="show-more btn btn-sm btn-secondary" data-toggle="collapse" href="#row_countries_{{rownumber}}" data-content="show {{ country_codes.size | minus: 10 }} more countries..."></a>
+              {%- endif -%}
+            {%- endif -%}
+          {% endfor %}
         </td>
         <td class="data-format">
           {{ row['Data Format'] }}
