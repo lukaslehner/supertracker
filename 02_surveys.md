@@ -13,10 +13,8 @@ bodyclass: page-datatable surveys
     <thead>
       <tr>
         <th class="title">Title</th>
-        <th class="policy-area">Policy Area</th>
         <th class="focus">Focus</th>
         <th class="country-coverage">Country Coverage</th>
-        <th class="data-format">Data Format</th>
         <th class="authors">Authors</th>
         <th class="target-population">Target Population</th>
         <th class="sampling-method">Sampling Method</th>
@@ -26,7 +24,6 @@ bodyclass: page-datatable surveys
         <th class="number-of-observations">Number of Observations</th>
         <th class="micro-data-availability">Micro Data Availablity</th>
         <th class="type">Type</th>
-        <th class="level-of-observation">Level of Observation</th>
       </tr>
     </thead>
     <tbody>
@@ -37,9 +34,6 @@ bodyclass: page-datatable surveys
           <a href="{{ row['Link'] }}">
             {{ row['Title'] }}
           </a>
-        </td>
-        <td class="policy-area">
-          {{ row['Policy Area'] }}
         </td>
         <td class="focus">
           {{ row['Focus'] }}
@@ -73,9 +67,6 @@ bodyclass: page-datatable surveys
             {%- endif -%}
           {% endfor %}
         </td>
-        <td class="data-format">
-          {{ row['Data Format'] }}
-        </td>
         <td class="authors">
           {{ row['Authors'] | markdownify }}
         </td>
@@ -102,9 +93,6 @@ bodyclass: page-datatable surveys
         </td>
         <td class="type">
           {{ row['Type'] }}
-        </td>
-        <td class="level-of-observation">
-          {{ row['Level of Observation'] }}
         </td>
       </tr>
     {% endif %}
