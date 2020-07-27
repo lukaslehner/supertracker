@@ -7,11 +7,9 @@ permalink: introducing-the-oxford-supertracker/
 author: Mary Daly, Bernhard Ebbinghaus, Lukas Lehner, Marek Naczyk and Tim Vlandas
 ---
 
-# Introducing the Oxford Supertracker: the Global Directory for COVID Policy Trackers and Surveys
-
 In the wake of the COVID-19 pandemic, numerous organisations produced policy trackers to allow policymakers and researchers to follow and evaluate policy developments. These trackers document, compare and evaluate policy responses to the pandemic around the globe.
 
-To address information overload, we have created the Oxford Supertracker: a global directory for COVID policy trackers and surveys. The tool allows users to search and identify relevant information resources, such as datasets, surveys, and systematic collections, across policy areas and countries.
+To address information overload, we have created the **Oxford Supertracker: a global directory for COVID policy trackers and surveys**. The tool allows users to search and identify relevant information resources, such as datasets, surveys, and systematic collections, across policy areas and countries.
 
 The Oxford Supertracker is very much a living project. Within a few weeks, thousands of researchers from over 120 countries around the globe have visited our initial website making use of the directory and contributing to the growing number of entries. We look forward to receiving many more **[suggestions for new sources](../submit-a-tracker/)**.
 
@@ -21,4 +19,4 @@ We will also provide a policy brief on the proliferation of Covid-19 policy trac
 
 Over the next weeks, we will be sharing more analysis of novel information resources around COVID-19 policies. These provide a whole array of new research opportunities. If you have an idea or would like to contribute to the blog, feel free to **[reach out](../submit-feedback/)**.
 
-Mary Daly, Bernhard Ebbinghaus, Lukas Lehner, Marek Naczyk and Tim Vlandas
+**Mary Daly, Bernhard Ebbinghaus, Lukas Lehner, Marek Naczyk and Tim Vlandas**
