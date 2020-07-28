@@ -12,7 +12,8 @@ bodyclass: page-datatable
       <div class="d-flex align-items-end">
         <span>Results: </span> <span data-content="DATASETS_FOUND"></span> / <span data-content="DATASETS_TOTAL"></span>
       </div>
-      <a href="https://github.com/lukaslehner/supertracker/blob/master/_data/trackers.csv" class="btn btn-primary">Download as CSV</a>
+      <span></span>
+      <!-- <a href="https://github.com/lukaslehner/supertracker/blob/master/_data/trackers.csv" class="btn btn-primary">Download as CSV</a> -->
     </div>      
   </div>
 
