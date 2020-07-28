@@ -11,23 +11,7 @@ layout: default
     If you maintain or know of an additional dataset, please <a href="../submit-a-tracker/">submit a new source</a>. We will promptly review it in line with our <a href="../documentation/">criteria for inclusion</a> and update the collection.
   </p>
   
-  <form class="filter-container mb-3">
-    
-    <div>
-      <div class="filter-metadata font-weight-bold mt-2 d-flex justify-content-between">
-        <div class="d-flex align-items-end">
-          <span>Results: </span> <span data-content="DATASETS_FOUND"></span> / <span data-content="DATASETS_TOTAL"></span>
-        </div>
-        <a href="#0" data-action="download-csv" class="btn btn-primary">Download as CSV</a>
-      </div>      
-    </div>
-
-  </form>  
-  
-  
-  <div class="datatable-container">
-    {{content}}
-  </div>
+  {{content}}
 </article>
 
 <script defer src="{{ "/assets/js/datatable.js" | relative_url }}"></script>
