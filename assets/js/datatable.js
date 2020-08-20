@@ -123,6 +123,9 @@ function datatableFilter(column, terms) {
       if(!terms || terms.length === 0) return;      
 
       switch (cat) {
+        case 'all':
+          catShow = terms.every((term) => textContent.includes(term.toLowerCase()))          
+          break;
         case 'country-coverage':
           catShow = terms.every((term) => catTextContent.includes(term.toLowerCase()))          
           break;
