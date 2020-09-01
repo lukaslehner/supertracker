@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How global are COVID-19 policy trackers?"
-date:   2020-09-01 08:00:00 +0100
+date:   2020-09-02 08:00:00 +0100
 categories: jekyll update
 permalink: how-global-are-covid-19-policy-trackers/
 author: Bernhard Ebbinghaus
