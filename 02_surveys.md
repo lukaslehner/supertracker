@@ -27,24 +27,27 @@ bodyclass: page-datatable surveys
       {% if forloop.first %}
       <thead>
         <tr>
+          <th class="sampling-method">Sampling</th>
           <th class="title">Title</th>
           <th class="focus">Focus</th>
           <th class="country-coverage">Country Coverage</th>
-          <th class="authors">Authors</th>
-          <th class="target-population">Target Population</th>
-          <th class="sampling-method">Sampling Method</th>
+          <th class="country-number">Countries</th>
           <th class="time">Time</th>
           <th class="data-collection-interval">Interval of Data Collection</th>
           <th class="individual-level-data">Individual Level Data from Pre-COVID</th>
-          <th class="number-of-observations">Number of Observations</th>
           <th class="micro-data-availability">Micro Data Availablity</th>
-          <th class="type">Type</th>
+          <th class="authors">Authors</th>
         </tr>
       </thead>
       <tbody>
       {% else %}
         {%- assign rownumber = rownumber | plus: 1 -%}
         <tr>
+          <td class="smpling-method">
+            <a>
+              {{ row['Sampling'] }}
+            </a>
+          </td>
           <td>
             <a href="{{ row['Link'] }}">
               {{ row['Title'] }}
@@ -82,14 +85,8 @@ bodyclass: page-datatable surveys
               {%- endif -%}
             {% endfor %}
           </td>
-          <td class="authors">
-            {{ row['Authors'] | markdownify }}
-          </td>
-          <td class="target-population">
-            {{ row['Target Population'] }}
-          </td>
-          <td class="sampling-method">
-            {{ row['Sampling Method'] }}
+          <td class="country-number">
+            {{ row['Number of countries'] }}
           </td>
           <td class="time">
             {{ row['Time'] }}
@@ -100,14 +97,11 @@ bodyclass: page-datatable surveys
           <td class="individual-level-data">
             {{ row['Availability of Individual Level Data from Pre-COVID'] }}
           </td>
-          <td class="number-of-observations">
-            {{ row['Number of Observations'] }}
-          </td>
           <td class="micro-data-availability">
             {{ row['Micro Data Availablity'] }}
           </td>
-          <td class="type">
-            {{ row['Type'] }}
+          <td class="authors">
+            {{ row['Authors'] | markdownify }}
           </td>
         </tr>
       {% endif %}
