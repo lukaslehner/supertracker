@@ -1,12 +1,12 @@
-# Contribution
+# Contributing
 
 ## Editing CSV with Libre Office ✍
 
-Open the CSV with Character set `Unicode (UTF-8)` and `Seperated by` `Comma`
+Open the CSV with character set `Unicode (UTF-8)` and `Seperated by` `Comma`
 
 ![Open CSV in Libre Office](./assets/images/libre_open_csv.png)
 
-When Savin be sure to save as Text CSV Format.
+When saving be sure to save as `Text CSV` format.
 
 ![Save CSV in Libre Office](./assets/images/libre_save_csv.png)
 
