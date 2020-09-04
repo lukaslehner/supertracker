@@ -20,7 +20,7 @@ bodyclass: page-datatable surveys
 </form>  
 
 
-<div class="datatable-container">
+<div class="datatable-container surveys">
   <table>
     {%- assign rownumber = 0 -%}
     {% for row in site.data.surveys %}
@@ -43,7 +43,7 @@ bodyclass: page-datatable surveys
       {% else %}
         {%- assign rownumber = rownumber | plus: 1 -%}
         <tr>
-          <td class="smpling-method">
+          <td class="sampling-method">
             <a>
               {{ row['Sampling'] }}
             </a>

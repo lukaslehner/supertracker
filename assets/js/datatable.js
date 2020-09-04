@@ -182,10 +182,13 @@ function createMultiSelect(column, splitter, container, options = {}) {
 
   terms.forEach((term) => allTerms.add(term));
 
+  console.log(terms);
   var options = terms
     .sort()
     .reverse()
-    .reduce((term, string) => `${string}<option>${term}</option>`);
+    .reduce((string, term) => `${string}<option>${term}</option>`, '');
+  
+  console.log(options);
 
   var labelElement = showLabel ? `<label>${column}</label>` : "";
 
