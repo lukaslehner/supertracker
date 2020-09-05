@@ -1,3 +1,4 @@
+const allTerms = new Set();
 let dt_sortby = 1;
 let dt_order = "asc";
 let dt_search = "";
@@ -25,6 +26,9 @@ jQuery(function () {
     jQuery(this).html(`<a class="${classes}" data-order="true" data-sortby="${index}">${content}${icons}</a>`)
   })
   
+  var titles = getTerms('title', ';');
+  titles.forEach((title) => allTerms.add(title));
+
   createMultiSelect("policy-area", ";", jQuery("th.policy-area"), { showLabel: false });
   createMultiSelect("country-coverage", ";", jQuery("th.country-coverage"), { showLabel: false });
   createMultiSelect("data-format", ";", jQuery("th.data-format"), { showLabel: false });
@@ -172,7 +176,6 @@ function sortTable(table, column, order) {
     .appendTo(tbody);
 }
 
-const allTerms = new Set();
 function createMultiSelect(column, splitter, container, options = {}) {
   const { showLabel = true } = options;
 
@@ -182,13 +185,11 @@ function createMultiSelect(column, splitter, container, options = {}) {
 
   terms.forEach((term) => allTerms.add(term));
 
-  console.log(terms);
   var options = terms
     .sort()
     .reverse()
     .reduce((string, term) => `${string}<option>${term}</option>`, '');
   
-  console.log(options);
 
   var labelElement = showLabel ? `<label>${column}</label>` : "";
 

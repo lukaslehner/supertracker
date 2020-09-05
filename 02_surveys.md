@@ -60,8 +60,9 @@ bodyclass: page-datatable surveys
             {%- assign country_codes = row['Country Coverage'] | split: "; " -%}
             {%- assign i = 1 -%}
             
-            {%- for code in country_codes -%}
+            {%- for codeUnsave in country_codes -%}
               {%- assign i = i | plus: 1 -%}
+              {%- assign code = codeUnsave | strip -%}
               {%- assign country_name = site.data.countries | where: "Alpha-3 code", code | map: 'Country' -%}
               {%- assign country_name = country_name[0] -%}
 
