@@ -187,7 +187,6 @@ function createMultiSelect(column, splitter, container, options = {}) {
 
   var options = terms
     .sort()
-    .reverse()
     .reduce((string, term) => `${string}<option>${term}</option>`, '');
   
 
@@ -225,9 +224,13 @@ function getTerms(column, splitter) {
     const row = jQuery(this);
 
     const elem = row.find(`.${column}`)[0];
-    let d = elem ? elem.textContent : "";
-    d = d.split(splitter).map((elem) => elem.trim());
-    terms = new Set([...terms, ...d]);
+    let newTerms = elem ? elem.textContent : "";
+    newTerms = newTerms
+      .split(splitter)
+      .map((term) => term.trim())
+      .filter(term => term !== '');
+
+    terms = new Set([...terms, ...newTerms]);
   });
 
   return [...terms];
