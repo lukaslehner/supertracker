@@ -1,3 +1,4 @@
+const allTerms = new Set();
 let dt_sortby = 1;
 let dt_order = "asc";
 let dt_search = "";
@@ -25,6 +26,9 @@ jQuery(function () {
     jQuery(this).html(`<a class="${classes}" data-order="true" data-sortby="${index}">${content}${icons}</a>`)
   })
   
+  var titles = getTerms('title', ';');
+  titles.forEach((title) => allTerms.add(title));
+
   createMultiSelect("policy-area", ";", jQuery("th.policy-area"), { showLabel: false });
   createMultiSelect("country-coverage", ";", jQuery("th.country-coverage"), { showLabel: false });
   createMultiSelect("data-format", ";", jQuery("th.data-format"), { showLabel: false });
@@ -172,7 +176,6 @@ function sortTable(table, column, order) {
     .appendTo(tbody);
 }
 
-const allTerms = new Set();
 function createMultiSelect(column, splitter, container, options = {}) {
   const { showLabel = true } = options;
 
@@ -184,8 +187,8 @@ function createMultiSelect(column, splitter, container, options = {}) {
 
   var options = terms
     .sort()
-    .reverse()
-    .reduce((term, string) => `${string}<option>${term}</option>`);
+    .reduce((string, term) => `${string}<option>${term}</option>`, '');
+  
 
   var labelElement = showLabel ? `<label>${column}</label>` : "";
 
@@ -221,9 +224,13 @@ function getTerms(column, splitter) {
     const row = jQuery(this);
 
     const elem = row.find(`.${column}`)[0];
-    let d = elem ? elem.textContent : "";
-    d = d.split(splitter).map((elem) => elem.trim());
-    terms = new Set([...terms, ...d]);
+    let newTerms = elem ? elem.textContent : "";
+    newTerms = newTerms
+      .split(splitter)
+      .map((term) => term.trim())
+      .filter(term => term !== '');
+
+    terms = new Set([...terms, ...newTerms]);
   });
 
   return [...terms];
