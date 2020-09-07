@@ -5,4 +5,4 @@ permalink: /blog/
 order: 3
 ---
 
-The novel cross-country sources on policies provide a range of new opportunities as well as challenges for research and policy analysis. We are discussing these in our blog series. Please contact us in case you would like to **[contribute to the debate](../submit-feedback/)**.
+The novel cross-country sources on policies provide a range of new opportunities as well as challenges for research and policy analysis. We are discussing these in our blog series. Please contact us in case you would like to **[contribute to the debate](../submit-a-tracker/)**.

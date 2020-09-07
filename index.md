@@ -14,9 +14,7 @@ The Oxford Supertracker is a global directory of over 100 **[policy trackers](po
 
 If you would like to receive updates on new sources, you can **[subscribe here](#subscribe)**.
 
-The Oxford Supertracker is a collaborative effort. Over 50 people have already contributed to the growing collection. If you maintain or know of an additional dataset, please **[submit a new source](submit-a-tracker/)**. We will promptly review it in line with our **[criteria for inclusion](documentation/)** and update the collection.
-
-We are interested in making the collection as comprehensive and accessible as possible. If you have any suggestions for improvements, please **[share your feedback](submit-feedback/)**.
+The Oxford Supertracker is a collaborative effort. We are interested in making the collection as comprehensive and accessible as possible. Over 50 researchers have already contributed to the growing collection. If you maintain or know of an additional dataset, please **[submit a new source](submit-a-tracker/)**. We will promptly review it in line with our **[criteria for inclusion](documentation/)** and update the collection.
 
 # Analysis
 
@@ -26,11 +24,9 @@ We are also partnering up with the producers and users of existing data sources 
 
 # Impact and Media
 
-See the **[press release]()** about the Oxford Supertracker.
-
 Within a few weeks, **thousands of researchers from over 120 countries** around the globe have visited our **[initial website](https://lukaslehner.github.io/covid19policytrackers/)** making use of the directory and contributing to the growing number of entries.
 
-We are working with authors of policy trackers to propose concrete actions to solve information gaps in existing policy trackers and create synergies between them. At the same time, their feedback has informed the creation of the Supertracker.
+We are working with authors of policy trackers to propose concrete actions to solve information gaps in existing policy trackers and create synergies between them. At the same time, their feedback has informed the creation of the Supertracker. For more information, please see the **[press release](assets/Oxford_COVID_Supertracker_Release.pdf)** about the Oxford Supertracker.
 
 > *“The Oxford Supertracker offers a precious compass to help policymakers, practitioners and researchers to navigating the rich and evolving set of trackers available globally.”* <br/>
 

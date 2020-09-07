@@ -1,3 +1,4 @@
+const allTerms = new Set();
 let dt_sortby = 1;
 let dt_order = "asc";
 let dt_search = "";
@@ -22,25 +23,26 @@ jQuery(function () {
     const content = jQuery(this).text();
     const index = jQuery(this).index() + 1;
     const classes = index == 1 ? 'active' : '';
-    console.log(content, index, classes);
     jQuery(this).html(`<a class="${classes}" data-order="true" data-sortby="${index}">${content}${icons}</a>`)
   })
   
-  createMultiSelect("Policy Area", ";", jQuery("th.policy-area"), { showLabel: false });
-  createMultiSelect("Country Coverage", ";", jQuery("th.country-coverage"), { showLabel: false });
-  createMultiSelect("Data Format", ";", jQuery("th.data-format"), { showLabel: false });
-  createMultiSelect("Authors", ";", jQuery("th.authors"), { showLabel: false });
+  var titles = getTerms('title', ';');
+  titles.forEach((title) => allTerms.add(title));
+
+  createMultiSelect("policy-area", ";", jQuery("th.policy-area"), { showLabel: false });
+  createMultiSelect("country-coverage", ";", jQuery("th.country-coverage"), { showLabel: false });
+  createMultiSelect("data-format", ";", jQuery("th.data-format"), { showLabel: false });
+  createMultiSelect("authors", ";", jQuery("th.authors"), { showLabel: false });
 
   var surveyFilter = jQuery("#surveyfilter");
 
-  createMultiSelect("Target Population", ";", jQuery('th.target-population'), { showLabel: false });
-  createMultiSelect("Sampling Method", ";", jQuery('th.sampling-method'), { showLabel: false });
-  createMultiSelect("Time", ";", jQuery('th.time'), { showLabel: false });
-  createMultiSelect("Interval of Data Collection", ";", jQuery('th.data-collection-interval'), { showLabel: false });
-  createMultiSelect("Individual Level Data from Pre-COVID", ";", jQuery('th.individual-level-data'), { showLabel: false });
-  createMultiSelect("Number of Observations", ";", jQuery('th.number-of-observations'), { showLabel: false });
-  createMultiSelect("Micro Data Availablity", ";", jQuery('th.micro-data-availability'), { showLabel: false });
-  createMultiSelect("Level of Observation", ";", jQuery('th.level-of-observation'), { showLabel: false });
+  createMultiSelect("target-population", ";", jQuery('th.target-population'), { showLabel: false });
+  createMultiSelect("sampling-method", ";", jQuery('th.sampling-method'), { showLabel: false });
+  createMultiSelect("time", ";", jQuery('th.time'), { showLabel: false });
+  createMultiSelect("data-collection-interval", ";", jQuery('th.data-collection-interval'), { showLabel: false });
+  createMultiSelect("individual-level-data", ";", jQuery('th.individual-level-data'), { showLabel: false });
+  createMultiSelect("number-of-observations", ";", jQuery('th.number-of-observations'), { showLabel: false });
+  createMultiSelect("micro-data-availability", ";", jQuery('th.micro-data-availability'), { showLabel: false });
 
   jQuery("#sortby").change(function () {
     dt_sortby = jQuery(this).val();
@@ -105,8 +107,6 @@ function datatableFilter(column, terms) {
     datatableFilterTerms.set(column, terms);
   }
 
-  console.log(datatableFilterTerms);
-
   const table = jQuery(".datatable-container table");
   const rows = table.find("tbody tr");
 
@@ -118,12 +118,29 @@ function datatableFilter(column, terms) {
   rows.each(function () {
     textContent = this.textContent.toLowerCase();
 
-    const show = allFilter.every((terms) => {
-      console.log(terms);
-      if(!terms || terms.length === 0) return true;
-      return terms.some((term) => textContent.includes(term.toLowerCase()));
-    }
-    );
+    let show = true;
+
+    datatableFilterTerms.forEach((terms, cat)=>{
+      let catShow = true;
+      let catTextContent = jQuery(this).find(`.${cat}`).text().toLowerCase() || '';
+      
+      if(!terms || terms.length === 0) return;      
+
+      switch (cat) {
+        case 'all':
+          catShow = terms.every((term) => textContent.includes(term.toLowerCase()))          
+          break;
+        case 'country-coverage':
+          catShow = terms.every((term) => catTextContent.includes(term.toLowerCase()))          
+          break;
+        default:
+          catShow = terms.some((term) => catTextContent.includes(term.toLowerCase()))
+          break;
+      }
+
+      if(!catShow) show = false;
+    })
+    
 
     if (!show) {
       jQuery(this).addClass("hidden");
@@ -159,7 +176,6 @@ function sortTable(table, column, order) {
     .appendTo(tbody);
 }
 
-const allTerms = new Set();
 function createMultiSelect(column, splitter, container, options = {}) {
   const { showLabel = true } = options;
 
@@ -171,21 +187,23 @@ function createMultiSelect(column, splitter, container, options = {}) {
 
   var options = terms
     .sort()
-    .reverse()
-    .reduce((term, string) => `${string}<option>${term}</option>`);
+    .reduce((string, term) => `${string}<option>${term}</option>`, '');
+  
 
   var labelElement = showLabel ? `<label>${column}</label>` : "";
 
   var filter = `
     <div class="filter-element ${id}_container">
       ${labelElement}
-      <select class="selectpicker" data-live-search="true" title="Select Filter..." multiple id="${id}">
+      <select data-container="body" data-live-search="true" title="Select Filter..." multiple id="${id}">
         ${options}
       </select>
     </div>  
   `;
 
   container.append(filter);
+
+  jQuery(`#${id}`).selectpicker();
 
   jQuery(`#${id}`).on("change", function (event) {
     datatableFilter(column, jQuery(this).val());
@@ -199,17 +217,20 @@ function getTerms(column, splitter) {
   let terms = new Set();
 
   const columnNumber = headings.toArray().findIndex(function (elem) {
-    if (!elem.textContent) return false;
-    return elem.textContent.trim().toLowerCase() === column.toLowerCase();
+    return jQuery(elem).hasClass(column);
   });
 
   rows.each(function () {
     const row = jQuery(this);
 
-    const elem = row.find(`:nth-child(${columnNumber + 1})`)[0];
-    let d = elem ? elem.textContent : "";
-    d = d.split(splitter).map((elem) => elem.trim());
-    terms = new Set([...terms, ...d]);
+    const elem = row.find(`.${column}`)[0];
+    let newTerms = elem ? elem.textContent : "";
+    newTerms = newTerms
+      .split(splitter)
+      .map((term) => term.trim())
+      .filter(term => term !== '');
+
+    terms = new Set([...terms, ...newTerms]);
   });
 
   return [...terms];

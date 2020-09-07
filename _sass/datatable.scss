@@ -17,7 +17,7 @@ body.page-datatable{
     background: #fff;
     
     .filter-element{
-      min-width: 150px;
+      min-width: 120px;
       max-width: 200px;
       margin-right: 10px;
       margin-bottom: 10px;
@@ -60,15 +60,24 @@ body.page-datatable{
     font-family: $font-family-heading;
     font-weight: $font-weight-heading;
     background-color: #f3f3f3;
-    min-width: 150px;
+    min-width: 100px;
     position: sticky;
     top:-1px;
-    z-index: 1;
+    z-index: unset;
     white-space: nowrap;
     border-left: none;
     border-top: none;
     border-bottom: 2px solid #e8e8e8;
     user-select: none;
+    .bootstrap-select{
+      width: auto !important;
+      max-width: 100%;
+      min-width: 100%;
+      .btn-light{
+        background-color: #fff;
+        border: 1px solid #ced4da;
+      }
+    }
     .desc,.asc{
       display: none;
       opacity: 0.4;
@@ -119,6 +128,9 @@ body.page-datatable{
     border-bottom: none;
     border-left: none;
   }
+  table td.authors{
+    max-width: 200px;
+  }
   table tr:first-child td{
     border-top: 0;
   }
@@ -141,5 +153,35 @@ body.page-datatable{
     display: none;
   }
 
+  &.surveys{
+    table th{
+      white-space: normal;
+      font-size: 14px;
+      vertical-align: top;
+      padding-bottom: 54px;
+      .filter-element,
+      .form-control{
+        position: absolute;
+        bottom: 15px;
+        left: 10px;
+        right: 10px;
+        width: calc(100% - 20px);
+      }
 
+      a[data-sortby]{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 2px;
+        &:hover{
+          opacity: 0.7;
+        }
+        svg{
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
 }
