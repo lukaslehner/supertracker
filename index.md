@@ -18,9 +18,9 @@ The Oxford Supertracker is a collaborative effort. We are interested in making t
 
 # Analysis
 
-The appearance of many new information resources on COVID-19 creates opportunities and challenges for research and policy analysis. We discuss these in our **[blog series](blog/)**. Please contact us in case you would like to **[contribute to the debate](submit-feedback/)**.
+The appearance of many new information resources on COVID-19 creates opportunities and challenges for research and policy analysis. We regularly discuss these in our **[blog series](blog/)** and published our analysis in a **[policy brief](assets/STBrief-1.pdf)** that addresses opportunities, challenges and solutions to existing policy tracking initiatives. Please contact us in case you would like to **[contribute to the debate](submit-feedback/)**.
 
-We are also partnering up with the producers and users of existing data sources on social policies in the wake of the pandemic to identify remaining information gaps and potential synergies, and to propose concrete actions to address these. A webinar discussion and policy brief will address information gaps in existing policy trackers. You can find more information on the Supertracker project on the website of the **[Department of Social Policy and Intervention at the University of Oxford][DSPI]**.
+We are also partnering up with the producers and users of existing data sources on social policies in the wake of the pandemic to identify remaining information gaps and potential synergies, and to propose concrete actions to address these. We have held a webinar discussion with producers to share knowledge and experiences. You can find more information on the Supertracker project on the website of the **[Department of Social Policy and Intervention at the University of Oxford][DSPI]**.
 
 # Impact and Media
 
