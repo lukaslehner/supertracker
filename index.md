@@ -24,7 +24,7 @@ We are also partnering up with the producers and users of existing data sources 
 
 # Impact and Media
 
-Within a few weeks, **thousands of researchers from over 120 countries** around the globe have visited our **[initial website](https://lukaslehner.github.io/covid19policytrackers/)** making use of the directory and contributing to the growing number of entries.
+Within a few weeks, **thousands of researchers from over 120 countries** around the globe have visited our **[initial website](https://lukaslehner.github.io/covid19policytrackers/)** making use of the directory and contributing to the growing number of entries. ***[Nature](https://www.nature.com/)*** has covered the **[background story of the project](https://www.nature.com/articles/d41586-020-02760-0)** in its Career Column.
 
 We are working with authors of policy trackers to propose concrete actions to solve information gaps in existing policy trackers and create synergies between them. At the same time, their feedback has informed the creation of the Supertracker. For more information, please see the **[press release](assets/Oxford_COVID_Supertracker_Release.pdf)** about the Oxford Supertracker.
 
