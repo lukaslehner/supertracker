@@ -68,7 +68,7 @@ Phoebe Dunn,
 [@KonstPoensgen](https://twitter.com/KonstPoensgen).
 
 **Citation:** 
-*Daly, M., Ebbinghaus, B., Lehner, L., Naczyk, M., Vlandas, T. (2020). Oxford Supertracker: The Global Directory for COVID Policy Trackers and Surveys, Department of Social Policy and Intervention.*
+*Daly, M., B. Ebbinghaus, L. Lehner, M. Naczyk, and T. Vlandas (2020). Oxford Supertracker: The Global Directory for COVID Policy Trackers and Surveys, Department of Social Policy and Intervention.*
 
 <br>
 **Contact details** <br>
