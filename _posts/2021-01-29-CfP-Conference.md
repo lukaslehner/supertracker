@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Call for Participation: COVID-19 Public Health and Social Measures (PHSMs) Data Coverage Conference"
-date:   2021-01-31 08:00:00 +0100
+date:   2021-02-01 08:00:00 +0100
 categories: jekyll update
 permalink: phsm-conference/
 author: Bernhard Ebbinghaus and Lukas Lehner
@@ -11,11 +11,12 @@ The goal of the conference is to provide groups collecting Public Health and Soc
  
 The conference will be organized in two workshops over three days: 
  
-# Problem Identification Workshops:
+## Problem Identification Workshops
 February 10th from 9am–1pm EST/3–7pm CET (open to the public)
+
 February 11th from 9am–12:45pm EST/3–6:45pm CET (restricted to policy trackers)
  
-# Tracking PHSMs Data: Lessons Learned from the COVID19 Pandemic:
+## Tracking PHSMs Data: Lessons Learned from the COVID19 Pandemic
 March 3rd (time TBD) (open to the public)
 
 Please see this link for more information on the workshops as well as our conference website: **[www.covid19-conference.org](www.covid19-conference.org)**.
