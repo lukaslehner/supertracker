@@ -12,14 +12,13 @@ The goal of the conference is to provide groups collecting Public Health and Soc
 The conference will be organized in two workshops over three days: 
  
 ## Problem Identification Workshops
-February 10th from 9am–1pm EST/3–7pm CET (open to the public)
-
-February 11th from 9am–12:45pm EST/3–6:45pm CET (restricted to policy trackers)
+1. February 10th from 9am–1pm EST/3–7pm CET (open to the public)
+2. February 11th from 9am–12:45pm EST/3–6:45pm CET (restricted to policy trackers)
  
 ## Tracking PHSMs Data: Lessons Learned from the COVID19 Pandemic
-March 3rd (time TBD) (open to the public)
+3. March 3rd (time TBD) (open to the public)
 
-Please see this link for more information on the workshops as well as our conference website: **[www.covid19-conference.org](www.covid19-conference.org)**.
+Please see this link for more information on the workshops as well as our conference website: **[www.covid19-conference.org](https://www.covid19-conference.org)**.
  
 You can register for the conference **[here](https://eu.jotform.com/form/210176154664353)**.
  
