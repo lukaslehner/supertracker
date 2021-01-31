@@ -18,7 +18,7 @@ The conference will be organized in two workshops over three days:
 ## Tracking PHSMs Data: Lessons Learned from the COVID19 Pandemic
 3. March 3rd (time TBD) (open to the public)
 
-Please see this link for more information on the workshops as well as our conference website: **[www.covid19-conference.org](https://www.covid19-conference.org)**.
+Please see this link for more information on the workshops as well as our conference website: **[www.covid19-conference.org](https://phsmconference.wordpress.com/)**.
  
 You can register for the conference **[here](https://eu.jotform.com/form/210176154664353)**.
  
