@@ -42,7 +42,8 @@ We are working with authors of policy trackers to propose concrete actions to so
 
 # Subscribe
 
-The Oxford Supertracker is a growing collection. Please subscribe here to receive regular updates on new sources.
+The Oxford Supertracker is a growing collection. Please subscribe here to receive monthly e-mail updates on new sources. <br/>
+Each newsletter features a specific topic. All of them can be found in our public **[newsletter archive](https://tinyletter.com/supertracker/archive)**.
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScXlCxpsUkgEK2xWz4oalL_bzr2MpTm8Wbp-Kp3ZN8X7DrqaA/viewform?embedded=true" width="640" height="614" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
