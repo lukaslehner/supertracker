@@ -33,8 +33,10 @@ jQuery(function () {
   createMultiSelect("country-coverage", ";", jQuery("th.country-coverage"), { showLabel: false });
   createMultiSelect("data-format", ";", jQuery("th.data-format"), { showLabel: false });
   createMultiSelect("authors", ";", jQuery("th.authors"), { showLabel: false });
-  createMultiSelect("start-date", ";", jQuery('th.start-date'), { showLabel: false });
-  createMultiSelect("end-date", ";", jQuery('th.end-date'), { showLabel: false });
+  // createMultiSelect("start-date", ";", jQuery('th.start-date'), { showLabel: false });
+  createDateRange("start-date", ";", jQuery('th.start-date'));
+  createDateRange("end-date", ";", jQuery('th.end-date'));
+  // createMultiSelect("end-date", ";", jQuery('th.end-date'), { showLabel: false });
   createMultiSelect("source", ";", jQuery('th.source'), { showLabel: false });
   createMultiSelect("world-region", ";", jQuery('th.world-region'), { showLabel: false });
   createMultiSelect("provider", ";", jQuery('th.provider'), { showLabel: false });
@@ -104,6 +106,16 @@ jQuery(function () {
 
 /** Actual Fitler Function */
 const datatableFilterTerms = new Map();
+const datatableDateRangeFilterTerms = new Map();
+function datatableDateRangeFilter(column, start, end){
+  if(column && start && end){
+    datatableDateRangeFilterTerms.set(column, {start, end});
+  }else if(column){
+    datatableDateRangeFilterTerms.delete(column);
+  }
+
+  datatableFilter();
+}
 function datatableFilter(column, terms) {
   if (column) {
     if (!Array.isArray(terms)) {
@@ -145,7 +157,20 @@ function datatableFilter(column, terms) {
 
       if(!catShow) show = false;
     })
-    
+
+    datatableDateRangeFilterTerms.forEach(({start, end}, cat)=>{
+      let textContent =jQuery(this).find(`.${cat}`).text();
+      if(textContent){
+        let date = moment(textContent);
+        if(!date.isBetween(start, end)){
+          show = false;
+        }
+      }else{
+        show = false;
+      }
+    })
+
+    console.log(datatableDateRangeFilterTerms);
 
     if (!show) {
       jQuery(this).addClass("hidden");
@@ -188,15 +213,12 @@ function createMultiSelect(column, splitter, container, options = {}) {
 
   var terms = getTerms(column, splitter);
 
-  console.log(column, terms);
-
   terms.forEach((term) => allTerms.add(term));
 
   var options = terms
     .sort()
     .reduce((string, term) => `${string}<option>${term}</option>`, '');
   
-
   var labelElement = showLabel ? `<label>${column}</label>` : "";
 
   var filter = `
@@ -214,6 +236,42 @@ function createMultiSelect(column, splitter, container, options = {}) {
 
   jQuery(`#${id}`).on("change", function (event) {
     datatableFilter(column, jQuery(this).val());
+  });
+}
+
+function createDateRange(column, splitter, container){
+  var terms = getTerms(column, splitter);
+
+  terms.forEach((term) => allTerms.add(term));
+
+  var id = makeSafeForCSS(column) + "_filter";
+  
+  var picker = `
+    <div class="filter-element ${id}_container">
+      <input placeholder="Select Date" type="text" name="daterange" class="form-control" id="${id}">
+    </div>  
+  `;
+
+  container.append(picker);
+
+  var format = 'YYYY-MM-DD';
+
+  jQuery(`#${id}`).daterangepicker({
+    locale: { 
+      cancelLabel: 'Clear' ,
+      format: format,
+    },
+    autoUpdateInput: false,
+  }, function(start, end){
+    picker = jQuery(`#${id}`);
+    picker.val(start.format(format) + ' - ' + end.format(format));
+    datatableDateRangeFilter(column, start, end);
+  });
+  
+  jQuery(`#${id}`).on('cancel.daterangepicker', function(ev, picker) {
+    picker = jQuery(`#${id}`);
+    picker.val('');
+    datatableDateRangeFilter(column);
   });
 }
 
