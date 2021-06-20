@@ -84,7 +84,7 @@ bodyclass: page-datatable
         {%- assign rownumber = rownumber | plus: 1 -%}
         <tr>
           <td class="title">
-            <a href="{{row['Link']}}">
+            <a href="{{row['Link']}}" target="_blank">
               {{ row['Title'] }}
             </a>
           </td>

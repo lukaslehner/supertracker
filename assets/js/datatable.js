@@ -59,6 +59,8 @@ jQuery(function () {
     datatableFilter();
   });
 
+  jQuery(".datatable-container a").attr('target', '_blank');
+
   jQuery('a[data-sortby]').click(function() {
     const elem = jQuery(this);
     const active = jQuery(this).hasClass('active')
