@@ -56,6 +56,31 @@ bodyclass: page-datatable
               Authors
               </a>
           </th>       
+          <th class="start-date">
+            <a data-sortby="7">
+              Start Date
+              </a>
+          </th>       
+          <th class="end-date">
+            <a data-sortby="8">
+              End Date
+              </a>
+          </th>       
+          <th class="source">
+            <a data-sortby="9">
+              Source
+              </a>
+          </th>       
+          <th class="world-region">
+            <a data-sortby="10">
+              World Region
+              </a>
+          </th>       
+          <th class="provider">
+            <a data-sortby="11">
+              Provider
+            </a>
+          </th>       
           <th class="type">Type</th>
         </tr>
       </thead>
@@ -112,6 +137,21 @@ bodyclass: page-datatable
           </td>
           <td class="authors">
             {{ row['Authors'] | markdownify }}
+          </td>
+          <td class="start-date">
+            {{ row['Start Date'] }}
+          </td>
+          <td class="end-date">
+            {{ row['End Date'] }}
+          </td>
+          <td class="source">
+            {{ row['Source'] }}
+          </td>
+          <td class="world-region">
+            {{ row['World Region'] }}
+          </td>
+          <td class="provider">
+            {{ row['Provider'] }}
           </td>
           <td class="type">
             {{ row['Type'] }}

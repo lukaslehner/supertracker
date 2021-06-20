@@ -33,6 +33,11 @@ jQuery(function () {
   createMultiSelect("country-coverage", ";", jQuery("th.country-coverage"), { showLabel: false });
   createMultiSelect("data-format", ";", jQuery("th.data-format"), { showLabel: false });
   createMultiSelect("authors", ";", jQuery("th.authors"), { showLabel: false });
+  createMultiSelect("start-date", ";", jQuery('th.start-date'), { showLabel: false });
+  createMultiSelect("end-date", ";", jQuery('th.end-date'), { showLabel: false });
+  createMultiSelect("source", ";", jQuery('th.source'), { showLabel: false });
+  createMultiSelect("world-region", ";", jQuery('th.world-region'), { showLabel: false });
+  createMultiSelect("provider", ";", jQuery('th.provider'), { showLabel: false });
 
   var surveyFilter = jQuery("#surveyfilter");
 
@@ -182,6 +187,8 @@ function createMultiSelect(column, splitter, container, options = {}) {
   var id = makeSafeForCSS(column) + "_filter";
 
   var terms = getTerms(column, splitter);
+
+  console.log(column, terms);
 
   terms.forEach((term) => allTerms.add(term));
 
