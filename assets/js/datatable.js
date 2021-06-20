@@ -34,8 +34,7 @@ jQuery(function () {
   createMultiSelect("data-format", ";", jQuery("th.data-format"), { showLabel: false });
   createMultiSelect("authors", ";", jQuery("th.authors"), { showLabel: false });
   // createMultiSelect("start-date", ";", jQuery('th.start-date'), { showLabel: false });
-  createDateRange("start-date", ";", jQuery('th.start-date'));
-  createDateRange("end-date", ";", jQuery('th.end-date'));
+  createDateRangeFilter("time-coverage", ";", jQuery('th.time-coverage'));
   // createMultiSelect("end-date", ";", jQuery('th.end-date'), { showLabel: false });
   createMultiSelect("source", ";", jQuery('th.source'), { showLabel: false });
   createMultiSelect("world-region", ";", jQuery('th.world-region'), { showLabel: false });
@@ -158,19 +157,38 @@ function datatableFilter(column, terms) {
       if(!catShow) show = false;
     })
 
+    const uptodateTerm = 'up-to-date';
     datatableDateRangeFilterTerms.forEach(({start, end}, cat)=>{
-      let textContent =jQuery(this).find(`.${cat}`).text();
-      if(textContent){
-        let date = moment(textContent);
-        if(!date.isBetween(start, end)){
+      cell = jQuery(this).find(`.${cat}`);
+      let startString = cell.attr('data-start');
+      let endString = cell.attr('data-end');
+      if(startString && endString){
+        const dataStart = startString.includes(uptodateTerm) ? moment() : moment(startString);
+        const dataEnd = endString.includes(uptodateTerm) ? moment() : moment(endString);
+        if(
+          !start.isBetween(dataStart, dataEnd) ||
+          !end.isBetween(dataStart, dataEnd)
+        ){
           show = false;
         }
       }else{
         show = false;
       }
+      // let textContent =jQuery(this).find(`.${cat}`).text();
+      // if(textContent){
+      //   let date;
+      //   if(textContent.includes(uptodateTerm)){
+      //     date = moment();
+      //   }else{
+      //     date = moment(textContent);
+      //   }
+      //   if(!date.isBetween(start, end)){
+      //     show = false;
+      //   }
+      // }else{
+      //   show = false;
+      // }
     })
-
-    console.log(datatableDateRangeFilterTerms);
 
     if (!show) {
       jQuery(this).addClass("hidden");
@@ -239,7 +257,7 @@ function createMultiSelect(column, splitter, container, options = {}) {
   });
 }
 
-function createDateRange(column, splitter, container){
+function createDateRangeFilter(column, splitter, container){
   var terms = getTerms(column, splitter);
 
   terms.forEach((term) => allTerms.add(term));
@@ -248,7 +266,7 @@ function createDateRange(column, splitter, container){
   
   var picker = `
     <div class="filter-element ${id}_container">
-      <input placeholder="Select Date" type="text" name="daterange" class="form-control" id="${id}">
+      <input placeholder="Select Daterange" type="text" name="daterange" class="form-control" id="${id}">
     </div>  
   `;
 
@@ -258,9 +276,17 @@ function createDateRange(column, splitter, container){
 
   jQuery(`#${id}`).daterangepicker({
     locale: { 
-      cancelLabel: 'Clear' ,
+      cancelLabel: 'Clear',
       format: format,
     },
+    ranges: {
+      'Entire Pandemic': [moment('2020-03-11'), moment().subtract(1, 'day')],
+      'Spring 2020': [moment('2020-03-11'), moment('2020-05-01')],
+      'Autumn 2020': [moment('2020-11-01'), moment('2020-12-01')],
+      'Winter 2020/2021': [moment('2020-12-14'), moment('2021-01-31')],
+      'Spring 2021': [moment('2021-02-23'), moment('2021-04-30')],
+    },
+    "alwaysShowCalendars": true,
     autoUpdateInput: false,
   }, function(start, end){
     picker = jQuery(`#${id}`);

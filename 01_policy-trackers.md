@@ -56,15 +56,10 @@ bodyclass: page-datatable
               Authors
               </a>
           </th>       
-          <th class="start-date">
+          <th class="time-coverage">
             <a data-sortby="7">
-              Start Date
-              </a>
-          </th>       
-          <th class="end-date">
-            <a data-sortby="8">
-              End Date
-              </a>
+              Time Coverage
+            </a>
           </th>       
           <th class="source">
             <a data-sortby="9">
@@ -138,11 +133,8 @@ bodyclass: page-datatable
           <td class="authors">
             {{ row['Authors'] | markdownify }}
           </td>
-          <td class="start-date">
-            {{ row['Start Date'] }}
-          </td>
-          <td class="end-date">
-            {{ row['End Date'] }}
+          <td class="time-coverage" data-start="{{row['Start Date']}}" data-end="{{row['End Date']}}">
+            {{ row['Start Date'] | date: '%d.%b %Y' }} - {{ row['End Date'] | date: '%d.%b %Y' }}
           </td>
           <td class="source">
             {{ row['Source'] }}
