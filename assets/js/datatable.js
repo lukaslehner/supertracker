@@ -69,7 +69,7 @@ jQuery(function () {
       order = !order
     }
 
-    dt_sortby = jQuery(this).data('sortby');
+    dt_sortby = jQuery(this).parent().index() + 1;
     dt_order = order ? 'asc' : 'desc';
 
     jQuery(this).attr('data-order', order);
@@ -268,7 +268,7 @@ function createDateRangeFilter(column, splitter, container){
   
   var picker = `
     <div class="filter-element ${id}_container">
-      <input placeholder="Select Daterange" type="text" name="daterange" class="form-control" id="${id}">
+      <input placeholder="Select Date" type="text" name="daterange" class="form-control" id="${id}">
     </div>  
   `;
 
@@ -287,6 +287,7 @@ function createDateRangeFilter(column, splitter, container){
       'Autumn 2020': [moment('2020-11-02'), moment('2020-11-30')],
       'Winter 2020/2021': [moment('2020-12-15'), moment('2021-01-30')],
       'Spring 2021': [moment('2021-02-24'), moment('2021-04-29')],
+      'Up-to-Date': [moment().subtract(2, 'day'),moment().subtract(1, 'day')],
     },
     "alwaysShowCalendars": true,
     autoUpdateInput: false,
