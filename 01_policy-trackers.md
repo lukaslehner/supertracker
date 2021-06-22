@@ -31,51 +31,51 @@ bodyclass: page-datatable
           <th class="title">
             Title
           </th>
+          <th class="authors">
+            <a data-sortby>
+              Authors
+            </a>
+          </th>          
           <th class="policy-area">
-            <a data-sortby="2">
+            <a data-sortby>
               Policy Area
-              </a>
+            </a>
           </th>
           <th class="focus">
-            <a data-sortby="3">
+            <a data-sortby>
               Focus
-              </a>
+            </a>
           </th>
+          <th class="world-region">
+            <a data-sortby>
+              World Region
+            </a>
+          </th>          
           <th class="country-coverage">
-            <a data-sortby="4">
+            <a data-sortby>
               Country Coverage
-              </a>
+            </a>
           </th>
-          <th class="data-format">
-            <a data-sortby="5">
-              Data Format
-              </a>
-          </th>
-          <th class="authors">
-            <a data-sortby="6">
-              Authors
-              </a>
-          </th>       
           <th class="time-coverage">
-            <a data-sortby="7">
+            <a data-sortby>
               Time Coverage
             </a>
-          </th>       
-          <th class="source">
-            <a data-sortby="9">
-              Source
-              </a>
-          </th>       
-          <th class="world-region">
-            <a data-sortby="10">
-              World Region
-              </a>
-          </th>       
+          </th>     
+          <th class="data-format">
+            <a data-sortby>
+              Data Format
+            </a>
+          </th>    
           <th class="provider">
-            <a data-sortby="11">
+            <a data-sortby>
               Provider
             </a>
-          </th>       
+          </th>          
+          <th class="source">
+            <a data-sortby>
+              Source
+            </a>
+          </th>            
           <th class="type">Type</th>
         </tr>
       </thead>
@@ -88,11 +88,17 @@ bodyclass: page-datatable
               {{ row['Title'] }}
             </a>
           </td>
+          <td class="authors">
+            {{ row['Authors'] | markdownify }}
+          </td>
           <td class="policy-area">
             {{ row['Policy Area'] }}
           </td>
           <td class="focus">
             {{ row['Focus'] }}
+          </td>
+          <td class="world-region">
+            {{ row['World Region'] }}
           </td>
           <td class="country-coverage">
             {%- assign country_codes = row['Country Coverage'] | split: "; " -%}
@@ -127,23 +133,17 @@ bodyclass: page-datatable
 
             {% endfor %}
           </td>
-          <td class="data-format">
-            {{ row['Data Format'] }}
-          </td>
-          <td class="authors">
-            {{ row['Authors'] | markdownify }}
-          </td>
           <td class="time-coverage" data-start="{{row['Start Date']}}" data-end="{{row['End Date']}}">
             {{ row['Start Date'] | date: '%d.%b %Y' }} - {{ row['End Date'] | date: '%d.%b %Y' }}
           </td>
-          <td class="source">
-            {{ row['Source'] }}
-          </td>
-          <td class="world-region">
-            {{ row['World Region'] }}
+          <td class="data-format">
+            {{ row['Data Format'] }}
           </td>
           <td class="provider">
             {{ row['Provider'] }}
+          </td>
+          <td class="source">
+            {{ row['Source'] }}
           </td>
           <td class="type">
             {{ row['Type'] }}
