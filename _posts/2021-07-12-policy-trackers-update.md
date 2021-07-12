@@ -15,4 +15,4 @@ We have also made the Supertracker more user friendly. In addition to policy are
 
 Filtering policy trackers by country coverage, you can see that measures in nearly all countries around the world are documented. However, the Global North is covered more in-depth than the Global South.
 
-![Figure 2](/assets/images/figure-1.png)
+![Figure 2](/assets/images/figure-2.png)
