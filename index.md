@@ -10,7 +10,7 @@ order: 0
 
 # Oxford Supertracker
 
-The Oxford Supertracker is a global directory of over 100 **[policy trackers](policy-trackers/)** and **[surveys](surveys/)** related to COVID-19. This novel collection is designed to assist researchers and policy-makers in keeping track of a rapidly growing number of data sources. You can search and identify  relevant information resources, such as datasets, surveys, and systematic collections, across different areas, countries and data types.
+The Oxford Supertracker is a global directory of over several hundred **[policy trackers](policy-trackers/)** and **[surveys](surveys/)** related to COVID-19. This novel collection is designed to assist researchers and policy-makers in keeping track of a rapidly growing number of data sources. You can search and identify  relevant information resources, such as datasets, surveys, and systematic collections, across different areas, countries and data types.
 
 If you would like to receive updates on new sources, you can **[subscribe here](#subscribe)**.
 
@@ -24,7 +24,7 @@ We are also partnering up with the producers and users of existing data sources 
 
 # Impact and Media
 
-Within a few weeks, **thousands of researchers from over 120 countries** around the globe have visited our **[initial website](https://lukaslehner.github.io/covid19policytrackers/)** making use of the directory and contributing to the growing number of entries. ***[Nature](https://www.nature.com/)*** has covered the **[background story of the project](https://www.nature.com/articles/d41586-020-02760-0)** in its Career Column.
+Within a few weeks, thousands of researchers from over 120 countries around the globe have visited our **[initial website](https://lukaslehner.github.io/covid19policytrackers/)** making use of the directory and contributing to the growing number of entries. ***[Nature](https://www.nature.com/)*** has covered the **[background story of the project](https://www.nature.com/articles/d41586-020-02760-0)** in its Career Column.
 
 We are working with authors of policy trackers to propose concrete actions to solve information gaps in existing policy trackers and create synergies between them. At the same time, their feedback has informed the creation of the Supertracker. For more information, please see the **[press release](assets/Oxford_COVID_Supertracker_Release.pdf)** about the Oxford Supertracker.
 
