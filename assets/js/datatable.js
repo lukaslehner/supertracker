@@ -87,8 +87,10 @@ jQuery(function () {
 
   datatableFilter();
 
-  jQuery('[data-action="download-csv"]').click(function () {
-    downloadCsv();
+  jQuery('[data-action="download-csv"]').click(function (e) {
+    var link = jQuery(this).attr('href');
+    downloadCsv(link);
+    e.preventDefault();
   });
 
   jQuery("#search_filter").autoComplete({
@@ -339,36 +341,9 @@ function makeSafeForCSS(name) {
   });
 }
 
-function downloadCsv() {
-  // var json_pre = '[{"Id":1,"UserName":"Sam Smith"},{"Id":2,"UserName":"Fred Frankly"},{"Id":1,"UserName":"Zachary Zupers"}]';
-  // var json = $.parseJSON(json_pre);
-  var csv = ``;
-  const table = jQuery(".datatable-container table");
-
-  csv += table
-    .find("thead tr th")
-    .toArray()
-    .reduce(function (thData, elem) {
-      if (jQuery(elem).hasClass("hidden")) {
-        return thData;
-      }
-      const end = jQuery(elem).is(":last-child") ? "\n" : ",";
-      return thData + elem.textContent + end;
-    }, "");
-
-  csv += table
-    .find("tbody tr td")
-    .toArray()
-    .reduce(function (rowData, elem) {
-      if (jQuery(elem).parent().hasClass("hidden")) {
-        return rowData;
-      }
-      const end = jQuery(elem).is(":last-child") ? "\n" : ",";
-
-      let content = elem.textContent.trim();
-
-      return rowData + `"${content}"${end}`;
-    }, "");
+async function downloadCsv(link) {
+  var response = await fetch(link);
+  var csv = await response.text();
 
   var downloadLink = document.createElement("a");
   var blob = new Blob(["\ufeff", csv]);

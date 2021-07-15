@@ -13,7 +13,7 @@ bodyclass: page-datatable
         <span>Results: </span> <span data-content="DATASETS_FOUND"></span> / <span data-content="DATASETS_TOTAL"></span>
       </div>
       <span></span>
-      <a href="https://raw.githubusercontent.com/lukaslehner/supertracker/master/_data/trackers.csv" target="_blank" class="btn btn-primary">Download as CSV</a>
+      <a href="https://raw.githubusercontent.com/lukaslehner/supertracker/master/_data/trackers.csv" target="_blank" class="btn btn-primary" data-action="download-csv">Download as CSV</a>
     </div>      
   </div>
 
