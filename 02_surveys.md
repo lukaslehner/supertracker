@@ -29,6 +29,7 @@ bodyclass: page-datatable surveys
         <tr>
           <th class="sampling-method">Sampling</th>
           <th class="title">Title</th>
+          <th class="policy-area">Policy Area</th>
           <th class="focus">Focus</th>
           <th class="country-coverage">Country Coverage</th>
           <th class="time-coverage">Time Coverage</th>
@@ -51,6 +52,9 @@ bodyclass: page-datatable surveys
             <a href="{{ row['Link'] }}">
               {{ row['Title'] }}
             </a>
+          </td>
+          <td class="policy-area">
+            {{ row['Policy Area'] }}
           </td>
           <td class="focus">
             {{ row['Focus'] }}
