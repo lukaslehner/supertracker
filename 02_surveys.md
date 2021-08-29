@@ -31,8 +31,7 @@ bodyclass: page-datatable surveys
           <th class="title">Title</th>
           <th class="focus">Focus</th>
           <th class="country-coverage">Country Coverage</th>
-          <th class="country-number">Countries</th>
-          <th class="time">Time</th>
+          <th class="time-coverage">Time Coverage</th>
           <th class="data-collection-interval">Interval of Data Collection</th>
           <th class="individual-level-data">Individual Level Data from Pre-COVID</th>
           <th class="micro-data-availability">Micro Data Availablity</th>
@@ -86,11 +85,8 @@ bodyclass: page-datatable surveys
               {%- endif -%}
             {% endfor %}
           </td>
-          <td class="country-number">
-            {{ row['Number of countries'] }}
-          </td>
-          <td class="time">
-            {{ row['Time'] }}
+          <td class="time-coverage" data-start="{{row['Start Date']}}" data-end="{{row['End Date']}}">
+            {{ row['Start Date'] | date: '%d.%b %Y' }} - {{ row['End Date'] | date: '%d.%b %Y' }}
           </td>
           <td class="data-collection-interval">
             {{ row['Interval of Data Collection'] }}

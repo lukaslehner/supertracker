@@ -32,7 +32,7 @@ jQuery(function () {
   createMultiSelect("policy-area", ";", jQuery("th.policy-area"), { showLabel: false });
   createMultiSelect("country-coverage", ";", jQuery("th.country-coverage"), { showLabel: false });
   createMultiSelect("data-format", ";", jQuery("th.data-format"), { showLabel: false });
-  createMultiSelect("authors", ";", jQuery("th.authors"), { showLabel: false });
+  createMultiSelect("authors", ";", jQuery("th.authors"), { showLabel: false, showTermResultsNumber: false });
   // createMultiSelect("start-date", ";", jQuery('th.start-date'), { showLabel: false });
   createDateRangeFilter("time-coverage", ";", jQuery('th.time-coverage'));
   // createMultiSelect("end-date", ";", jQuery('th.end-date'), { showLabel: false });
@@ -44,7 +44,7 @@ jQuery(function () {
 
   createMultiSelect("target-population", ";", jQuery('th.target-population'), { showLabel: false });
   createMultiSelect("sampling-method", ";", jQuery('th.sampling-method'), { showLabel: false });
-  createMultiSelect("time", ";", jQuery('th.time'), { showLabel: false });
+  // createMultiSelect("time", ";", jQuery('th.time'), { showLabel: false });
   createMultiSelect("data-collection-interval", ";", jQuery('th.data-collection-interval'), { showLabel: false });
   createMultiSelect("individual-level-data", ";", jQuery('th.individual-level-data'), { showLabel: false });
   createMultiSelect("number-of-observations", ";", jQuery('th.number-of-observations'), { showLabel: false });
@@ -212,35 +212,47 @@ function sortTable(table, column, order) {
   var asc = order === "asc",
     tbody = table.find("tbody");
 
+  var columnClass =  table.find("th:nth-child(" + column + ")").attr('class');
+
+  console.log(columnClass);
+
   tbody
     .find("tr")
     .sort(function (a, b) {
-      if (asc) {
-        return $("td:nth-child(" + column + ")", a)
-          .text()
-          .localeCompare($("td:nth-child(" + column + ")", b).text());
-      } else {
-        return $("td:nth-child(" + column + ")", b)
-          .text()
-          .localeCompare($("td:nth-child(" + column + ")", a).text());
+      var compare = 0;
+      switch (columnClass) {
+        case 'country-coverage':
+          var aSize = $("td:nth-child(" + column + ")", a).text().split(';').length;
+          var bSize = $("td:nth-child(" + column + ")", b).text().split(';').length;
+          compare = aSize-bSize;
+          break;
+        default:
+          compare = $("td:nth-child(" + column + ")", a)
+            .text()
+            .localeCompare($("td:nth-child(" + column + ")", b).text());
       }
+      return asc ? compare : compare * -1;
     })
     .appendTo(tbody);
 }
 
 function createMultiSelect(column, splitter, container, options = {}) {
-  const { showLabel = true } = options;
-
+  const { showLabel = true, showTermResultsNumber = true } = options;
   var id = makeSafeForCSS(column) + "_filter";
 
   var terms = getTerms(column, splitter);
+  var nonUniqueTerms = getTerms(column, splitter, false);
 
   terms.forEach((term) => allTerms.add(term));
 
   var options = terms
     .sort()
-    .reduce((string, term) => `${string}<option>${term}</option>`, '');
-  
+    .reduce((string, term) => {
+      var termResultsNumber = nonUniqueTerms.filter(t => t === term).length;
+      var termResultsNumberString = showTermResultsNumber ? `(${termResultsNumber})` : '';
+      return `${string}<option value="${term}">${term} ${termResultsNumberString}</option>`;
+    }, '');
+
   var labelElement = showLabel ? `<label>${column}</label>` : "";
 
   var filter = `
@@ -306,11 +318,14 @@ function createDateRangeFilter(column, splitter, container){
   });
 }
 
-function getTerms(column, splitter) {
+function getTerms(column, splitter, unique = true) {
   const table = jQuery(".datatable-container table");
   const rows = table.find("tbody tr");
   const headings = table.find("thead tr>*");
   let terms = new Set();
+  if(!unique){
+    terms = new Array();
+  }
 
   const columnNumber = headings.toArray().findIndex(function (elem) {
     return jQuery(elem).hasClass(column);
@@ -326,7 +341,11 @@ function getTerms(column, splitter) {
       .map((term) => term.trim())
       .filter(term => term !== '');
 
-    terms = new Set([...terms, ...newTerms]);
+    if(unique){
+      terms = new Set([...terms, ...newTerms]);
+    }else{
+      terms = [...terms, ...newTerms];
+    }
   });
 
   return [...terms];

@@ -153,7 +153,7 @@ body.page-datatable{
     display: none;
   }
 
-  &.surveys{
+  &.surveys.disable_this_rule{
     table th{
       white-space: normal;
       font-size: 14px;
