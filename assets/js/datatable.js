@@ -54,6 +54,7 @@ jQuery(function () {
   createMultiSelect("country-coverage", ";", jQuery("th.country-coverage"), { showLabel: false });
   createMultiSelect("data-format", ";", jQuery("th.data-format"), { showLabel: false });
   createMultiSelect("authors", ";", jQuery("th.authors"), { showLabel: false, showTermResultsNumber: false });
+  createMultiSelect("focus", ";", jQuery("body.surveys th.focus"), { showLabel: false });
   // createMultiSelect("start-date", ";", jQuery('th.start-date'), { showLabel: false });
   createDateRangeFilter("time-coverage", ";", jQuery('th.time-coverage'));
   // createMultiSelect("end-date", ";", jQuery('th.end-date'), { showLabel: false });
