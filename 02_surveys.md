@@ -36,6 +36,7 @@ bodyclass: page-datatable surveys
           <th class="data-collection-interval">Interval of Data Collection</th>
           <th class="individual-level-data">Individual Level Data from Pre-COVID</th>
           <th class="micro-data-availability">Micro Data Availablity</th>
+          <th class="types-of-data">Type of Data</th>
           <th class="authors">Authors</th>
         </tr>
       </thead>
@@ -100,6 +101,9 @@ bodyclass: page-datatable surveys
           </td>
           <td class="micro-data-availability">
             {{ row['Micro Data Availablity'] }}
+          </td>
+          <td class="types-of-data">
+            {{ row['Types of Data'] }}
           </td>
           <td class="authors">
             {{ row['Authors'] | markdownify }}

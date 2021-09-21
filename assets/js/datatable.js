@@ -71,6 +71,7 @@ jQuery(function () {
   createMultiSelect("individual-level-data", ";", jQuery('th.individual-level-data'), { showLabel: false });
   createMultiSelect("number-of-observations", ";", jQuery('th.number-of-observations'), { showLabel: false });
   createMultiSelect("micro-data-availability", ";", jQuery('th.micro-data-availability'), { showLabel: false });
+  createMultiSelect("types-of-data", ";", jQuery('th.types-of-data'), { showLabel: false });
 
   jQuery("#sortby").change(function () {
     dt_sortby = jQuery(this).val();
