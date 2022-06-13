@@ -28,7 +28,7 @@ Within a few weeks, thousands of researchers from over 120 countries around the 
 
 We are working with authors of policy trackers to propose concrete actions to solve information gaps in existing policy trackers and create synergies between them. At the same time, their feedback has informed the creation of the Supertracker. For more information, please see the **[press release](assets/Oxford_COVID_Supertracker_Release.pdf)** about the Oxford Supertracker.
 
-> *“The Oxford Supertracker offers a precious compass to help policymakers, practitioners and researchers to navigating the rich and evolving set of trackers available globally.”* <br/>
+> *“The Supertracker offers a rich, accessible and diversified repository of COVID-related policy trackers — an essential data platform for policymakers, practitioners and researchers engaged in better understanding and quantifying responses to and implications of the pandemic.”* <br/>
 
 **Ugo Gentilini**, Global lead for social assistance, World Bank
 
